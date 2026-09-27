@@ -1,0 +1,7 @@
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:31:6:MX_TIM1_Init	96	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:113:6:MX_TIM2_Init	32	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:156:6:HAL_TIM_Base_MspInit	24	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:172:6:HAL_TIM_IC_MspInit	48	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:200:6:HAL_TIM_MspPostInit	40	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:231:6:HAL_TIM_Base_MspDeInit	16	static
+/home/nestor/drone-master/drone-fc/Core/Src/tim.c:247:6:HAL_TIM_IC_MspDeInit	16	static
