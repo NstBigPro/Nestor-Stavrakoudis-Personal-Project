@@ -1,0 +1,5 @@
+/home/nestor/drone-master/drone-fc/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c:30:6:_IMU_ReadRegister	16	static
+/home/nestor/drone-master/drone-fc/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c:44:6:_IMU_WriteRegisterBlocking	24	static
+/home/nestor/drone-master/drone-fc/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c:64:6:IMU_Test	8	static
+/home/nestor/drone-master/drone-fc/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c:69:6:IMU_Init	8	static
+/home/nestor/drone-master/drone-fc/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c:83:6:IMU_Read	8	static

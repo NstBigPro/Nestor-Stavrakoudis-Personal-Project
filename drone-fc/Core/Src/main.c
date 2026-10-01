@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lsm6dsv32x.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +57,37 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi){
+	if (hspi == &hspi1){ // These events refer to the IMU SPI DMA.
+		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_SET);
+		switch(IMU_Current_DMA_Transaction) {
+			case WRITE:
+				break; // No additional processing is required on register write.
+			case SINGLE_REG:
+				if(	IMU_Current_Register_Read == IMU_WHO_AM_I){ // Status update based on WHO_AM_I register
+					switch(IMU_SPI_SingleBuf_RX[1]) {
+						case IMU_WHO_AM_I_NORMAL:
+							IMU_Status = OPERATIONAL;
+							break;
+						default:
+							IMU_Status = FAULTY;
+							break;
+					}
+				}
+				break;
+			case IMU_PACKET: // Parse IMU Packet
+				IMU_Raw.A_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_A-0x21];
+				IMU_Raw.A_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_A-0x21];
+				IMU_Raw.A_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_A-0x21];
 
+
+				IMU_Raw.G_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_G-0x21];
+				IMU_Raw.G_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_G-0x21];
+				IMU_Raw.G_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_G-0x21];
+
+		}
+	}
+}
 /* USER CODE END 0 */
 
 /**

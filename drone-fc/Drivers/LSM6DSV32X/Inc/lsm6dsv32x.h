@@ -4,20 +4,26 @@
   * @brief          : Header file for the LSM6DSV32X accelerometer/gyroscope
   * @author					: Nestor Stavrakoudis
   ******************************************************************************
-  * Contains the register map of the IMU.
+  * Contains the register map and driver functions of the IMU.
   * Taken from LSM6DSV32X datasheet, section 8 "Register mapping", p. 52-54
   ******************************************************************************
 **/
 
+/* Register map & initialization settings */
+
 #ifndef LSM6DSV32X_H
+#include <stdint.h>
+
 #define  LSM6DSV32X_H
 
-#define IMU_WHO_AM_I 0x0F // WHO_AM_I register
+#define IMU_READ 	0x80					// MSB setting for read
+#define IMU_WRITE	0x00					// MSB setting for write
+
+#define IMU_WHO_AM_I 0x0F 				// WHO_AM_I register
 #define IMU_WHO_AM_I_NORMAL 0x70 // WHO_AM_I expected response
 
 #define IMU_INT1_CTRL 0x0D // Interrupt 1 control
 #define IMU_INT2_CTRL 0x0E // Interrupt 2 control
-
 
 #define IMU_CTRL1  0x10  // Control register 1
 #define IMU_CTRL2  0x11  // Control register 2
@@ -63,5 +69,54 @@
 
 #define IMU_FIFO_STATUS1 0x1B // FIFO status register 1
 #define IMU_FIFO_STATUS2 0x1C // FIFO status register 2
+
+#define IMU_ACCEL_ODR	0x0A 				// This setting corresponds to High-Performance mode, 1.92kHz ODR (datasheet p.65)
+#define IMU_GYRO_ODR		0x0A				// This setting corresponds to High-Performance mode, 1.92kHz ODR (datasheet p.66)
+
+#define IMU_INT1_SETTING 0x02 			// This setting fires INT1 on gyroscope data ready (datasheet p.63)
+
+#define IMU_ACCEL_SCALE 0x07				// This setting corresponds to +-32g  (datasheet p.71)
+#define IMU_GYRO_SCALE  0x04				// This setting corresponds to +-2000dps (datasheet p.69-70)
+
+
+void _IMU_ReadRegister(uint8_t reg);										// Read one register (does not return, DMA is asynchronous!)
+void _IMU_WriteRegisterBlocking(uint8_t reg, uint8_t data);			// Write to one register (blocking)
+
+
+typedef enum {
+	OPERATIONAL,
+	FAULTY
+} IMU_StatusTypeDef;
+void IMU_Test();																				// Checks WHO_AM_I
+extern volatile IMU_StatusTypeDef IMU_Status;
+
+void IMU_Init();																				// IMU initialization
+
+typedef struct {
+	int16_t A_X;
+	int16_t A_Y;
+	int16_t A_Z;
+	int16_t G_X;
+	int16_t G_Y;
+	int16_t G_Z;
+} IMU_Data_Packet;
+
+typedef enum {
+	WRITE,
+	SINGLE_REG,
+	IMU_PACKET
+} IMU_DMA_Transaction_Type;
+
+extern IMU_DMA_Transaction_Type	IMU_Current_DMA_Transaction;	// Dictates post processing in complete callback
+extern uint8_t									IMU_Current_Register_Read; 		// Transfers which register was read to complete callback
+
+void IMU_Read();		// Read IMU acceleration and gyroscope registers
+extern IMU_Data_Packet IMU_Raw; // IMU output
+
+extern uint8_t IMU_SPI_SingleBuf_RX[2]; // Receive buffer for single register
+extern uint8_t IMU_SPI_SingleBuf_TX[2];	// Write buffer for single register
+
+extern uint8_t IMU_SPI_IMUPacket_RX[13]; // Receive buffer for 6-axis measurement
+extern uint8_t IMU_SPI_IMUPacket_TX[13]; // Write buffer for 6-axis measurement
 
 #endif
