@@ -4,4 +4,5 @@
 	(lib (name "Radio_Drone") (type "KiCad") (uri "${KIPRJMOD}/footprints/Radio_Drone.pretty") (options "") (descr ""))
 	(lib (name "SAM-M10Q") (type "KiCad") (uri "${KIPRJMOD}/footprints/SAM-M10Q.pretty") (options "") (descr ""))
 	(lib (name "VLS3015") (type "KiCad") (uri "${KIPRJMOD}/footprints/VLS3015.pretty") (options "") (descr ""))
+	(lib (name "BMP388") (type "KiCad") (uri "${KIPRJMOD}/footprints/BMP388.pretty") (options "") (descr ""))
 )

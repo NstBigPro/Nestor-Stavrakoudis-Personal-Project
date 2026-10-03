@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "BMP581"
+	(symbol "BMP388"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -19,7 +19,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "BMP581"
+		(property "Value" "BMP388"
 			(at 26.67 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -149,7 +149,7 @@
 				(justify left top)
 			)
 		)
-		(symbol "BMP581_1_1"
+		(symbol "BMP388_1_1"
 			(rectangle
 				(start 5.08 12.7)
 				(end 25.4 -15.24)

@@ -588,6 +588,407 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "BMP388:BMP388"
+		(layer "F.Cu")
+		(uuid "0c788893-9876-45d7-82d4-5d04d3545391")
+		(at 205 96.225 -90)
+		(descr "BMP581-7")
+		(tags "Undefined or Miscellaneous")
+		(property "Reference" "U5"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "96314b0a-ac48-4c79-bbf3-725fe0f9f989")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "BMP388"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2d67a28b-0682-45e1-b427-2058a16307a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab2b753a-8806-4a8e-a5d8-c79444780e46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba865fce-d0c6-4aea-970e-b7c811c5c3cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "854bd526-86d0-47db-92d3-86e57ad826ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "BOSCH"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "476f395b-f7d2-463e-a42d-3673504ec589")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BMP581"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba0b958d-179e-4436-9718-c296ba892f12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "262-BMP581"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42207d1d-09f8-4307-88bf-c59be276f5bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMP581?qs=Li%252BoUPsLEntPL9tlFmcgXg%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e9c6c75-01b9-4bd2-8846-6a63d4fa62ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" "BMP581"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09649e4f-df85-4893-b0ae-c5413bfe0bc4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bmp581/bosch-sensortec?utm_currency=USD&region=nac"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc188622-c6b5-4f23-b1d8-8bd2c4ffc165")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8e608f0c-f4f8-45bf-a03d-09d1671cf55b")
+		(sheetname "/")
+		(sheetfile "drone-fc.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "10" "3" "9" "4" "8" "5" "7" "6")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.7 -0.25)
+			(end -1.7 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "40b6d72a-c131-4892-a90b-5f7af371d883")
+		)
+		(fp_line
+			(start -1.6 -0.25)
+			(end -1.6 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b2769090-5ac1-4c87-b435-9a1579095525")
+		)
+		(fp_arc
+			(start -1.7 -0.25)
+			(mid -1.65 -0.3)
+			(end -1.6 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c0dfc162-0258-4278-a7a9-315bafa31298")
+		)
+		(fp_arc
+			(start -1.6 -0.25)
+			(mid -1.65 -0.2)
+			(end -1.7 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f9440cf3-a6ac-48c2-a6c2-fb3ffc2bc8a3")
+		)
+		(fp_line
+			(start -2 2)
+			(end -2 -2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "df260c48-2169-468f-8fc7-b9dec9764ad6")
+		)
+		(fp_line
+			(start 2 2)
+			(end -2 2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c15836b3-56a6-40d0-9eeb-04a49a19176e")
+		)
+		(fp_line
+			(start -2 -2)
+			(end 2 -2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c026efde-34db-4d15-935d-0b27cd29e41b")
+		)
+		(fp_line
+			(start 2 -2)
+			(end 2 2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "11d04ae6-8bf0-47d1-ad3b-698f2eccc238")
+		)
+		(fp_line
+			(start -1 1)
+			(end -1 -1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b81808d2-a9b4-4dba-9877-22afc2c15086")
+		)
+		(fp_line
+			(start 1 1)
+			(end -1 1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c842abd7-d1b1-499b-be18-26aa95257b27")
+		)
+		(fp_line
+			(start -1 -1)
+			(end 1 -1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "909cbd9f-7a6b-4a44-8d73-d926c5c9fedd")
+		)
+		(fp_line
+			(start 1 -1)
+			(end 1 1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4d20b41d-a43d-4782-9756-7372152c1c06")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "a7799bcb-b4fa-4b03-bb9c-f4cfb95e4163")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.75 -0.25)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "+3V3")
+			(pinfunction "VDDIO_1")
+			(pintype "passive")
+			(uuid "47b1f61a-88c4-49f5-88c6-885036a6771d")
+		)
+		(pad "2" smd rect
+			(at -0.75 0.25)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/ALT_SCK")
+			(pinfunction "SCK_2")
+			(pintype "passive")
+			(uuid "b7713f36-b311-4e75-87c5-31453ea87abe")
+		)
+		(pad "3" smd rect
+			(at -0.5 0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(pinfunction "VSS_1_3")
+			(pintype "passive")
+			(uuid "be751138-8537-4756-8ad4-0d4c2e42930a")
+		)
+		(pad "4" smd rect
+			(at 0 0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/ALT_MOSI")
+			(pinfunction "SDI_4")
+			(pintype "passive")
+			(uuid "67effe51-41f3-481a-883d-a09bac021430")
+		)
+		(pad "5" smd rect
+			(at 0.5 0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/ALT_MISO")
+			(pinfunction "SDO_5")
+			(pintype "passive")
+			(uuid "3c030d52-0fa2-4325-bb20-10cae727d067")
+		)
+		(pad "6" smd rect
+			(at 0.75 0.25)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/ALT_CS")
+			(pinfunction "CSB_6")
+			(pintype "passive")
+			(uuid "a328c291-9d0f-42d2-a21f-12a85060117a")
+		)
+		(pad "7" smd rect
+			(at 0.75 -0.25)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/ALT_INT")
+			(pinfunction "INT_7")
+			(pintype "passive")
+			(uuid "d5a6222a-9941-4e9b-ba51-6f8c5e876eee")
+		)
+		(pad "8" smd rect
+			(at 0.5 -0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(pinfunction "VSS_2_8")
+			(pintype "passive")
+			(uuid "7a0221bb-1bcb-478e-917b-e0ee6eeae4a5")
+		)
+		(pad "9" smd rect
+			(at 0 -0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(pinfunction "VSS_3_9")
+			(pintype "passive")
+			(uuid "bf81638a-99c0-424c-8b0f-286a68748a21")
+		)
+		(pad "10" smd rect
+			(at -0.5 -0.775 270)
+			(size 0.3 0.325)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "+3V3")
+			(pinfunction "VDD_10")
+			(pintype "passive")
+			(uuid "d7870cd7-6cf1-4ef3-8398-9e2c8a8d33b5")
+		)
+		(embedded_fonts no)
+		(model "BMP581.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+		(model "/home/nestor/Downloads/LIB_BMP581/BMP581/3D/BMP581.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
 		(layer "F.Cu")
 		(uuid "12b1b286-2124-40a9-9061-4b4145123ec6")
@@ -2100,432 +2501,6 @@
 			)
 			(rotate
 				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "BMP581:BMP581"
-		(layer "F.Cu")
-		(uuid "39bf070f-4abc-47fb-9bae-812520ae52a6")
-		(at 205 96.225 -90)
-		(descr "BMP581-7")
-		(tags "Undefined or Miscellaneous")
-		(property "Reference" "U6"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(uuid "6b23c6ea-690f-46d6-aadb-279d1a835824")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(property "Value" "BMP581"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e2b9f0c0-13ba-49f5-8de7-496c37e6e264")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8d60478-fa0c-4743-be1c-72cdc1c78108")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7b3971a3-c77e-4295-a496-25af8681b94f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "0.8"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dcc2dd4f-c5e5-41e1-8801-9c3e63b4538c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Name" "BOSCH"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7346d768-6637-4e84-82b0-211f6d9a42e9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" "BMP581"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cbe96983-c07f-4f0a-b701-5309431deca6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Part Number" "262-BMP581"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e4713392-ba7b-4ef7-a639-aa4967e22b78")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMP581?qs=Li%252BoUPsLEntPL9tlFmcgXg%3D%3D"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8e0d4b39-24c9-4b81-94d2-3bcee114a544")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Arrow Part Number" "BMP581"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1ddbe963-48ab-4ea7-9481-35a2adf786e3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bmp581/bosch-sensortec?utm_currency=USD&region=nac"
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6f5176b4-c189-40de-b692-0c6710d025ad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "af0f01c8-04e1-4223-a456-24d38ed9d1ab")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "532bcc78-11ba-4f97-8942-1a1e6b121428")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/9bc6e1f3-b97c-4f53-9ff5-f59f0ff6c266")
-		(sheetname "/")
-		(sheetfile "drone-fc.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "10" "3" "9" "4" "8" "5" "7" "6")
-			)
-		)
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.7 -0.25)
-			(end -1.7 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d27f785a-2806-497c-80b7-4b4feedae975")
-		)
-		(fp_line
-			(start -1.6 -0.25)
-			(end -1.6 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0dd80785-fffe-42a2-b578-bcf9c40a6084")
-		)
-		(fp_arc
-			(start -1.7 -0.25)
-			(mid -1.65 -0.3)
-			(end -1.6 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7c9d555d-fe90-4dd7-b1de-9c627a9ec245")
-		)
-		(fp_arc
-			(start -1.6 -0.25)
-			(mid -1.65 -0.2)
-			(end -1.7 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e0714b9c-d38c-425f-8aba-78b4c74da8da")
-		)
-		(fp_line
-			(start -2 2)
-			(end -2 -2)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c192315f-35f0-41fa-bd5e-e5799b244901")
-		)
-		(fp_line
-			(start 2 2)
-			(end -2 2)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0564297c-2462-49d8-a815-8100b81fd6cf")
-		)
-		(fp_line
-			(start -2 -2)
-			(end 2 -2)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f5cb33c0-8bb8-4db1-a438-e1cb750fd289")
-		)
-		(fp_line
-			(start 2 -2)
-			(end 2 2)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "d7cb8d54-22a5-429f-8812-6ca209589153")
-		)
-		(fp_line
-			(start -1 1)
-			(end -1 -1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d101984f-5bd8-445f-b4ea-56c9f03f5670")
-		)
-		(fp_line
-			(start 1 1)
-			(end -1 1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e9e3b390-8e63-4523-a687-58ed63e72b7d")
-		)
-		(fp_line
-			(start -1 -1)
-			(end 1 -1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7266a73c-4aaa-4ee1-b94a-bffbda986880")
-		)
-		(fp_line
-			(start 1 -1)
-			(end 1 1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a1a6ea7a-27e7-4976-92d2-0d16134fee49")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(uuid "d4e67c12-352f-45bd-975e-04e892cf1b22")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at -0.75 -0.25)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "+3V3")
-			(pinfunction "VDDIO_1")
-			(pintype "passive")
-			(uuid "2a17860a-3187-4cad-b141-200f009324df")
-		)
-		(pad "2" smd rect
-			(at -0.75 0.25)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/ALT_SCK")
-			(pinfunction "SCK_2")
-			(pintype "passive")
-			(uuid "68732c2b-33e5-440e-8015-798e32514d49")
-		)
-		(pad "3" smd rect
-			(at -0.5 0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(pinfunction "VSS_1_3")
-			(pintype "passive")
-			(uuid "ae2313c0-4dd5-453b-b3ea-6113caf28fae")
-		)
-		(pad "4" smd rect
-			(at 0 0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/ALT_MOSI")
-			(pinfunction "SDI_4")
-			(pintype "passive")
-			(uuid "22ee7f64-7636-4068-9f72-3a1b6b6b61cd")
-		)
-		(pad "5" smd rect
-			(at 0.5 0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/ALT_MISO")
-			(pinfunction "SDO_5")
-			(pintype "passive")
-			(uuid "82929562-d6d0-4047-9c74-99244c8b0bbb")
-		)
-		(pad "6" smd rect
-			(at 0.75 0.25)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/ALT_CS")
-			(pinfunction "CSB_6")
-			(pintype "passive")
-			(uuid "d775b6e2-44f0-40a1-ae9a-90a39071d347")
-		)
-		(pad "7" smd rect
-			(at 0.75 -0.25)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "/ALT_INT")
-			(pinfunction "INT_7")
-			(pintype "passive")
-			(uuid "455189b8-be1c-427c-bc14-dab344b6c0e3")
-		)
-		(pad "8" smd rect
-			(at 0.5 -0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(pinfunction "VSS_2_8")
-			(pintype "passive")
-			(uuid "211d9f15-791a-47bd-a764-e708447ae8b0")
-		)
-		(pad "9" smd rect
-			(at 0 -0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(pinfunction "VSS_3_9")
-			(pintype "passive")
-			(uuid "6db700be-fb69-40bb-8678-fbc78abe412e")
-		)
-		(pad "10" smd rect
-			(at -0.5 -0.775 270)
-			(size 0.3 0.325)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "+3V3")
-			(pinfunction "VDD_10")
-			(pintype "passive")
-			(uuid "a3213234-0b21-4eae-bd65-4ca9a9ac27a8")
-		)
-		(embedded_fonts no)
-		(model "BMP581.stp"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 0 0)
-			)
-		)
-		(model "/home/nestor/Downloads/LIB_BMP581/BMP581/3D/BMP581.stp"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
 			)
 		)
 	)

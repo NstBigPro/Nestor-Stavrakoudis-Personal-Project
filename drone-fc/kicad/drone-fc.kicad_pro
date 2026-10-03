@@ -78,14 +78,6 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|189487500|88925000|249cec88-73e5-4b99-84ef-67b93f69e220|f1188f1a-d6fc-4dec-a85b-2925bef13620",
-          "footprint"
-        ],
-        [
-          "clearance|189487500|89100000|249cec88-73e5-4b99-84ef-67b93f69e220|419a2fa6-7ad1-44f2-be67-58476985f897",
-          "footprint"
-        ],
-        [
           "clearance|189487500|89600000|419a2fa6-7ad1-44f2-be67-58476985f897|71409159-27f8-4dc7-a731-b511daf97731",
           "footprint"
         ],
@@ -98,31 +90,11 @@
           "footprint"
         ],
         [
-          "clearance|189837500|90450000|1a389573-1479-4656-b175-b2412247dae9|dbaa3d65-15d1-4649-b6a8-ee953be7c80d",
-          "footprint"
-        ],
-        [
-          "clearance|190337500|88125000|7aacdcbf-ec7c-4c7e-a235-8715bec6e236|b32ca948-169e-428b-9645-7a03265aa13b",
-          "footprint"
-        ],
-        [
-          "clearance|190512500|88125000|7aacdcbf-ec7c-4c7e-a235-8715bec6e236|4b460a26-f4b7-4cc2-abd8-c06a29a7c9b6",
-          "footprint"
-        ],
-        [
           "clearance|190837500|90450000|c65b422e-6b99-4cac-8816-65e018058a15|9777fbbc-54e6-40cc-bfc6-bc77393cd6e3",
           "footprint"
         ],
         [
-          "clearance|190862500|90100000|09b1947d-04d8-4618-9979-fad28a0dbf6f|c65b422e-6b99-4cac-8816-65e018058a15",
-          "footprint"
-        ],
-        [
           "clearance|191012500|88925000|6f831fa5-927f-4e99-b2ed-f71d637274cb|4b460a26-f4b7-4cc2-abd8-c06a29a7c9b6",
-          "footprint"
-        ],
-        [
-          "clearance|191312500|89925000|09b1947d-04d8-4618-9979-fad28a0dbf6f|b939b3bf-eac9-42e1-8dd6-388ec379559a",
           "footprint"
         ],
         [
@@ -833,7 +805,7 @@
         "uuid": "6ce96793-b60f-415a-883a-09e9f87a0ce0"
       }
     ],
-    "used_designators": "NRST1,SCL1-3,DSHOT5-6,R2-8,R10,R14-26,D1-5,C20-21,C32-40,U2-3,U5,J11-14,Y1,SWCLK1,#PWR1,#PWR8,#PWR10-12,#PWR45,#PWR55-56,#PWR68,#PWR73,#PWR75-86",
+    "used_designators": "#PWR1,#PWR8,#PWR10-12,#PWR45,#PWR55-56,#PWR68,#PWR73,#PWR75-86,SWCLK1,Y1,J11-14,U2-3,U5,C20-21,C32-40,D1-5,R2-8,R10,R14-26,DSHOT5-6,SCL1-3,NRST1",
     "variants": []
   },
   "sheets": [

@@ -5,7 +5,7 @@
 	(uuid "6ce96793-b60f-415a-883a-09e9f87a0ce0")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BMP581:BMP581"
+		(symbol "BMP388:BMP388"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -22,7 +22,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "BMP581"
+			(property "Value" "BMP388"
 				(at 26.67 15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -152,7 +152,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "BMP581_1_1"
+			(symbol "BMP388_1_1"
 				(rectangle
 					(start 5.08 12.7)
 					(end 25.4 -15.24)
@@ -6056,12 +6056,6 @@
 		(uuid "54f18a8a-f570-4c86-b031-a317b68f04d4")
 	)
 	(junction
-		(at 241.3 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b3fa968-00b5-4e7a-b80a-e5aa4173b5e5")
-	)
-	(junction
 		(at 82.55 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6072,6 +6066,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5fdefe05-fbe8-477a-93cf-678c542d0004")
+	)
+	(junction
+		(at 241.3 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63533fec-96b6-4497-98fb-97aa2f6ba6f7")
 	)
 	(junction
 		(at 100.33 60.96)
@@ -6200,16 +6200,16 @@
 		(uuid "c3d85fa0-9e46-4b44-ad9e-d4f29d7c78dd")
 	)
 	(junction
+		(at 236.22 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c46ba7fc-a299-4535-9823-f7f0e686170f")
+	)
+	(junction
 		(at 34.29 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c58e4c89-2bf9-49c0-a550-a265131ef00b")
-	)
-	(junction
-		(at 236.22 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdcec9b8-4937-4af4-bfe6-dcca83b5f01e")
 	)
 	(junction
 		(at 102.87 92.71)
@@ -6331,16 +6331,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 113.03) (xy 251.46 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0051d66f-47da-4777-8120-01593dc6a130")
-	)
-	(wire
-		(pts
 			(xy 130.81 38.1) (xy 140.97 38.1)
 		)
 		(stroke
@@ -6398,16 +6388,6 @@
 			(type default)
 		)
 		(uuid "0ee559e5-1382-48f3-86b6-83515d2c215d")
-	)
-	(wire
-		(pts
-			(xy 238.76 113.03) (xy 241.3 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14264e51-bbce-4547-9842-8329106188bb")
 	)
 	(wire
 		(pts
@@ -7011,6 +6991,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 113.03) (xy 241.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8760ee9d-7b5b-4bae-8427-41dd4413f280")
+	)
+	(wire
+		(pts
 			(xy 101.6 128.27) (xy 101.6 132.08)
 		)
 		(stroke
@@ -7158,6 +7148,16 @@
 			(type default)
 		)
 		(uuid "a9c04994-58a4-4bce-b3c1-60eeb754b154")
+	)
+	(wire
+		(pts
+			(xy 241.3 113.03) (xy 251.46 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1bcb61-3a90-4e0b-b556-4424ebaec451")
 	)
 	(wire
 		(pts
@@ -16910,6 +16910,196 @@
 		)
 	)
 	(symbol
+		(lib_id "BMP388:BMP388")
+		(at 223.52 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e608f0c-f4f8-45bf-a03d-09d1671cf55b")
+		(property "Reference" "U5"
+			(at 254 124.3898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BMP388"
+			(at 254 126.9298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BMP388:BMP388"
+			(at 250.19 215.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf"
+			(at 250.19 315.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA"
+			(at 223.52 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 250.19 515.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "BOSCH"
+			(at 250.19 615.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BMP581"
+			(at 250.19 715.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "262-BMP581"
+			(at 250.19 815.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMP581?qs=Li%252BoUPsLEntPL9tlFmcgXg%3D%3D"
+			(at 250.19 915.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "BMP581"
+			(at 250.19 1015.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bmp581/bosch-sensortec?utm_currency=USD&region=nac"
+			(at 250.19 1115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "450d2a92-4e24-40d0-9939-5a07a0d97a78")
+		)
+		(pin "2"
+			(uuid "27ed1947-ec7e-4166-9864-fb8cfdc7886f")
+		)
+		(pin "7"
+			(uuid "76188cb7-5155-4305-8fa1-42caa9cedd4a")
+		)
+		(pin "8"
+			(uuid "136e6e20-565e-4fa1-8fad-acbe13c0a5b7")
+		)
+		(pin "5"
+			(uuid "eb07c95a-dd39-4ad3-98e3-a358e9f88bf5")
+		)
+		(pin "3"
+			(uuid "15ebc1bb-f400-4996-aed4-25769053e47b")
+		)
+		(pin "4"
+			(uuid "9aef7848-fa64-4a73-8795-6514e4cf67ac")
+		)
+		(pin "6"
+			(uuid "43a11e91-f5ff-4ec4-a9d3-092b9e1522c8")
+		)
+		(pin "9"
+			(uuid "bd255739-1279-4694-9856-6b68e8cca592")
+		)
+		(pin "10"
+			(uuid "0890f266-446c-4fdb-94ed-2006828e99b2")
+		)
+		(instances
+			(project "drone-fc"
+				(path "/6ce96793-b60f-415a-883a-09e9f87a0ce0"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 213.36 26.67 0)
 		(unit 1)
@@ -17752,218 +17942,6 @@
 			(project "drone-fc"
 				(path "/6ce96793-b60f-415a-883a-09e9f87a0ce0"
 					(reference "DSHOT3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BMP581:BMP581")
-		(at 223.52 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9bc6e1f3-b97c-4f53-9ff5-f59f0ff6c266")
-		(property "Reference" "U6"
-			(at 254 124.3898 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BMP581"
-			(at 254 126.9298 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BMP581:BMP581"
-			(at 250.19 215.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf"
-			(at 250.19 315.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA"
-			(at 223.52 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "0.8"
-			(at 250.19 515.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "BOSCH"
-			(at 250.19 615.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "BMP581"
-			(at 250.19 715.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "262-BMP581"
-			(at 250.19 815.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMP581?qs=Li%252BoUPsLEntPL9tlFmcgXg%3D%3D"
-			(at 250.19 915.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "BMP581"
-			(at 250.19 1015.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/bmp581/bosch-sensortec?utm_currency=USD&region=nac"
-			(at 250.19 1115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 223.52 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 223.52 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "e3d38b09-7373-4ace-afaf-a6ddc2566b8b")
-		)
-		(pin "1"
-			(uuid "349c0bb3-60fc-4d74-a60a-ad82a32500bb")
-		)
-		(pin "2"
-			(uuid "8776a39f-e36b-4547-a638-8ecca5a47435")
-		)
-		(pin "7"
-			(uuid "3381b4b4-62f1-465f-befe-6182356e1fd7")
-		)
-		(pin "4"
-			(uuid "aa229f6e-1b35-4a5b-8858-7ee81d826c3a")
-		)
-		(pin "3"
-			(uuid "bf67b092-e0db-4521-99cf-528ee5c95dd6")
-		)
-		(pin "6"
-			(uuid "c373edf1-da46-42ef-885b-9bbc498b17ef")
-		)
-		(pin "10"
-			(uuid "1accfdf6-837e-453a-a7fa-a2891f0f2766")
-		)
-		(pin "9"
-			(uuid "de97ae1f-d74a-48e7-a3c6-91d0df92508b")
-		)
-		(pin "8"
-			(uuid "47f3e774-0e88-42ae-9a31-e7c6261a4f30")
-		)
-		(instances
-			(project "drone-fc"
-				(path "/6ce96793-b60f-415a-883a-09e9f87a0ce0"
-					(reference "U6")
 					(unit 1)
 				)
 			)
