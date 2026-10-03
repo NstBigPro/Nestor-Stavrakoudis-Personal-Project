@@ -20,7 +20,7 @@
 #include "gpio.h"
 
 /* extern variable initialization */
-volatile IMU_StatusTypeDef IMU_Status = FAULTY;
+volatile IMU_StatusTypeDef IMU_Status = IMU_FAULTY;
 IMU_DMA_Transaction_Type	IMU_Current_DMA_Transaction;
 uint8_t         IMU_Current_Register_Read;
 IMU_Data_Packet IMU_Raw;
@@ -36,10 +36,28 @@ void _IMU_ReadRegister(uint8_t reg){
 
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_RESET);
 
-	IMU_Current_DMA_Transaction = SINGLE_REG;
+	IMU_Current_DMA_Transaction = IMU_SINGLE_REG;
 	IMU_Current_Register_Read		= reg;
 
-	HAL_SPI_TransmitReceive_DMA(&hspi1,IMU_SPI_SingleBuf_TX,IMU_SPI_SingleBuf_RX,2);
+	HAL_SPI_TransmitReceive_DMA(IMU_INTERFACE,IMU_SPI_SingleBuf_TX,IMU_SPI_SingleBuf_RX,2);
+}
+
+uint8_t _IMU_ReadRegisterBlocking(uint8_t reg){
+	/* Read singular register (blocking)*/
+
+	IMU_SPI_SingleBuf_TX[0] = reg | IMU_READ;
+	IMU_SPI_SingleBuf_TX[1] = 0x00;
+
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_RESET);
+
+	IMU_Current_DMA_Transaction = IMU_SINGLE_REG;
+	IMU_Current_Register_Read		= reg;
+
+	if (HAL_SPI_TransmitReceive(IMU_INTERFACE, IMU_SPI_SingleBuf_TX, IMU_SPI_SingleBuf_RX, 2, 10) != HAL_OK) {
+			IMU_Status = IMU_FAULTY;
+	}
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_SET);
+	return IMU_SPI_SingleBuf_RX[1];
 }
 
 void _IMU_WriteRegisterBlocking(uint8_t reg, uint8_t data){
@@ -54,17 +72,24 @@ void _IMU_WriteRegisterBlocking(uint8_t reg, uint8_t data){
 
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_RESET);
 
-	IMU_Current_DMA_Transaction = WRITE;
+	IMU_Current_DMA_Transaction = IMU_WRITE_REG;
 
-	if (HAL_SPI_TransmitReceive(&hspi1, IMU_SPI_SingleBuf_TX, IMU_SPI_SingleBuf_RX, 2, 10) != HAL_OK) {
-	    IMU_Status = FAULTY;
+	if (HAL_SPI_TransmitReceive(IMU_INTERFACE, IMU_SPI_SingleBuf_TX, IMU_SPI_SingleBuf_RX, 2, 10) != HAL_OK) {
+	    IMU_Status = IMU_FAULTY;
 	}
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_SET);
 }
 
 void IMU_Test(){
 	/* Check WHO_AM_I register */
-	_IMU_ReadRegister(IMU_WHO_AM_I);
+	switch(_IMU_ReadRegisterBlocking(IMU_WHO_AM_I)) {
+		case IMU_WHO_AM_I_NORMAL:
+			IMU_Status = IMU_OPERATIONAL;
+			break;
+		default:
+			IMU_Status = IMU_FAULTY;
+			break;
+	}
 }
 
 void IMU_Init(){
@@ -76,8 +101,9 @@ void IMU_Init(){
 	_IMU_WriteRegisterBlocking(IMU_CTRL8, IMU_ACCEL_SCALE); // Set accelerometer scale
 	_IMU_WriteRegisterBlocking(IMU_CTRL6, IMU_GYRO_SCALE);  // Set gyroscope scale
 
+	_IMU_WriteRegisterBlocking(IMU_CTRL4, IMU_CTRL4_SETTING);	// Set INT1 to pulsed instead of latching mode
 
-	_IMU_WriteRegisterBlocking(IMU_INT1_CTRL, IMU_INT1_SETTING); // Set INT1 behaviour
+	_IMU_WriteRegisterBlocking(IMU_INT1_CTRL, IMU_INT1_SETTING); // Set INT1 behavior
 
 }
 
@@ -89,6 +115,6 @@ void IMU_Read(){
 	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_RESET);
 
 	IMU_Current_DMA_Transaction = IMU_PACKET;
-	HAL_SPI_TransmitReceive_DMA(&hspi1,IMU_SPI_IMUPacket_TX,IMU_SPI_IMUPacket_RX,13);
+	HAL_SPI_TransmitReceive_DMA(IMU_INTERFACE,IMU_SPI_IMUPacket_TX,IMU_SPI_IMUPacket_RX,13);
 }
 

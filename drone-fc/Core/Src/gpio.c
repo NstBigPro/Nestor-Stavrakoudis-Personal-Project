@@ -55,7 +55,7 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, GPS_RESET_Pin|IMU_CS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, BARO_CS_Pin|LED1_R_Pin|LED1_G_Pin|LED2_R_Pin
+  HAL_GPIO_WritePin(GPIOD, ALT_CS_Pin|LED1_R_Pin|LED1_G_Pin|LED2_R_Pin
                           |LED2_G_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pins : GPS_RESET_Pin IMU_CS_Pin */
@@ -71,15 +71,15 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BARO_INT_Pin */
-  GPIO_InitStruct.Pin = BARO_INT_Pin;
+  /*Configure GPIO pin : ALT_INT_Pin */
+  GPIO_InitStruct.Pin = ALT_INT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(BARO_INT_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(ALT_INT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : BARO_CS_Pin LED1_R_Pin LED1_G_Pin LED2_R_Pin
+  /*Configure GPIO pins : ALT_CS_Pin LED1_R_Pin LED1_G_Pin LED2_R_Pin
                            LED2_G_Pin */
-  GPIO_InitStruct.Pin = BARO_CS_Pin|LED1_R_Pin|LED1_G_Pin|LED2_R_Pin
+  GPIO_InitStruct.Pin = ALT_CS_Pin|LED1_R_Pin|LED1_G_Pin|LED2_R_Pin
                           |LED2_G_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;

@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "lsm6dsv32x.h"
+#include "lsm6dsv32x.h" // IMU header
+#include "bmp388.h"			// Barometer header
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,35 +58,53 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void IMU_TxRxCpltCallback();
+void ALT_TxRxCpltCallback();
+
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi){
-	if (hspi == &hspi1){ // These events refer to the IMU SPI DMA.
-		HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_SET);
-		switch(IMU_Current_DMA_Transaction) {
-			case WRITE:
-				break; // No additional processing is required on register write.
-			case SINGLE_REG:
-				if(	IMU_Current_Register_Read == IMU_WHO_AM_I){ // Status update based on WHO_AM_I register
-					switch(IMU_SPI_SingleBuf_RX[1]) {
-						case IMU_WHO_AM_I_NORMAL:
-							IMU_Status = OPERATIONAL;
-							break;
-						default:
-							IMU_Status = FAULTY;
-							break;
-					}
-				}
-				break;
-			case IMU_PACKET: // Parse IMU Packet
-				IMU_Raw.A_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_A-0x21];
-				IMU_Raw.A_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_A-0x21];
-				IMU_Raw.A_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_A-0x21];
+	if (hspi == IMU_INTERFACE){ // These events refer to the IMU SPI DMA.
+		IMU_TxRxCpltCallback();
+	}
+	if (hspi == ALT_INTERFACE){
+		ALT_TxRxCpltCallback();
+	}
+}
 
+void IMU_TxRxCpltCallback(){
+	HAL_GPIO_WritePin(IMU_CS_GPIO_Port, IMU_CS_Pin, GPIO_PIN_SET);
+	switch(IMU_Current_DMA_Transaction) {
+		case IMU_WRITE_REG:
+			break; // No additional processing is required on register write.
+		case IMU_SINGLE_REG:
+			break; // Not used yet (all single register reads use blocking mode)
+		case IMU_PACKET: // Parse IMU Packet
+			IMU_Raw.A_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_A-0x21];
+			IMU_Raw.A_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_A-0x21];
+			IMU_Raw.A_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_A-0x21];
 
-				IMU_Raw.G_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_G-0x21];
-				IMU_Raw.G_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_G-0x21];
-				IMU_Raw.G_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_G-0x21];
+			IMU_Raw.G_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_G-0x21];
+			IMU_Raw.G_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_G-0x21];
+			IMU_Raw.G_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_G-0x21];
+			break;
+	}
+}
 
-		}
+void ALT_TxRxCpltCallback(){
+	HAL_GPIO_WritePin(ALT_CS_GPIO_Port, ALT_CS_Pin, GPIO_PIN_SET);
+	switch(ALT_Current_DMA_Transaction) {
+		case ALT_WRITE_REG:
+			break; // No additional processing is required on register write.
+		case ALT_SINGLE_REG:
+			break; // Not used yet (all single register reads use blocking mode)
+		case ALT_PACKET: // Parse barometer Packet
+			ALT_Raw.P = (ALT_SPI_ALTPacket_RX[ALT_OUT_PRES_H-0x02] << 16)
+								+ (ALT_SPI_ALTPacket_RX[ALT_OUT_PRES_M-0x02] << 8)
+								+ ALT_SPI_ALTPacket_RX[ALT_OUT_PRES_L-0x02];
+
+			ALT_Raw.T = (ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_H-0x02] << 16)
+								+ (ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_M-0x02] << 8)
+								+ ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_L-0x02];
+			break;
 	}
 }
 /* USER CODE END 0 */

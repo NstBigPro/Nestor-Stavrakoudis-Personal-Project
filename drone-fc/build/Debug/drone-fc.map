@@ -3290,11 +3290,16 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .text          0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .text.HAL_SPI_TxRxCpltCallback
-                0x00000000      0x10c CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x00000000       0x30 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .text.IMU_TxRxCpltCallback
+                0x00000000       0xc0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .text.ALT_TxRxCpltCallback
+                0x00000000       0x70 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
@@ -3784,7 +3789,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .text.HAL_SPI_MspDeInit
-                0x00000000       0x78 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x00000000       0x8c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
@@ -4472,7 +4477,9 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .bss.IMU_Status
+ .data.IMU_Status
+                0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .bss.IMU_Current_DMA_Transaction
                 0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .bss.IMU_Current_Register_Read
                 0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
@@ -4487,21 +4494,23 @@ Discarded input sections
                 0x00000000        0xd CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .text._IMU_ReadRegister
                 0x00000000       0x60 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .text._IMU_ReadRegisterBlocking
+                0x00000000       0x80 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .text._IMU_WriteRegisterBlocking
                 0x00000000       0x80 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .text.IMU_Test
-                0x00000000        0xe CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+                0x00000000       0x28 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .text.IMU_Init
-                0x00000000       0x30 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+                0x00000000       0x38 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .text.IMU_Read
                 0x00000000       0x40 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_info    0x00000000      0x93c CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_abbrev  0x00000000      0x1e7 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_info    0x00000000      0x972 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_abbrev  0x00000000      0x206 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_aranges
-                0x00000000       0x40 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+                0x00000000       0x48 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_rnglists
-                0x00000000       0x2c CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_macro   0x00000000      0x27c CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+                0x00000000       0x33 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_macro   0x00000000      0x282 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0x8e CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
@@ -4509,7 +4518,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x103 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0x6a CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000      0x1df CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_macro   0x00000000      0x100 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_macro   0x00000000      0x106 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0x2f CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
@@ -4550,12 +4559,151 @@ Discarded input sections
  .debug_macro   0x00000000      0x2aa CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000      0x12d CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .debug_macro   0x00000000       0xa0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_line    0x00000000      0x997 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_str     0x00000000    0xd3dfd CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_line    0x00000000      0x9e0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_str     0x00000000    0xd3e52 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .comment       0x00000000       0x44 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
- .debug_frame   0x00000000       0xac CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .debug_frame   0x00000000       0xd0 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .data.ALT_Status
+                0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_Current_DMA_Transaction
+                0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_Current_Register_Read
+                0x00000000        0x1 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_Raw   0x00000000        0x8 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_SPI_SingleBuf_RX
+                0x00000000        0x3 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_SPI_SingleBuf_TX
+                0x00000000        0x3 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_SPI_ALTPacket_RX
+                0x00000000        0xe CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .bss.ALT_SPI_ALTPacket_TX
+                0x00000000        0xe CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text._ALT_ReadRegister
+                0x00000000       0x60 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text._ALT_ReadRegisterBlocking
+                0x00000000       0x80 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text._ALT_WriteRegisterBlocking
+                0x00000000       0x80 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text.ALT_Test
+                0x00000000       0x44 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text.ALT_Init
+                0x00000000       0x28 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .text.ALT_Read
+                0x00000000       0x40 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_info    0x00000000      0x922 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_abbrev  0x00000000      0x206 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_aranges
+                0x00000000       0x48 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_rnglists
+                0x00000000       0x33 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x282 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x82 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x2f CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000    0x15ea5 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x980 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x13e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x174 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0xb5b CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x38b CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x176 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0xf9 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x12c CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x21e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x1b5 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0xd6 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x7e CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x225 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0x4d CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x2aa CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000      0x12d CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_macro   0x00000000       0xa0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_line    0x00000000      0x9e6 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_str     0x00000000    0xd3cb3 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_frame   0x00000000       0xd0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -5017,6 +5165,7 @@ LOAD CMakeFiles/drone-fc.dir/Core/Src/sysmem.c.obj
 LOAD CMakeFiles/drone-fc.dir/Core/Src/syscalls.c.obj
 LOAD CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
 LOAD CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
+LOAD CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
 LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 START GROUP
 LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a
@@ -5041,7 +5190,7 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000188     0x5084
+.text           0x08000188     0x5194
                 0x08000188                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000188       0x40 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -5263,279 +5412,283 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x0800455c       0x88 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
                 0x0800455c                HAL_ADC_MspInit
  .text.MX_DMA_Init
-                0x080045e4       0x8c CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+                0x080045e4       0xac CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
                 0x080045e4                MX_DMA_Init
  .text.MX_I2C1_Init
-                0x08004670       0x5c CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
-                0x08004670                MX_I2C1_Init
+                0x08004690       0x5c CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x08004690                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x080046cc       0x90 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
-                0x080046cc                HAL_I2C_MspInit
+                0x080046ec       0x90 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x080046ec                HAL_I2C_MspInit
  .text.MX_SPI1_Init
-                0x0800475c       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x0800475c                MX_SPI1_Init
+                0x0800477c       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x0800477c                MX_SPI1_Init
  .text.MX_SPI3_Init
-                0x080047c8       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x080047c8                MX_SPI3_Init
+                0x080047e8       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x080047e8                MX_SPI3_Init
  .text.HAL_SPI_MspInit
-                0x08004834      0x1cc CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x08004834                HAL_SPI_MspInit
+                0x08004854      0x294 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x08004854                HAL_SPI_MspInit
  .text.MX_TIM1_Init
-                0x08004a00      0x188 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004a00                MX_TIM1_Init
+                0x08004ae8      0x188 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08004ae8                MX_TIM1_Init
  .text.MX_TIM2_Init
-                0x08004b88       0xa4 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004b88                MX_TIM2_Init
+                0x08004c70       0xa4 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08004c70                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x08004c2c       0x44 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004c2c                HAL_TIM_Base_MspInit
+                0x08004d14       0x44 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08004d14                HAL_TIM_Base_MspInit
  .text.HAL_TIM_IC_MspInit
-                0x08004c70       0x8c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004c70                HAL_TIM_IC_MspInit
+                0x08004d58       0x8c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08004d58                HAL_TIM_IC_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08004cfc       0x74 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004cfc                HAL_TIM_MspPostInit
+                0x08004de4       0x74 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08004de4                HAL_TIM_MspPostInit
  .text.MX_USART2_UART_Init
-                0x08004d70       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004d70                MX_USART2_UART_Init
+                0x08004e58       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x08004e58                MX_USART2_UART_Init
  .text.MX_USART3_UART_Init
-                0x08004dc4       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004dc4                MX_USART3_UART_Init
+                0x08004eac       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x08004eac                MX_USART3_UART_Init
  .text.HAL_UART_MspInit
-                0x08004e18      0x1ec CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004e18                HAL_UART_MspInit
+                0x08004f00      0x1ec CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x08004f00                HAL_UART_MspInit
  .text.NMI_Handler
-                0x08005004        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005004                NMI_Handler
+                0x080050ec        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080050ec                NMI_Handler
  .text.HardFault_Handler
-                0x0800500c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800500c                HardFault_Handler
+                0x080050f4        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080050f4                HardFault_Handler
  .text.MemManage_Handler
-                0x08005014        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005014                MemManage_Handler
+                0x080050fc        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080050fc                MemManage_Handler
  .text.BusFault_Handler
-                0x0800501c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800501c                BusFault_Handler
+                0x08005104        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005104                BusFault_Handler
  .text.UsageFault_Handler
-                0x08005024        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005024                UsageFault_Handler
+                0x0800510c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800510c                UsageFault_Handler
  .text.SVC_Handler
-                0x0800502c        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800502c                SVC_Handler
+                0x08005114        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005114                SVC_Handler
  .text.DebugMon_Handler
-                0x0800503a        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800503a                DebugMon_Handler
+                0x08005122        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005122                DebugMon_Handler
  .text.PendSV_Handler
-                0x08005048        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005048                PendSV_Handler
+                0x08005130        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005130                PendSV_Handler
  .text.SysTick_Handler
-                0x08005056        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005056                SysTick_Handler
+                0x0800513e        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800513e                SysTick_Handler
  .text.EXTI0_IRQHandler
-                0x08005062        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005062                EXTI0_IRQHandler
+                0x0800514a        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800514a                EXTI0_IRQHandler
  .text.EXTI4_IRQHandler
-                0x08005070        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005070                EXTI4_IRQHandler
- *fill*         0x0800507e        0x2 
+                0x08005158        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005158                EXTI4_IRQHandler
+ *fill*         0x08005166        0x2 
+ .text.DMA1_Stream0_IRQHandler
+                0x08005168       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005168                DMA1_Stream0_IRQHandler
  .text.DMA1_Stream1_IRQHandler
-                0x08005080       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005080                DMA1_Stream1_IRQHandler
+                0x0800517c       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800517c                DMA1_Stream1_IRQHandler
  .text.DMA1_Stream5_IRQHandler
-                0x08005094       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005094                DMA1_Stream5_IRQHandler
+                0x08005190       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005190                DMA1_Stream5_IRQHandler
  .text.USART2_IRQHandler
-                0x080050a8       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050a8                USART2_IRQHandler
+                0x080051a4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080051a4                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x080050bc       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050bc                USART3_IRQHandler
+                0x080051b8       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080051b8                USART3_IRQHandler
+ .text.DMA1_Stream7_IRQHandler
+                0x080051cc       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080051cc                DMA1_Stream7_IRQHandler
  .text.DMA2_Stream0_IRQHandler
-                0x080050d0       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050d0                DMA2_Stream0_IRQHandler
+                0x080051e0       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080051e0                DMA2_Stream0_IRQHandler
  .text.DMA2_Stream3_IRQHandler
-                0x080050e4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050e4                DMA2_Stream3_IRQHandler
+                0x080051f4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x080051f4                DMA2_Stream3_IRQHandler
  .text.HAL_MspInit
-                0x080050f8       0x50 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x080050f8                HAL_MspInit
+                0x08005208       0x50 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08005208                HAL_MspInit
  .text.Reset_Handler
-                0x08005148       0x50 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
-                0x08005148                Reset_Handler
+                0x08005258       0x50 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x08005258                Reset_Handler
  .text.Default_Handler
-                0x08005198        0x2 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
-                0x08005198                RTC_Alarm_IRQHandler
-                0x08005198                HASH_RNG_IRQHandler
-                0x08005198                EXTI2_IRQHandler
-                0x08005198                TIM8_CC_IRQHandler
-                0x08005198                TIM1_CC_IRQHandler
-                0x08005198                DMA2_Stream5_IRQHandler
-                0x08005198                PVD_IRQHandler
-                0x08005198                SDIO_IRQHandler
-                0x08005198                TAMP_STAMP_IRQHandler
-                0x08005198                CAN2_RX1_IRQHandler
-                0x08005198                EXTI3_IRQHandler
-                0x08005198                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08005198                TIM1_UP_TIM10_IRQHandler
-                0x08005198                TIM8_UP_TIM13_IRQHandler
-                0x08005198                I2C3_ER_IRQHandler
-                0x08005198                I2C2_EV_IRQHandler
-                0x08005198                DMA1_Stream2_IRQHandler
-                0x08005198                CAN1_RX0_IRQHandler
-                0x08005198                FPU_IRQHandler
-                0x08005198                OTG_HS_WKUP_IRQHandler
-                0x08005198                CAN2_SCE_IRQHandler
-                0x08005198                DMA2_Stream2_IRQHandler
-                0x08005198                SPI1_IRQHandler
-                0x08005198                TIM6_DAC_IRQHandler
-                0x08005198                TIM1_BRK_TIM9_IRQHandler
-                0x08005198                DCMI_IRQHandler
-                0x08005198                CAN2_RX0_IRQHandler
-                0x08005198                USART6_IRQHandler
-                0x08005198                CAN1_RX1_IRQHandler
-                0x08005198                UART5_IRQHandler
-                0x08005198                TIM4_IRQHandler
-                0x08005198                I2C1_EV_IRQHandler
-                0x08005198                DMA1_Stream6_IRQHandler
-                0x08005198                UART4_IRQHandler
-                0x08005198                TIM3_IRQHandler
-                0x08005198                RCC_IRQHandler
-                0x08005198                TIM8_BRK_TIM12_IRQHandler
-                0x08005198                Default_Handler
-                0x08005198                EXTI15_10_IRQHandler
-                0x08005198                ADC_IRQHandler
-                0x08005198                DMA1_Stream7_IRQHandler
-                0x08005198                TIM7_IRQHandler
-                0x08005198                CAN2_TX_IRQHandler
-                0x08005198                TIM5_IRQHandler
-                0x08005198                DMA2_Stream7_IRQHandler
-                0x08005198                I2C3_EV_IRQHandler
-                0x08005198                EXTI9_5_IRQHandler
-                0x08005198                RTC_WKUP_IRQHandler
-                0x08005198                ETH_WKUP_IRQHandler
-                0x08005198                SPI2_IRQHandler
-                0x08005198                OTG_HS_EP1_IN_IRQHandler
-                0x08005198                DMA1_Stream0_IRQHandler
-                0x08005198                CAN1_TX_IRQHandler
-                0x08005198                FSMC_IRQHandler
-                0x08005198                ETH_IRQHandler
-                0x08005198                OTG_HS_EP1_OUT_IRQHandler
-                0x08005198                WWDG_IRQHandler
-                0x08005198                TIM2_IRQHandler
-                0x08005198                OTG_FS_WKUP_IRQHandler
-                0x08005198                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08005198                OTG_HS_IRQHandler
-                0x08005198                EXTI1_IRQHandler
-                0x08005198                I2C2_ER_IRQHandler
-                0x08005198                DMA2_Stream1_IRQHandler
-                0x08005198                CAN1_SCE_IRQHandler
-                0x08005198                FLASH_IRQHandler
-                0x08005198                DMA2_Stream4_IRQHandler
-                0x08005198                USART1_IRQHandler
-                0x08005198                OTG_FS_IRQHandler
-                0x08005198                SPI3_IRQHandler
-                0x08005198                DMA1_Stream4_IRQHandler
-                0x08005198                I2C1_ER_IRQHandler
-                0x08005198                DMA2_Stream6_IRQHandler
-                0x08005198                DMA1_Stream3_IRQHandler
- .text.memset   0x0800519a       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x0800519a                memset
- *fill*         0x080051aa        0x2 
+                0x080052a8        0x2 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x080052a8                RTC_Alarm_IRQHandler
+                0x080052a8                HASH_RNG_IRQHandler
+                0x080052a8                EXTI2_IRQHandler
+                0x080052a8                TIM8_CC_IRQHandler
+                0x080052a8                TIM1_CC_IRQHandler
+                0x080052a8                DMA2_Stream5_IRQHandler
+                0x080052a8                PVD_IRQHandler
+                0x080052a8                SDIO_IRQHandler
+                0x080052a8                TAMP_STAMP_IRQHandler
+                0x080052a8                CAN2_RX1_IRQHandler
+                0x080052a8                EXTI3_IRQHandler
+                0x080052a8                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080052a8                TIM1_UP_TIM10_IRQHandler
+                0x080052a8                TIM8_UP_TIM13_IRQHandler
+                0x080052a8                I2C3_ER_IRQHandler
+                0x080052a8                I2C2_EV_IRQHandler
+                0x080052a8                DMA1_Stream2_IRQHandler
+                0x080052a8                CAN1_RX0_IRQHandler
+                0x080052a8                FPU_IRQHandler
+                0x080052a8                OTG_HS_WKUP_IRQHandler
+                0x080052a8                CAN2_SCE_IRQHandler
+                0x080052a8                DMA2_Stream2_IRQHandler
+                0x080052a8                SPI1_IRQHandler
+                0x080052a8                TIM6_DAC_IRQHandler
+                0x080052a8                TIM1_BRK_TIM9_IRQHandler
+                0x080052a8                DCMI_IRQHandler
+                0x080052a8                CAN2_RX0_IRQHandler
+                0x080052a8                USART6_IRQHandler
+                0x080052a8                CAN1_RX1_IRQHandler
+                0x080052a8                UART5_IRQHandler
+                0x080052a8                TIM4_IRQHandler
+                0x080052a8                I2C1_EV_IRQHandler
+                0x080052a8                DMA1_Stream6_IRQHandler
+                0x080052a8                UART4_IRQHandler
+                0x080052a8                TIM3_IRQHandler
+                0x080052a8                RCC_IRQHandler
+                0x080052a8                TIM8_BRK_TIM12_IRQHandler
+                0x080052a8                Default_Handler
+                0x080052a8                EXTI15_10_IRQHandler
+                0x080052a8                ADC_IRQHandler
+                0x080052a8                TIM7_IRQHandler
+                0x080052a8                CAN2_TX_IRQHandler
+                0x080052a8                TIM5_IRQHandler
+                0x080052a8                DMA2_Stream7_IRQHandler
+                0x080052a8                I2C3_EV_IRQHandler
+                0x080052a8                EXTI9_5_IRQHandler
+                0x080052a8                RTC_WKUP_IRQHandler
+                0x080052a8                ETH_WKUP_IRQHandler
+                0x080052a8                SPI2_IRQHandler
+                0x080052a8                OTG_HS_EP1_IN_IRQHandler
+                0x080052a8                CAN1_TX_IRQHandler
+                0x080052a8                FSMC_IRQHandler
+                0x080052a8                ETH_IRQHandler
+                0x080052a8                OTG_HS_EP1_OUT_IRQHandler
+                0x080052a8                WWDG_IRQHandler
+                0x080052a8                TIM2_IRQHandler
+                0x080052a8                OTG_FS_WKUP_IRQHandler
+                0x080052a8                TIM1_TRG_COM_TIM11_IRQHandler
+                0x080052a8                OTG_HS_IRQHandler
+                0x080052a8                EXTI1_IRQHandler
+                0x080052a8                I2C2_ER_IRQHandler
+                0x080052a8                DMA2_Stream1_IRQHandler
+                0x080052a8                CAN1_SCE_IRQHandler
+                0x080052a8                FLASH_IRQHandler
+                0x080052a8                DMA2_Stream4_IRQHandler
+                0x080052a8                USART1_IRQHandler
+                0x080052a8                OTG_FS_IRQHandler
+                0x080052a8                SPI3_IRQHandler
+                0x080052a8                DMA1_Stream4_IRQHandler
+                0x080052a8                I2C1_ER_IRQHandler
+                0x080052a8                DMA2_Stream6_IRQHandler
+                0x080052a8                DMA1_Stream3_IRQHandler
+ .text.memset   0x080052aa       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x080052aa                memset
+ *fill*         0x080052ba        0x2 
  .text.__libc_init_array
-                0x080051ac       0x48 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x080051ac                __libc_init_array
+                0x080052bc       0x48 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x080052bc                __libc_init_array
  *(.glue_7)
- .glue_7        0x080051f4        0x0 linker stubs
+ .glue_7        0x08005304        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080051f4        0x0 linker stubs
+ .glue_7t       0x08005304        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080051f4        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08005304        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x080051f4        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080051f4                _init
- .init          0x080051f8        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08005304        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08005304                _init
+ .init          0x08005308        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08005200        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08005200                _fini
- .fini          0x08005204        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0800520c                        . = ALIGN (0x4)
-                0x0800520c                        _etext = .
+ .fini          0x08005310        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08005310                _fini
+ .fini          0x08005314        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0800531c                        . = ALIGN (0x4)
+                0x0800531c                        _etext = .
 
-.vfp11_veneer   0x0800520c        0x0
- .vfp11_veneer  0x0800520c        0x0 linker stubs
+.vfp11_veneer   0x0800531c        0x0
+ .vfp11_veneer  0x0800531c        0x0 linker stubs
 
-.v4_bx          0x0800520c        0x0
- .v4_bx         0x0800520c        0x0 linker stubs
+.v4_bx          0x0800531c        0x0
+ .v4_bx         0x0800531c        0x0 linker stubs
 
-.iplt           0x0800520c        0x0
- .iplt          0x0800520c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0800531c        0x0
+ .iplt          0x0800531c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0800520c       0x20
-                0x0800520c                        . = ALIGN (0x4)
+.rodata         0x0800531c       0x20
+                0x0800531c                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x0800520c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800520c                AHBPrescTable
+                0x0800531c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x0800531c                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800521c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800521c                APBPrescTable
+                0x0800532c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x0800532c                APBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x08005224        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0800522c                        . = ALIGN (0x4)
+                0x08005334        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x0800533c                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800522c        0x0
-                0x0800522c                        . = ALIGN (0x4)
+.ARM.extab      0x0800533c        0x0
+                0x0800533c                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800522c                        . = ALIGN (0x4)
+                0x0800533c                        . = ALIGN (0x4)
 
-.ARM            0x0800522c        0x8
-                0x0800522c                        . = ALIGN (0x4)
-                0x0800522c                        __exidx_start = .
+.ARM            0x0800533c        0x8
+                0x0800533c                        . = ALIGN (0x4)
+                0x0800533c                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800522c        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08005234                        __exidx_end = .
-                0x08005234                        . = ALIGN (0x4)
+ .ARM.exidx     0x0800533c        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08005344                        __exidx_end = .
+                0x08005344                        . = ALIGN (0x4)
 
-.preinit_array  0x08005234        0x0
-                0x08005234                        . = ALIGN (0x4)
-                0x08005234                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08005344        0x0
+                0x08005344                        . = ALIGN (0x4)
+                0x08005344                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08005234                        PROVIDE (__preinit_array_end = .)
-                0x08005234                        . = ALIGN (0x4)
+                0x08005344                        PROVIDE (__preinit_array_end = .)
+                0x08005344                        . = ALIGN (0x4)
 
-.init_array     0x08005234        0x4
-                0x08005234                        . = ALIGN (0x4)
-                0x08005234                        PROVIDE (__init_array_start = .)
+.init_array     0x08005344        0x4
+                0x08005344                        . = ALIGN (0x4)
+                0x08005344                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08005234        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08005238                        PROVIDE (__init_array_end = .)
-                0x08005238                        . = ALIGN (0x4)
+ .init_array    0x08005344        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08005348                        PROVIDE (__init_array_end = .)
+                0x08005348                        . = ALIGN (0x4)
 
-.fini_array     0x08005238        0x4
-                0x08005238                        . = ALIGN (0x4)
+.fini_array     0x08005348        0x4
+                0x08005348                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08005238        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08005348        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800523c                        . = ALIGN (0x4)
-                0x0800523c                        _siccmram = LOADADDR (.ccmram)
+                0x0800534c                        . = ALIGN (0x4)
+                0x0800534c                        _siccmram = LOADADDR (.ccmram)
 
-.rel.dyn        0x0800523c        0x0
- .rel.iplt      0x0800523c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800534c        0x0
+ .rel.iplt      0x0800534c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x0800523c
+.ccmram         0x10000000        0x0 load address 0x0800534c
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
  *(.ccmram*)
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _eccmram = .
-                0x0800523c                        _sidata = LOADADDR (.data)
+                0x0800534c                        _sidata = LOADADDR (.data)
 
-.data           0x20000000        0xc load address 0x0800523c
+.data           0x20000000        0xc load address 0x0800534c
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5554,10 +5707,10 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x2000000c                        . = ALIGN (0x4)
  *fill*         0x20000009        0x3 
 
-.igot.plt       0x2000000c        0x0 load address 0x08005248
+.igot.plt       0x2000000c        0x0 load address 0x08005358
  .igot.plt      0x2000000c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x2000000c        0x0 load address 0x08005248
+.tdata          0x2000000c        0x0 load address 0x08005358
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x2000000c                        . = ALIGN (0x4)
                 0x2000000c                        _edata = .
@@ -5574,7 +5727,7 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x2000000c        0x0 load address 0x08005248
+.tbss           0x2000000c        0x0 load address 0x08005358
                 0x2000000c                        _sbss = .
                 0x2000000c                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -5591,7 +5744,7 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x2000000c      0x40c load address 0x08005248
+.bss            0x2000000c      0x4cc load address 0x08005358
  *(.bss)
  .bss           0x2000000c       0x1c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
@@ -5611,39 +5764,45 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
  .bss.hdma_spi1_tx
                 0x200001d8       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
                 0x200001d8                hdma_spi1_tx
- .bss.htim1     0x20000238       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x20000238                htim1
- .bss.htim2     0x20000280       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x20000280                htim2
- .bss.huart2    0x200002c8       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x200002c8                huart2
- .bss.huart3    0x20000310       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x20000310                huart3
+ .bss.hdma_spi3_rx
+                0x20000238       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000238                hdma_spi3_rx
+ .bss.hdma_spi3_tx
+                0x20000298       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000298                hdma_spi3_tx
+ .bss.htim1     0x200002f8       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x200002f8                htim1
+ .bss.htim2     0x20000340       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x20000340                htim2
+ .bss.huart2    0x20000388       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x20000388                huart2
+ .bss.huart3    0x200003d0       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x200003d0                huart3
  .bss.hdma_usart2_rx
-                0x20000358       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x20000358                hdma_usart2_rx
+                0x20000418       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x20000418                hdma_usart2_rx
  .bss.hdma_usart3_rx
-                0x200003b8       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x200003b8                hdma_usart3_rx
+                0x20000478       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x20000478                hdma_usart3_rx
  *(COMMON)
-                0x20000418                        . = ALIGN (0x4)
-                0x20000418                        _ebss = .
-                0x20000418                        __bss_end__ = _ebss
+                0x200004d8                        . = ALIGN (0x4)
+                0x200004d8                        _ebss = .
+                0x200004d8                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20000418     0x1200 load address 0x08005248
-                0x20000418                        . = ALIGN (0x8)
+                0x200004d8     0x1200 load address 0x08005358
+                0x200004d8                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x20000418                        PROVIDE (_end = .)
-                0x20000618                        . = (. + _Min_Heap_Size)
- *fill*         0x20000418      0x200 
-                0x20001618                        . = (. + _Min_Stack_Size)
- *fill*         0x20000618     0x1000 
-                0x20001618                        . = ALIGN (0x8)
+                0x200004d8                        PROVIDE (_end = .)
+                0x200006d8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200004d8      0x200 
+                0x200016d8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200006d8     0x1000 
+                0x200016d8                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -5744,7 +5903,7 @@ LOAD linker stubs
  .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_info     0x00000000    0x14264
+.debug_info     0x00000000    0x14314
  .debug_info    0x00000000      0x512 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x00000512      0xce3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_info    0x000011f5      0x8c3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5757,21 +5916,21 @@ LOAD linker stubs
  .debug_info    0x00007a6c     0x299d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_info    0x0000a409     0x14db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_info    0x0000b8e4     0x2f4f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000e833      0xc3e CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_info    0x0000f471      0x67e CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000faef      0x995 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_info    0x00010484      0x4c6 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_info    0x0001094a      0x968 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_info    0x000112b2      0x9f0 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_info    0x00011ca2      0xe06 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_info    0x00012aa8      0xc30 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_info    0x000136d8      0x708 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00013de0      0x269 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00014049       0x30 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_info    0x00014079       0xe0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_info    0x00014159      0x10b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_info    0x0000e833      0xc96 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_info    0x0000f4c9      0x67e CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000fb47      0x995 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_info    0x000104dc      0x4c6 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_info    0x000109a2      0x968 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_info    0x0001130a      0xa10 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_info    0x00011d1a      0xe06 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_info    0x00012b20      0xc30 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_info    0x00013750      0x740 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00013e90      0x269 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x000140f9       0x30 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_info    0x00014129       0xe0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_info    0x00014209      0x10b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_abbrev   0x00000000     0x2fea
+.debug_abbrev   0x00000000     0x3003
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x252 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_abbrev  0x0000036c      0x2b7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5784,21 +5943,21 @@ LOAD linker stubs
  .debug_abbrev  0x000014b3      0x278 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_abbrev  0x0000172b      0x283 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_abbrev  0x000019ae      0x30e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_abbrev  0x00001cbc      0x23c CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00001ef8      0x174 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x0000206c      0x1f3 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_abbrev  0x0000225f      0x11b CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x0000237a      0x1f1 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_abbrev  0x0000256b      0x216 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x00002781      0x22c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x000029ad      0x234 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00002be1      0x1a6 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00002d87       0xd8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x00002e5f       0x24 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_abbrev  0x00002e83       0x9e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x00002f21       0xc9 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x00001cbc      0x255 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00001f11      0x174 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x00002085      0x1f3 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_abbrev  0x00002278      0x11b CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x00002393      0x1f1 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_abbrev  0x00002584      0x216 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x0000279a      0x22c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x000029c6      0x234 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x00002bfa      0x1a6 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00002da0       0xd8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x00002e78       0x24 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_abbrev  0x00002e9c       0x9e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x00002f3a       0xc9 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_aranges  0x00000000     0x1318
+.debug_aranges  0x00000000     0x1338
  .debug_aranges
                 0x00000000       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
@@ -5824,34 +5983,34 @@ LOAD linker stubs
  .debug_aranges
                 0x00000e50      0x208 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_aranges
-                0x00001058       0x38 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x00001058       0x48 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x00001090       0x20 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+                0x000010a0       0x20 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x000010b0       0x30 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+                0x000010c0       0x30 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
  .debug_aranges
-                0x000010e0       0x20 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+                0x000010f0       0x20 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
  .debug_aranges
-                0x00001100       0x30 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x00001110       0x30 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
  .debug_aranges
-                0x00001130       0x38 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x00001140       0x38 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_aranges
-                0x00001168       0x50 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x00001178       0x50 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
  .debug_aranges
-                0x000011b8       0x38 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x000011c8       0x38 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
  .debug_aranges
-                0x000011f0       0xa0 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00001200       0xb0 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x00001290       0x20 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x000012b0       0x20 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x000012b0       0x28 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x000012d0       0x28 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
  .debug_aranges
-                0x000012d8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x000012f8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .debug_aranges
-                0x000012f8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00001318       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_rnglists
-                0x00000000      0xef5
+                0x00000000      0xf0e
  .debug_rnglists
                 0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
@@ -5877,33 +6036,33 @@ LOAD linker stubs
  .debug_rnglists
                 0x00000b5d      0x1bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_rnglists
-                0x00000d19       0x27 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x00000d19       0x33 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x00000d40       0x14 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+                0x00000d4c       0x14 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
  .debug_rnglists
-                0x00000d54       0x21 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+                0x00000d60       0x21 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
  .debug_rnglists
-                0x00000d75       0x14 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+                0x00000d81       0x14 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
  .debug_rnglists
-                0x00000d89       0x20 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x00000d95       0x20 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
  .debug_rnglists
-                0x00000da9       0x26 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x00000db5       0x27 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_rnglists
-                0x00000dcf       0x3a CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x00000ddc       0x3a CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
  .debug_rnglists
-                0x00000e09       0x27 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x00000e16       0x27 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
  .debug_rnglists
-                0x00000e30       0x73 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00000e3d       0x7f CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_rnglists
-                0x00000ea3       0x13 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00000ebc       0x13 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_rnglists
-                0x00000eb6       0x19 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x00000ecf       0x19 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
  .debug_rnglists
-                0x00000ecf       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x00000ee8       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
  .debug_rnglists
-                0x00000ee2       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00000efb       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_macro    0x00000000    0x233db
+.debug_macro    0x00000000    0x23478
  .debug_macro   0x00000000      0x21a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x0000021a      0xad8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x00000cf2       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -5962,20 +6121,21 @@ LOAD linker stubs
  .debug_macro   0x000215ae      0x21b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_macro   0x000217c9      0x21a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_macro   0x000219e3      0x21b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_macro   0x00021bfe      0x27c CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_macro   0x00021e7a       0xa0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_macro   0x00021f1a      0x100 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_macro   0x0002201a      0x233 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_macro   0x0002224d      0x233 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_macro   0x00022480      0x233 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_macro   0x000226b3      0x233 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_macro   0x000228e6      0x233 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_macro   0x00022b19      0x233 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_macro   0x00022d4c      0x233 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_macro   0x00022f7f      0x233 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x000231b2      0x229 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x00021bfe      0x285 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_macro   0x00021e83       0xa0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_macro   0x00021f23      0x10c CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_macro   0x0002202f       0x88 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_macro   0x000220b7      0x233 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x000222ea      0x233 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_macro   0x0002251d      0x233 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_macro   0x00022750      0x233 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_macro   0x00022983      0x233 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_macro   0x00022bb6      0x233 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_macro   0x00022de9      0x233 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_macro   0x0002301c      0x233 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x0002324f      0x229 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 
-.debug_line     0x00000000    0x19825
+.debug_line     0x00000000    0x19940
  .debug_line    0x00000000      0x8ec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x000008ec     0x137f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_line    0x00001c6b      0xf75 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5988,49 +6148,49 @@ LOAD linker stubs
  .debug_line    0x0000bd2c     0x38e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_line    0x0000f60f     0x1ac8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_line    0x000110d7     0x26b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00013787      0xa21 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_line    0x000141a8      0x8ad CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_line    0x00014a55      0x8fe CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_line    0x00015353      0x879 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_line    0x00015bcc      0x8e4 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_line    0x000164b0      0x9bd CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_line    0x00016e6d      0xa4f CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_line    0x000178bc      0x9ae CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_line    0x0001826a      0x9e5 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00018c4f      0x876 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x000194c5       0x7a CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_line    0x0001953f      0x17e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_line    0x000196bd      0x168 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_line    0x00013787      0xab1 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_line    0x00014238      0x8ad CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_line    0x00014ae5      0x8fe CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_line    0x000153e3      0x87d CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_line    0x00015c60      0x8e4 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_line    0x00016544      0xa14 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_line    0x00016f58      0xa4f CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_line    0x000179a7      0x9ae CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_line    0x00018355      0xa15 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00018d6a      0x876 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x000195e0       0x7a CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_line    0x0001965a      0x17e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_line    0x000197d8      0x168 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_str      0x00000000    0xd909a
- .debug_str     0x00000000    0xd909a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0xd9300
+ .debug_str     0x00000000    0xd9300 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0xd3368 (size before relaxing)
- .debug_str     0x000d909a    0xd3955 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_str     0x000d909a    0xd379c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x000d909a    0xd34e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x000d909a    0xd3782 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x000d909a    0xd3c68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x000d909a    0xd3eec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x000d909a    0xd4386 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
- .debug_str     0x000d909a    0xd3c26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_str     0x000d909a    0xd46f2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x000d909a    0xd3efe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x000d909a    0xd3d7d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x000d909a    0xd406b CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_str     0x000d909a    0xd3b19 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_str     0x000d909a    0xd3a6b CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_str     0x000d909a    0xd3a4b CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_str     0x000d909a    0xd3b28 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_str     0x000d909a    0xd3ace CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_str     0x000d909a    0xd3e9e CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_str     0x000d909a    0xd403f CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_str     0x000d909a    0xd3a63 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x000d909a    0xd352e CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x000d909a       0x84 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_str     0x000d909a      0x211 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_str     0x000d909a      0x272 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_str     0x000d9300    0xd3955 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_str     0x000d9300    0xd379c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x000d9300    0xd34e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x000d9300    0xd3782 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x000d9300    0xd3c68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x000d9300    0xd3eec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000d9300    0xd4386 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+ .debug_str     0x000d9300    0xd3c26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x000d9300    0xd46f2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x000d9300    0xd3efe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x000d9300    0xd3d7d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000d9300    0xd4293 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_str     0x000d9300    0xd3b14 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_str     0x000d9300    0xd3a66 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_str     0x000d9300    0xd3a46 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_str     0x000d9300    0xd3b23 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_str     0x000d9300    0xd3ae3 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_str     0x000d9300    0xd3e99 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_str     0x000d9300    0xd403a CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_str     0x000d9300    0xd3aa8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000d9300    0xd3529 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x000d9300       0x84 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_str     0x000d9300      0x211 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_str     0x000d9300      0x272 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_frame    0x00000000     0x4b90
+.debug_frame    0x00000000     0x4c04
  .debug_frame   0x00000000       0x50 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_frame   0x00000050      0x3bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_frame   0x0000040c      0x1d8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -6043,20 +6203,20 @@ LOAD linker stubs
  .debug_frame   0x000024ec     0x10f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_frame   0x000035dc      0x600 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_frame   0x00003bdc      0x8ec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_frame   0x000044c8       0x8c CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_frame   0x00004554       0x34 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_frame   0x00004588       0x7c CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_frame   0x00004604       0x34 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_frame   0x00004638       0x74 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_frame   0x000046ac       0x90 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_frame   0x0000473c      0x10c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_frame   0x00004848       0x90 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_frame   0x000048d8      0x1d8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00004ab0       0x34 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00004ae4       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00004b10       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00004b44       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00004b64       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_frame   0x000044c8       0xc4 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_frame   0x0000458c       0x34 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x000045c0       0x7c CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_frame   0x0000463c       0x34 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_frame   0x00004670       0x74 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_frame   0x000046e4       0x94 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_frame   0x00004778      0x10c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_frame   0x00004884       0x90 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_frame   0x00004914      0x210 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00004b24       0x34 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00004b58       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00004b84       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00004bb8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00004bd8       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000       0x68

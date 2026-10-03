@@ -70,11 +70,11 @@ void Error_Handler(void);
 #define IMU_INT2_GPIO_Port GPIOC
 #define VBAT_Pin GPIO_PIN_0
 #define VBAT_GPIO_Port GPIOB
-#define BARO_INT_Pin GPIO_PIN_0
-#define BARO_INT_GPIO_Port GPIOD
-#define BARO_INT_EXTI_IRQn EXTI0_IRQn
-#define BARO_CS_Pin GPIO_PIN_1
-#define BARO_CS_GPIO_Port GPIOD
+#define ALT_INT_Pin GPIO_PIN_0
+#define ALT_INT_GPIO_Port GPIOD
+#define ALT_INT_EXTI_IRQn EXTI0_IRQn
+#define ALT_CS_Pin GPIO_PIN_1
+#define ALT_CS_GPIO_Port GPIOD
 #define LED1_R_Pin GPIO_PIN_2
 #define LED1_R_GPIO_Port GPIOD
 #define LED1_G_Pin GPIO_PIN_3
