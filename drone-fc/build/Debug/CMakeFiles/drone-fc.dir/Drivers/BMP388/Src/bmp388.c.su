@@ -1,6 +1,10 @@
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:31:6:_ALT_ReadRegister	16	static
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:45:9:_ALT_ReadRegisterBlocking	24	static
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:62:6:_ALT_WriteRegisterBlocking	24	static
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:82:6:ALT_Test	8	static
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:101:6:ALT_Init	8	static
-/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:113:6:ALT_Read	8	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:35:6:_ALT_ReadRegister	16	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:49:9:_ALT_ReadRegisterBlocking	24	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:66:6:_ALT_WriteRegisterBlocking	24	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:86:6:ALT_Test	8	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:105:6:ALT_ReadCalibration	16	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:161:6:ALT_Init	8	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:174:6:ALT_Read	8	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:185:6:_ALT_Compensate_T	16	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:197:6:_ALT_Compensate_P	32	static
+/home/nestor/drone-master/drone-fc/Drivers/BMP388/Src/bmp388.c:228:6:ALT_Compensate	8	static

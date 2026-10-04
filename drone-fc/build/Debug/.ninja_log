@@ -75,3 +75,15 @@
 301	719	1791038111833937388	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj	7a799c1de2653d3f
 319	731	1791038111851937340	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj	3a0c1c71271a23b7
 731	802	1791038112263936244	drone-fc.elf	4f0e57175fe41662
+2	325	1791101106058717764	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	7e0a375dbfd5367a
+3	327	1791101106059717751	CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj	1e73efd9ae38c886
+1	158	1791101126175464862	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	7e0a375dbfd5367a
+1	167	1791101126176399897	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	4667238b9893d9a2
+167	356	1791101126342462763	drone-fc.elf	4f0e57175fe41662
+1	161	1791101159728043049	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	4667238b9893d9a2
+161	259	1791101159888041038	drone-fc.elf	4f0e57175fe41662
+2	159	1791101207256445536	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	4667238b9893d9a2
+159	257	1791101207413443563	drone-fc.elf	4f0e57175fe41662
+1	156	1791101788092143443	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	7e0a375dbfd5367a
+2	165	1791101788093143430	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	4667238b9893d9a2
+165	264	1791101788256141381	drone-fc.elf	4f0e57175fe41662

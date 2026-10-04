@@ -83,7 +83,7 @@
 #define IMU_ACCEL_SCALE 			0x07	// This setting corresponds to +-32g  (datasheet p.71)
 #define IMU_GYRO_SCALE  			0x04	// This setting corresponds to +-2000dps (datasheet p.69-70)
 
-
+/* Driver functions & helper structs/enums */
 void 		_IMU_ReadRegister(uint8_t reg);												// Read one register (does not return, DMA is asynchronous!)
 uint8_t _IMU_ReadRegisterBlocking(uint8_t reg);								// Read one register (blocking)
 void 		_IMU_WriteRegisterBlocking(uint8_t reg, uint8_t data);// Write to one register (blocking)
