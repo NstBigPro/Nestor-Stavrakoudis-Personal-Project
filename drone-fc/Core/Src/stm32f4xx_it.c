@@ -22,6 +22,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "sam_m10q.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -281,11 +282,14 @@ void DMA1_Stream5_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
+	if(__HAL_UART_GET_FLAG(GPS_INTERFACE,UART_FLAG_IDLE)){
+		__HAL_UART_CLEAR_IDLEFLAG(GPS_INTERFACE);
 
+	}
   /* USER CODE END USART2_IRQn 0 */
   HAL_UART_IRQHandler(&huart2);
   /* USER CODE BEGIN USART2_IRQn 1 */
-
+  GPS_New_Sentence();
   /* USER CODE END USART2_IRQn 1 */
 }
 

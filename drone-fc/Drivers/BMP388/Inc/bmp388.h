@@ -169,7 +169,7 @@ extern ALT_Calibration_Coefficient_NVM ALT_Coefficients_NVM;	// NVM trimming coe
 extern ALT_Calibration_Coefficient_Scaled ALT_Coefficients_Scaled;	// Scaled trimming coefficients
 
 
-void ALT_ReadCoefficients(void);	// Obtain calibration/trimming data
+void ALT_ReadCalibration(void);	// Obtain calibration/trimming data
 void ALT_Compensate(void);			// Apply calibration/trimming coefficients to raw reading (formulas from datasheet appendix 9)
 
 void _ALT_Compensate_T(void);		// Apply calibration/trimming coefficients to raw temperature reading

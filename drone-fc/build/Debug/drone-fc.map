@@ -1,5 +1,31 @@
 Archive member included to satisfy reference by file (symbol)
 
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+                              CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj (pow)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (finite)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (__ieee754_pow)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (fabs)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (scalbn)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (__math_uflow)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (__ieee754_sqrt)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (__aeabi_dmul)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (__aeabi_dsub)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o) (__aeabi_ddiv)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (__aeabi_dcmpeq)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+                              /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (__aeabi_dcmpun)
+/home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+                              CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj (__aeabi_d2f)
 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
                               cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -3299,7 +3325,7 @@ Discarded input sections
  .text.IMU_TxRxCpltCallback
                 0x00000000       0xc0 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .text.ALT_TxRxCpltCallback
-                0x00000000       0x70 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x00000000       0x74 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
@@ -4084,6 +4110,7 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .text          0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
@@ -4661,8 +4688,8 @@ Discarded input sections
                 0x00000000      0x1d0 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
  .text.ALT_Compensate
                 0x00000000       0x10 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
- .debug_info    0x00000000      0xc5b CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
- .debug_abbrev  0x00000000      0x24d CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_info    0x00000000      0xc59 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .debug_abbrev  0x00000000      0x236 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
  .debug_aranges
                 0x00000000       0x68 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
  .debug_rnglists
@@ -4722,6 +4749,175 @@ Discarded input sections
  .debug_frame   0x00000000      0x158 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .group         0x00000000        0xc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .text          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .data          0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .text.GPS_Init
+                0x00000000       0x2c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x2ad CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x2f CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000    0x15ea5 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x980 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x13e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x174 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0xb5b CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x38b CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x176 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0xf9 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x12c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x21e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x1b5 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0xd6 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x7e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x225 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x4d CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x2aa CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x12d CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0xa0 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x2a CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x364 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x4a CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000       0x58 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00000000      0x1de CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.__math_may_uflow
+                0x00000000       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.__math_divzero
+                0x00000000       0x38 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.__math_invalid
+                0x00000000       0x4c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.__math_check_uflow
+                0x00000000       0x38 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.__math_check_oflow
+                0x00000000       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .text          0x00000000      0x254 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -4772,23 +4968,8 @@ Discarded input sections
  .text.__fp_unlock_all
                 0x00000000       0x1c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .data.__sglue  0x00000000        0xc /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .bss.__sf      0x00000000      0x138 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .bss.__stdio_exit_handler
                 0x00000000        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_info    0x00000000      0xfb8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x00000000      0x424 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_loclists
-                0x00000000      0x2b6 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_aranges
-                0x00000000       0x78 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_rnglists
-                0x00000000       0x7d /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_line    0x00000000      0x5d1 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_str     0x00000000      0x7b4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .comment       0x00000000       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00000000      0x144 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
- .ARM.attributes
-                0x00000000       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-fwalk.o)
@@ -4878,19 +5059,6 @@ Discarded input sections
  .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .data._impure_ptr
-                0x00000000        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .data._impure_data
-                0x00000000       0x4c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_info    0x00000000      0x715 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x00000000      0x149 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_aranges
-                0x00000000       0x18 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_line    0x00000000      0x163 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .debug_str     0x00000000      0x531 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .comment       0x00000000       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
- .ARM.attributes
-                0x00000000       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
  .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-lseekr.o)
@@ -4950,19 +5118,6 @@ Discarded input sections
  .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .text.__errno  0x00000000        0xc /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_info    0x00000000      0x6fb /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x00000000      0x15e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_aranges
-                0x00000000       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_rnglists
-                0x00000000       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_line    0x00000000      0x185 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_str     0x00000000      0x52b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .comment       0x00000000       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .debug_frame   0x00000000       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
- .ARM.attributes
-                0x00000000       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .text          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
  .data          0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
  .bss           0x00000000        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
@@ -5184,6 +5339,7 @@ LOAD CMakeFiles/drone-fc.dir/Core/Src/syscalls.c.obj
 LOAD CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
 LOAD CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj
 LOAD CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj
+LOAD CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
 LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 START GROUP
 LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a
@@ -5208,505 +5364,594 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000188     0x5194
+.text           0x08000188     0x7b94
                 0x08000188                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000188       0x40 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .text          0x080001c8       0x30 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
-                0x080001c8                __aeabi_uldivmod
- .text          0x080001f8      0x2f8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x080001f8                __udivmoddi4
- .text          0x080004f0        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
-                0x080004f0                __aeabi_ldiv0
-                0x080004f0                __aeabi_idiv0
+ .text          0x080001c8      0x378 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+                0x080001c8                __aeabi_drsub
+                0x080001d0                __aeabi_dsub
+                0x080001d0                __subdf3
+                0x080001d4                __adddf3
+                0x080001d4                __aeabi_dadd
+                0x0800044c                __aeabi_ui2d
+                0x0800044c                __floatunsidf
+                0x0800046c                __floatsidf
+                0x0800046c                __aeabi_i2d
+                0x08000490                __extendsfdf2
+                0x08000490                __aeabi_f2d
+                0x080004d4                __aeabi_ul2d
+                0x080004d4                __floatundidf
+                0x080004e4                __floatdidf
+                0x080004e4                __aeabi_l2d
+ .text          0x08000540      0x424 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+                0x08000540                __aeabi_dmul
+                0x08000540                __muldf3
+                0x08000794                __aeabi_ddiv
+                0x08000794                __divdf3
+ .text          0x08000964      0x110 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+                0x08000964                __gtdf2
+                0x08000964                __gedf2
+                0x0800096c                __ltdf2
+                0x0800096c                __ledf2
+                0x08000974                __cmpdf2
+                0x08000974                __eqdf2
+                0x08000974                __nedf2
+                0x080009f0                __aeabi_cdrcmple
+                0x08000a00                __aeabi_cdcmple
+                0x08000a00                __aeabi_cdcmpeq
+                0x08000a10                __aeabi_dcmpeq
+                0x08000a24                __aeabi_dcmplt
+                0x08000a38                __aeabi_dcmple
+                0x08000a4c                __aeabi_dcmpge
+                0x08000a60                __aeabi_dcmpgt
+ .text          0x08000a74       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+                0x08000a74                __aeabi_dcmpun
+                0x08000a74                __unorddf2
+ .text          0x08000aa0       0xa0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+                0x08000aa0                __aeabi_d2f
+                0x08000aa0                __truncdfsf2
+ .text          0x08000b40       0x30 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x08000b40                __aeabi_uldivmod
+ .text          0x08000b70      0x2f8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08000b70                __udivmoddi4
+ .text          0x08000e68        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x08000e68                __aeabi_ldiv0
+                0x08000e68                __aeabi_idiv0
  *(.text*)
  .text.SystemInit
-                0x080004f4       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x080004f4                SystemInit
+                0x08000e6c       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08000e6c                SystemInit
  .text.HAL_ADC_Init
-                0x08000518       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x08000518                HAL_ADC_Init
- *fill*         0x0800059e        0x2 
+                0x08000e90       0x86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x08000e90                HAL_ADC_Init
+ *fill*         0x08000f16        0x2 
  .text.HAL_ADC_ConfigChannel
-                0x080005a0      0x244 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-                0x080005a0                HAL_ADC_ConfigChannel
+                0x08000f18      0x244 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x08000f18                HAL_ADC_ConfigChannel
  .text.ADC_Init
-                0x080007e4      0x1f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+                0x0800115c      0x1f8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .text.HAL_RCC_OscConfig
-                0x080009dc      0x4f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080009dc                HAL_RCC_OscConfig
+                0x08001354      0x4f0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001354                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x08000ecc      0x1cc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08000ecc                HAL_RCC_ClockConfig
+                0x08001844      0x1cc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001844                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001098      0x188 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001098                HAL_RCC_GetSysClockFreq
+                0x08001a10      0x188 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001a10                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08001220       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001220                HAL_RCC_GetHCLKFreq
+                0x08001b98       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001b98                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08001238       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001238                HAL_RCC_GetPCLK1Freq
+                0x08001bb0       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001bb0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08001260       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001260                HAL_RCC_GetPCLK2Freq
+                0x08001bd8       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001bd8                HAL_RCC_GetPCLK2Freq
  .text.HAL_GPIO_Init
-                0x08001288      0x338 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08001288                HAL_GPIO_Init
+                0x08001c00      0x338 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001c00                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x080015c0       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x080015c0                HAL_GPIO_WritePin
- *fill*         0x080015f2        0x2 
+                0x08001f38       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001f38                HAL_GPIO_WritePin
+ *fill*         0x08001f6a        0x2 
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x080015f4       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x080015f4                HAL_GPIO_EXTI_IRQHandler
+                0x08001f6c       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001f6c                HAL_GPIO_EXTI_IRQHandler
  .text.HAL_GPIO_EXTI_Callback
-                0x08001624       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08001624                HAL_GPIO_EXTI_Callback
- *fill*         0x0800163a        0x2 
+                0x08001f9c       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001f9c                HAL_GPIO_EXTI_Callback
+ *fill*         0x08001fb2        0x2 
  .text.HAL_DMA_Init
-                0x0800163c      0x15c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0800163c                HAL_DMA_Init
+                0x08001fb4      0x15c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08001fb4                HAL_DMA_Init
  .text.HAL_DMA_Abort
-                0x08001798       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x08001798                HAL_DMA_Abort
+                0x08002110       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002110                HAL_DMA_Abort
  .text.HAL_DMA_Abort_IT
-                0x08001878       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x08001878                HAL_DMA_Abort_IT
+                0x080021f0       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080021f0                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x080018bc      0x314 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080018bc                HAL_DMA_IRQHandler
+                0x08002234      0x314 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002234                HAL_DMA_IRQHandler
  .text.DMA_CalcBaseAndBitshift
-                0x08001bd0       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08002548       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_CheckFifoParam
-                0x08001c3c       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080025b4       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.__NVIC_SetPriorityGrouping
-                0x08001d34       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080026ac       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08001d7c       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080026f4       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x08001d98       0x3c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002710       0x3c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x08001dd4       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800274c       0x54 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08001e28       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- *fill*         0x08001e8e        0x2 
+                0x080027a0       0x66 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ *fill*         0x08002806        0x2 
  .text.SysTick_Config
-                0x08001e90       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002808       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001ed4       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001ed4                HAL_NVIC_SetPriorityGrouping
+                0x0800284c       0x16 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800284c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001eea       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001eea                HAL_NVIC_SetPriority
+                0x08002862       0x38 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08002862                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08001f22       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001f22                HAL_NVIC_EnableIRQ
+                0x0800289a       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800289a                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08001f3e       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001f3e                HAL_SYSTICK_Config
- *fill*         0x08001f56        0x2 
+                0x080028b6       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080028b6                HAL_SYSTICK_Config
+ *fill*         0x080028ce        0x2 
  .text.HAL_Init
-                0x08001f58       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001f58                HAL_Init
+                0x080028d0       0x44 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080028d0                HAL_Init
  .text.HAL_InitTick
-                0x08001f9c       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001f9c                HAL_InitTick
+                0x08002914       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002914                HAL_InitTick
  .text.HAL_IncTick
-                0x08001ffc       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001ffc                HAL_IncTick
+                0x08002974       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08002974                HAL_IncTick
  .text.HAL_GetTick
-                0x08002024       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08002024                HAL_GetTick
+                0x0800299c       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0800299c                HAL_GetTick
  .text.HAL_I2C_Init
-                0x0800203c      0x288 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
-                0x0800203c                HAL_I2C_Init
+                0x080029b4      0x288 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+                0x080029b4                HAL_I2C_Init
  .text.HAL_SPI_Init
-                0x080022c4      0x112 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-                0x080022c4                HAL_SPI_Init
+                0x08002c3c      0x112 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+                0x08002c3c                HAL_SPI_Init
  .text.HAL_TIM_Base_Init
-                0x080023d6       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x080023d6                HAL_TIM_Base_Init
+                0x08002d4e       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002d4e                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x08002474       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002474                HAL_TIM_PWM_Init
+                0x08002dec       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002dec                HAL_TIM_PWM_Init
  .text.HAL_TIM_PWM_MspInit
-                0x08002512       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002512                HAL_TIM_PWM_MspInit
+                0x08002e8a       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002e8a                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_IC_Init
-                0x08002526       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002526                HAL_TIM_IC_Init
+                0x08002e9e       0x9e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002e9e                HAL_TIM_IC_Init
  .text.HAL_TIM_IC_ConfigChannel
-                0x080025c4      0x138 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x080025c4                HAL_TIM_IC_ConfigChannel
+                0x08002f3c      0x138 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002f3c                HAL_TIM_IC_ConfigChannel
  .text.HAL_TIM_PWM_ConfigChannel
-                0x080026fc      0x184 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x080026fc                HAL_TIM_PWM_ConfigChannel
+                0x08003074      0x184 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003074                HAL_TIM_PWM_ConfigChannel
  .text.HAL_TIM_ConfigClockSource
-                0x08002880      0x18e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002880                HAL_TIM_ConfigClockSource
- *fill*         0x08002a0e        0x2 
+                0x080031f8      0x18e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080031f8                HAL_TIM_ConfigClockSource
+ *fill*         0x08003386        0x2 
  .text.TIM_Base_SetConfig
-                0x08002a10      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002a10                TIM_Base_SetConfig
+                0x08003388      0x14c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003388                TIM_Base_SetConfig
  .text.TIM_OC1_SetConfig
-                0x08002b5c       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080034d4       0xe0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_OC2_SetConfig
-                0x08002c3c       0xec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002c3c                TIM_OC2_SetConfig
+                0x080035b4       0xec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080035b4                TIM_OC2_SetConfig
  .text.TIM_OC3_SetConfig
-                0x08002d28       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080036a0       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x08002e10       0xac cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003788       0xac cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI1_SetConfig
-                0x08002ebc       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08002ebc                TIM_TI1_SetConfig
+                0x08003834       0xe8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003834                TIM_TI1_SetConfig
  .text.TIM_TI1_ConfigInputStage
-                0x08002fa4       0x5e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0800391c       0x5e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI2_SetConfig
-                0x08003002       0x7a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0800397a       0x7a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x0800307c       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080039f4       0x60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI3_SetConfig
-                0x080030dc       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003a54       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_TI4_SetConfig
-                0x08003154       0x7a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003acc       0x7a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x080031ce       0x36 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003b46       0x36 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .text.TIM_ETR_SetConfig
-                0x08003204       0x40 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
-                0x08003204                TIM_ETR_SetConfig
+                0x08003b7c       0x40 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08003b7c                TIM_ETR_SetConfig
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08003244       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x08003244                HAL_TIMEx_MasterConfigSynchronization
+                0x08003bbc       0xf8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x08003bbc                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x0800333c       0xa4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
-                0x0800333c                HAL_TIMEx_ConfigBreakDeadTime
+                0x08003cb4       0xa4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+                0x08003cb4                HAL_TIMEx_ConfigBreakDeadTime
  .text.HAL_UART_Init
-                0x080033e0       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080033e0                HAL_UART_Init
+                0x08003d58       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003d58                HAL_UART_Init
  .text.HAL_UART_IRQHandler
-                0x08003480      0x554 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003480                HAL_UART_IRQHandler
+                0x08003df8      0x554 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08003df8                HAL_UART_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x080039d4       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080039d4                HAL_UART_TxCpltCallback
+                0x0800434c       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800434c                HAL_UART_TxCpltCallback
  .text.HAL_UART_RxCpltCallback
-                0x080039e8       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080039e8                HAL_UART_RxCpltCallback
+                0x08004360       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004360                HAL_UART_RxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x080039fc       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080039fc                HAL_UART_ErrorCallback
+                0x08004374       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004374                HAL_UART_ErrorCallback
  .text.HAL_UARTEx_RxEventCallback
-                0x08003a10       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08003a10                HAL_UARTEx_RxEventCallback
+                0x08004388       0x18 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004388                HAL_UARTEx_RxEventCallback
  .text.UART_EndRxTransfer
-                0x08003a28       0xc6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080043a0       0xc6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x08003aee       0x22 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004466       0x22 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x08003b10       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004488       0xa0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndTransmit_IT
-                0x08003bb0       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004528       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Receive_IT
-                0x08003be0      0x17c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08004558      0x17c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08003d5c      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .text.main     0x08004244       0x38 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
-                0x08004244                main
+                0x080046d4      0x4e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .text.main     0x08004bbc       0x38 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x08004bbc                main
  .text.SystemClock_Config
-                0x0800427c       0xd4 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
-                0x0800427c                SystemClock_Config
+                0x08004bf4       0xd4 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x08004bf4                SystemClock_Config
  .text.Error_Handler
-                0x08004350        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
-                0x08004350                Error_Handler
+                0x08004cc8        0xc CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+                0x08004cc8                Error_Handler
  .text.MX_GPIO_Init
-                0x0800435c      0x15c CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
-                0x0800435c                MX_GPIO_Init
+                0x08004cd4      0x15c CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+                0x08004cd4                MX_GPIO_Init
  .text.MX_ADC1_Init
-                0x080044b8       0xa4 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
-                0x080044b8                MX_ADC1_Init
+                0x08004e30       0xa4 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+                0x08004e30                MX_ADC1_Init
  .text.HAL_ADC_MspInit
-                0x0800455c       0x88 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
-                0x0800455c                HAL_ADC_MspInit
+                0x08004ed4       0x88 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+                0x08004ed4                HAL_ADC_MspInit
  .text.MX_DMA_Init
-                0x080045e4       0xac CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
-                0x080045e4                MX_DMA_Init
+                0x08004f5c       0xac CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+                0x08004f5c                MX_DMA_Init
  .text.MX_I2C1_Init
-                0x08004690       0x5c CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
-                0x08004690                MX_I2C1_Init
+                0x08005008       0x5c CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x08005008                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x080046ec       0x90 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
-                0x080046ec                HAL_I2C_MspInit
+                0x08005064       0x90 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x08005064                HAL_I2C_MspInit
  .text.MX_SPI1_Init
-                0x0800477c       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x0800477c                MX_SPI1_Init
+                0x080050f4       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x080050f4                MX_SPI1_Init
  .text.MX_SPI3_Init
-                0x080047e8       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x080047e8                MX_SPI3_Init
+                0x08005160       0x6c CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x08005160                MX_SPI3_Init
  .text.HAL_SPI_MspInit
-                0x08004854      0x294 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x08004854                HAL_SPI_MspInit
+                0x080051cc      0x294 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x080051cc                HAL_SPI_MspInit
  .text.MX_TIM1_Init
-                0x08004ae8      0x188 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004ae8                MX_TIM1_Init
+                0x08005460      0x188 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x08005460                MX_TIM1_Init
  .text.MX_TIM2_Init
-                0x08004c70       0xa4 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004c70                MX_TIM2_Init
+                0x080055e8       0xa4 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x080055e8                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x08004d14       0x44 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004d14                HAL_TIM_Base_MspInit
+                0x0800568c       0x44 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x0800568c                HAL_TIM_Base_MspInit
  .text.HAL_TIM_IC_MspInit
-                0x08004d58       0x8c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004d58                HAL_TIM_IC_MspInit
+                0x080056d0       0x8c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x080056d0                HAL_TIM_IC_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08004de4       0x74 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x08004de4                HAL_TIM_MspPostInit
+                0x0800575c       0x74 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x0800575c                HAL_TIM_MspPostInit
  .text.MX_USART2_UART_Init
-                0x08004e58       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004e58                MX_USART2_UART_Init
+                0x080057d0       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x080057d0                MX_USART2_UART_Init
  .text.MX_USART3_UART_Init
-                0x08004eac       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004eac                MX_USART3_UART_Init
+                0x08005824       0x54 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x08005824                MX_USART3_UART_Init
  .text.HAL_UART_MspInit
-                0x08004f00      0x1ec CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x08004f00                HAL_UART_MspInit
+                0x08005878      0x1ec CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x08005878                HAL_UART_MspInit
  .text.NMI_Handler
-                0x080050ec        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050ec                NMI_Handler
+                0x08005a64        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a64                NMI_Handler
  .text.HardFault_Handler
-                0x080050f4        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050f4                HardFault_Handler
+                0x08005a6c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a6c                HardFault_Handler
  .text.MemManage_Handler
-                0x080050fc        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080050fc                MemManage_Handler
+                0x08005a74        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a74                MemManage_Handler
  .text.BusFault_Handler
-                0x08005104        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005104                BusFault_Handler
+                0x08005a7c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a7c                BusFault_Handler
  .text.UsageFault_Handler
-                0x0800510c        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800510c                UsageFault_Handler
+                0x08005a84        0x8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a84                UsageFault_Handler
  .text.SVC_Handler
-                0x08005114        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005114                SVC_Handler
+                0x08005a8c        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a8c                SVC_Handler
  .text.DebugMon_Handler
-                0x08005122        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005122                DebugMon_Handler
+                0x08005a9a        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005a9a                DebugMon_Handler
  .text.PendSV_Handler
-                0x08005130        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005130                PendSV_Handler
+                0x08005aa8        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005aa8                PendSV_Handler
  .text.SysTick_Handler
-                0x0800513e        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800513e                SysTick_Handler
+                0x08005ab6        0xc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005ab6                SysTick_Handler
  .text.EXTI0_IRQHandler
-                0x0800514a        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800514a                EXTI0_IRQHandler
+                0x08005ac2        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005ac2                EXTI0_IRQHandler
  .text.EXTI4_IRQHandler
-                0x08005158        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005158                EXTI4_IRQHandler
- *fill*         0x08005166        0x2 
+                0x08005ad0        0xe CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005ad0                EXTI4_IRQHandler
+ *fill*         0x08005ade        0x2 
  .text.DMA1_Stream0_IRQHandler
-                0x08005168       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005168                DMA1_Stream0_IRQHandler
+                0x08005ae0       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005ae0                DMA1_Stream0_IRQHandler
  .text.DMA1_Stream1_IRQHandler
-                0x0800517c       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800517c                DMA1_Stream1_IRQHandler
+                0x08005af4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005af4                DMA1_Stream1_IRQHandler
  .text.DMA1_Stream5_IRQHandler
-                0x08005190       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08005190                DMA1_Stream5_IRQHandler
+                0x08005b08       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b08                DMA1_Stream5_IRQHandler
  .text.USART2_IRQHandler
-                0x080051a4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080051a4                USART2_IRQHandler
+                0x08005b1c       0x40 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b1c                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x080051b8       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080051b8                USART3_IRQHandler
+                0x08005b5c       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b5c                USART3_IRQHandler
  .text.DMA1_Stream7_IRQHandler
-                0x080051cc       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080051cc                DMA1_Stream7_IRQHandler
+                0x08005b70       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b70                DMA1_Stream7_IRQHandler
  .text.DMA2_Stream0_IRQHandler
-                0x080051e0       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080051e0                DMA2_Stream0_IRQHandler
+                0x08005b84       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b84                DMA2_Stream0_IRQHandler
  .text.DMA2_Stream3_IRQHandler
-                0x080051f4       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
-                0x080051f4                DMA2_Stream3_IRQHandler
+                0x08005b98       0x14 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08005b98                DMA2_Stream3_IRQHandler
  .text.HAL_MspInit
-                0x08005208       0x50 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08005208                HAL_MspInit
+                0x08005bac       0x50 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08005bac                HAL_MspInit
  .text.Reset_Handler
-                0x08005258       0x50 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
-                0x08005258                Reset_Handler
+                0x08005bfc       0x50 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x08005bfc                Reset_Handler
  .text.Default_Handler
-                0x080052a8        0x2 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
-                0x080052a8                RTC_Alarm_IRQHandler
-                0x080052a8                HASH_RNG_IRQHandler
-                0x080052a8                EXTI2_IRQHandler
-                0x080052a8                TIM8_CC_IRQHandler
-                0x080052a8                TIM1_CC_IRQHandler
-                0x080052a8                DMA2_Stream5_IRQHandler
-                0x080052a8                PVD_IRQHandler
-                0x080052a8                SDIO_IRQHandler
-                0x080052a8                TAMP_STAMP_IRQHandler
-                0x080052a8                CAN2_RX1_IRQHandler
-                0x080052a8                EXTI3_IRQHandler
-                0x080052a8                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080052a8                TIM1_UP_TIM10_IRQHandler
-                0x080052a8                TIM8_UP_TIM13_IRQHandler
-                0x080052a8                I2C3_ER_IRQHandler
-                0x080052a8                I2C2_EV_IRQHandler
-                0x080052a8                DMA1_Stream2_IRQHandler
-                0x080052a8                CAN1_RX0_IRQHandler
-                0x080052a8                FPU_IRQHandler
-                0x080052a8                OTG_HS_WKUP_IRQHandler
-                0x080052a8                CAN2_SCE_IRQHandler
-                0x080052a8                DMA2_Stream2_IRQHandler
-                0x080052a8                SPI1_IRQHandler
-                0x080052a8                TIM6_DAC_IRQHandler
-                0x080052a8                TIM1_BRK_TIM9_IRQHandler
-                0x080052a8                DCMI_IRQHandler
-                0x080052a8                CAN2_RX0_IRQHandler
-                0x080052a8                USART6_IRQHandler
-                0x080052a8                CAN1_RX1_IRQHandler
-                0x080052a8                UART5_IRQHandler
-                0x080052a8                TIM4_IRQHandler
-                0x080052a8                I2C1_EV_IRQHandler
-                0x080052a8                DMA1_Stream6_IRQHandler
-                0x080052a8                UART4_IRQHandler
-                0x080052a8                TIM3_IRQHandler
-                0x080052a8                RCC_IRQHandler
-                0x080052a8                TIM8_BRK_TIM12_IRQHandler
-                0x080052a8                Default_Handler
-                0x080052a8                EXTI15_10_IRQHandler
-                0x080052a8                ADC_IRQHandler
-                0x080052a8                TIM7_IRQHandler
-                0x080052a8                CAN2_TX_IRQHandler
-                0x080052a8                TIM5_IRQHandler
-                0x080052a8                DMA2_Stream7_IRQHandler
-                0x080052a8                I2C3_EV_IRQHandler
-                0x080052a8                EXTI9_5_IRQHandler
-                0x080052a8                RTC_WKUP_IRQHandler
-                0x080052a8                ETH_WKUP_IRQHandler
-                0x080052a8                SPI2_IRQHandler
-                0x080052a8                OTG_HS_EP1_IN_IRQHandler
-                0x080052a8                CAN1_TX_IRQHandler
-                0x080052a8                FSMC_IRQHandler
-                0x080052a8                ETH_IRQHandler
-                0x080052a8                OTG_HS_EP1_OUT_IRQHandler
-                0x080052a8                WWDG_IRQHandler
-                0x080052a8                TIM2_IRQHandler
-                0x080052a8                OTG_FS_WKUP_IRQHandler
-                0x080052a8                TIM1_TRG_COM_TIM11_IRQHandler
-                0x080052a8                OTG_HS_IRQHandler
-                0x080052a8                EXTI1_IRQHandler
-                0x080052a8                I2C2_ER_IRQHandler
-                0x080052a8                DMA2_Stream1_IRQHandler
-                0x080052a8                CAN1_SCE_IRQHandler
-                0x080052a8                FLASH_IRQHandler
-                0x080052a8                DMA2_Stream4_IRQHandler
-                0x080052a8                USART1_IRQHandler
-                0x080052a8                OTG_FS_IRQHandler
-                0x080052a8                SPI3_IRQHandler
-                0x080052a8                DMA1_Stream4_IRQHandler
-                0x080052a8                I2C1_ER_IRQHandler
-                0x080052a8                DMA2_Stream6_IRQHandler
-                0x080052a8                DMA1_Stream3_IRQHandler
- .text.memset   0x080052aa       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
-                0x080052aa                memset
- *fill*         0x080052ba        0x2 
+                0x08005c4c        0x2 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+                0x08005c4c                RTC_Alarm_IRQHandler
+                0x08005c4c                HASH_RNG_IRQHandler
+                0x08005c4c                EXTI2_IRQHandler
+                0x08005c4c                TIM8_CC_IRQHandler
+                0x08005c4c                TIM1_CC_IRQHandler
+                0x08005c4c                DMA2_Stream5_IRQHandler
+                0x08005c4c                PVD_IRQHandler
+                0x08005c4c                SDIO_IRQHandler
+                0x08005c4c                TAMP_STAMP_IRQHandler
+                0x08005c4c                CAN2_RX1_IRQHandler
+                0x08005c4c                EXTI3_IRQHandler
+                0x08005c4c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08005c4c                TIM1_UP_TIM10_IRQHandler
+                0x08005c4c                TIM8_UP_TIM13_IRQHandler
+                0x08005c4c                I2C3_ER_IRQHandler
+                0x08005c4c                I2C2_EV_IRQHandler
+                0x08005c4c                DMA1_Stream2_IRQHandler
+                0x08005c4c                CAN1_RX0_IRQHandler
+                0x08005c4c                FPU_IRQHandler
+                0x08005c4c                OTG_HS_WKUP_IRQHandler
+                0x08005c4c                CAN2_SCE_IRQHandler
+                0x08005c4c                DMA2_Stream2_IRQHandler
+                0x08005c4c                SPI1_IRQHandler
+                0x08005c4c                TIM6_DAC_IRQHandler
+                0x08005c4c                TIM1_BRK_TIM9_IRQHandler
+                0x08005c4c                DCMI_IRQHandler
+                0x08005c4c                CAN2_RX0_IRQHandler
+                0x08005c4c                USART6_IRQHandler
+                0x08005c4c                CAN1_RX1_IRQHandler
+                0x08005c4c                UART5_IRQHandler
+                0x08005c4c                TIM4_IRQHandler
+                0x08005c4c                I2C1_EV_IRQHandler
+                0x08005c4c                DMA1_Stream6_IRQHandler
+                0x08005c4c                UART4_IRQHandler
+                0x08005c4c                TIM3_IRQHandler
+                0x08005c4c                RCC_IRQHandler
+                0x08005c4c                TIM8_BRK_TIM12_IRQHandler
+                0x08005c4c                Default_Handler
+                0x08005c4c                EXTI15_10_IRQHandler
+                0x08005c4c                ADC_IRQHandler
+                0x08005c4c                TIM7_IRQHandler
+                0x08005c4c                CAN2_TX_IRQHandler
+                0x08005c4c                TIM5_IRQHandler
+                0x08005c4c                DMA2_Stream7_IRQHandler
+                0x08005c4c                I2C3_EV_IRQHandler
+                0x08005c4c                EXTI9_5_IRQHandler
+                0x08005c4c                RTC_WKUP_IRQHandler
+                0x08005c4c                ETH_WKUP_IRQHandler
+                0x08005c4c                SPI2_IRQHandler
+                0x08005c4c                OTG_HS_EP1_IN_IRQHandler
+                0x08005c4c                CAN1_TX_IRQHandler
+                0x08005c4c                FSMC_IRQHandler
+                0x08005c4c                ETH_IRQHandler
+                0x08005c4c                OTG_HS_EP1_OUT_IRQHandler
+                0x08005c4c                WWDG_IRQHandler
+                0x08005c4c                TIM2_IRQHandler
+                0x08005c4c                OTG_FS_WKUP_IRQHandler
+                0x08005c4c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08005c4c                OTG_HS_IRQHandler
+                0x08005c4c                EXTI1_IRQHandler
+                0x08005c4c                I2C2_ER_IRQHandler
+                0x08005c4c                DMA2_Stream1_IRQHandler
+                0x08005c4c                CAN1_SCE_IRQHandler
+                0x08005c4c                FLASH_IRQHandler
+                0x08005c4c                DMA2_Stream4_IRQHandler
+                0x08005c4c                USART1_IRQHandler
+                0x08005c4c                OTG_FS_IRQHandler
+                0x08005c4c                SPI3_IRQHandler
+                0x08005c4c                DMA1_Stream4_IRQHandler
+                0x08005c4c                I2C1_ER_IRQHandler
+                0x08005c4c                DMA2_Stream6_IRQHandler
+                0x08005c4c                DMA1_Stream3_IRQHandler
+ *fill*         0x08005c4e        0x2 
+ .text.GPS_New_Sentence
+                0x08005c50       0x70 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x08005c50                GPS_New_Sentence
+ .text.GPS_Parse_Byte
+                0x08005cc0       0x6c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x08005cc0                GPS_Parse_Byte
+ *fill*         0x08005d2c        0x4 
+ .text._GPS_Parse_GGA
+                0x08005d30      0xc6c CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x08005d30                _GPS_Parse_GGA
+ .text._GPS_Parse_RMC
+                0x0800699c      0x140 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x0800699c                _GPS_Parse_RMC
+ .text.GPS_Parse_Sentence
+                0x08006adc       0xa8 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x08006adc                GPS_Parse_Sentence
+ *fill*         0x08006b84        0x4 
+ .text.pow      0x08006b88       0xf0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+                0x08006b88                pow
+ .text.finite   0x08006c78       0x18 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+                0x08006c78                finite
+ .text.__ieee754_pow
+                0x08006c90      0xc7c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+                0x08006c90                __ieee754_pow
+ .text.fabs     0x0800790c       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+                0x0800790c                fabs
+ *fill*         0x0800791c        0x4 
+ .text.scalbn   0x08007920      0x114 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+                0x08007920                scalbn
+ .text.with_errno
+                0x08007a34       0x24 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .text.xflow    0x08007a58       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ *fill*         0x08007a8c        0x4 
+ .text.__math_uflow
+                0x08007a90       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+                0x08007a90                __math_uflow
+ .text.__math_oflow
+                0x08007aa0       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+                0x08007aa0                __math_oflow
+ .text.__ieee754_sqrt
+                0x08007ab0      0x1f0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+                0x08007ab0                __ieee754_sqrt
+ .text.memset   0x08007ca0       0x10 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x08007ca0                memset
+ .text.__errno  0x08007cb0        0xc /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+                0x08007cb0                __errno
  .text.__libc_init_array
-                0x080052bc       0x48 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
-                0x080052bc                __libc_init_array
+                0x08007cbc       0x48 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x08007cbc                __libc_init_array
  *(.glue_7)
- .glue_7        0x08005304        0x0 linker stubs
+ .glue_7        0x08007d04        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08005304        0x0 linker stubs
+ .glue_7t       0x08007d04        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08005304        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08007d04        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08005304        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08005304                _init
- .init          0x08005308        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08007d04        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08007d04                _init
+ .init          0x08007d08        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08005310        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08005310                _fini
- .fini          0x08005314        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0800531c                        . = ALIGN (0x4)
-                0x0800531c                        _etext = .
+ .fini          0x08007d10        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08007d10                _fini
+ .fini          0x08007d14        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08007d1c                        . = ALIGN (0x4)
+                0x08007d1c                        _etext = .
 
-.vfp11_veneer   0x0800531c        0x0
- .vfp11_veneer  0x0800531c        0x0 linker stubs
+.vfp11_veneer   0x08007d1c        0x0
+ .vfp11_veneer  0x08007d1c        0x0 linker stubs
 
-.v4_bx          0x0800531c        0x0
- .v4_bx         0x0800531c        0x0 linker stubs
+.v4_bx          0x08007d1c        0x0
+ .v4_bx         0x08007d1c        0x0 linker stubs
 
-.iplt           0x0800531c        0x0
- .iplt          0x0800531c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08007d1c        0x0
+ .iplt          0x08007d1c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0800531c       0x20
-                0x0800531c                        . = ALIGN (0x4)
+.rodata         0x08007d20       0x30
+                0x08007d20                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x0800531c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800531c                AHBPrescTable
+                0x08007d20       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08007d20                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800532c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800532c                APBPrescTable
+                0x08007d30        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x08007d30                APBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x08005334        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0800533c                        . = ALIGN (0x4)
+                0x08007d38        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .rodata.tiny   0x08007d40        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .rodata.one    0x08007d48        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+                0x08007d50                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800533c        0x0
-                0x0800533c                        . = ALIGN (0x4)
+.ARM.extab      0x08007d50        0x0
+                0x08007d50                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800533c                        . = ALIGN (0x4)
+                0x08007d50                        . = ALIGN (0x4)
 
-.ARM            0x0800533c        0x8
-                0x0800533c                        . = ALIGN (0x4)
-                0x0800533c                        __exidx_start = .
+.ARM            0x08007d50        0x8
+                0x08007d50                        . = ALIGN (0x4)
+                0x08007d50                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800533c        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08005344                        __exidx_end = .
-                0x08005344                        . = ALIGN (0x4)
+ .ARM.exidx     0x08007d50        0x8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08007d58                        __exidx_end = .
+                0x08007d58                        . = ALIGN (0x4)
 
-.preinit_array  0x08005344        0x0
-                0x08005344                        . = ALIGN (0x4)
-                0x08005344                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08007d58        0x0
+                0x08007d58                        . = ALIGN (0x4)
+                0x08007d58                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08005344                        PROVIDE (__preinit_array_end = .)
-                0x08005344                        . = ALIGN (0x4)
+                0x08007d58                        PROVIDE (__preinit_array_end = .)
+                0x08007d58                        . = ALIGN (0x4)
 
-.init_array     0x08005344        0x4
-                0x08005344                        . = ALIGN (0x4)
-                0x08005344                        PROVIDE (__init_array_start = .)
+.init_array     0x08007d58        0x4
+                0x08007d58                        . = ALIGN (0x4)
+                0x08007d58                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08005344        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08005348                        PROVIDE (__init_array_end = .)
-                0x08005348                        . = ALIGN (0x4)
+ .init_array    0x08007d58        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08007d5c                        PROVIDE (__init_array_end = .)
+                0x08007d5c                        . = ALIGN (0x4)
 
-.fini_array     0x08005348        0x4
-                0x08005348                        . = ALIGN (0x4)
+.fini_array     0x08007d5c        0x4
+                0x08007d5c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08005348        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08007d5c        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800534c                        . = ALIGN (0x4)
-                0x0800534c                        _siccmram = LOADADDR (.ccmram)
+                0x08007d60                        . = ALIGN (0x4)
+                0x08007d60                        _siccmram = LOADADDR (.ccmram)
 
-.rel.dyn        0x0800534c        0x0
- .rel.iplt      0x0800534c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08007d60        0x0
+ .rel.iplt      0x08007d60        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x0800534c
+.ccmram         0x10000000        0x0 load address 0x08007d60
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
  *(.ccmram*)
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _eccmram = .
-                0x0800534c                        _sidata = LOADADDR (.data)
+                0x08007d60                        _sidata = LOADADDR (.data)
 
-.data           0x20000000        0xc load address 0x0800534c
+.data           0x20000000       0x5c load address 0x08007d60
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5720,18 +5965,24 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
  .data.uwTickFreq
                 0x20000008        0x1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                 0x20000008                uwTickFreq
+ *fill*         0x20000009        0x3 
+ .data._impure_ptr
+                0x2000000c        0x4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x2000000c                _impure_ptr
+ .data._impure_data
+                0x20000010       0x4c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+                0x20000010                _impure_data
  *(.RamFunc)
  *(.RamFunc*)
-                0x2000000c                        . = ALIGN (0x4)
- *fill*         0x20000009        0x3 
+                0x2000005c                        . = ALIGN (0x4)
 
-.igot.plt       0x2000000c        0x0 load address 0x08005358
- .igot.plt      0x2000000c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.igot.plt       0x2000005c        0x0 load address 0x08007dbc
+ .igot.plt      0x2000005c        0x0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x2000000c        0x0 load address 0x08005358
+.tdata          0x2000005c        0x0 load address 0x08007dbc
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x2000000c                        . = ALIGN (0x4)
-                0x2000000c                        _edata = .
+                0x2000005c                        . = ALIGN (0x4)
+                0x2000005c                        _edata = .
                 [!provide]                        PROVIDE (__data_end = .)
                 [!provide]                        PROVIDE (__tdata_end = .)
                 [!provide]                        PROVIDE (__tdata_start = ADDR (.tdata))
@@ -5745,11 +5996,11 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x2000000c        0x0 load address 0x08005358
-                0x2000000c                        _sbss = .
-                0x2000000c                        __bss_start__ = _sbss
+.tbss           0x2000005c        0x0 load address 0x08007dbc
+                0x2000005c                        _sbss = .
+                0x2000005c                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
-                0x2000000c                        . = ALIGN (0x4)
+                0x2000005c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__tbss_end = .)
                 [!provide]                        PROVIDE (__tbss_start = ADDR (.tbss))
                 [!provide]                        PROVIDE (__tbss_size = (__tbss_end - __tbss_start))
@@ -5762,65 +6013,83 @@ LOAD /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externa
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x2000000c      0x4cc load address 0x08005358
+.bss            0x2000005c      0xa3c load address 0x08007dbc
  *(.bss)
- .bss           0x2000000c       0x1c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x2000005c       0x1c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
- .bss.uwTick    0x20000028        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x20000028                uwTick
- .bss.hadc1     0x2000002c       0x48 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
-                0x2000002c                hadc1
- .bss.hi2c1     0x20000074       0x54 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
-                0x20000074                hi2c1
- .bss.hspi1     0x200000c8       0x58 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x200000c8                hspi1
- .bss.hspi3     0x20000120       0x58 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x20000120                hspi3
+ .bss.uwTick    0x20000078        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x20000078                uwTick
+ .bss.hadc1     0x2000007c       0x48 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+                0x2000007c                hadc1
+ .bss.hi2c1     0x200000c4       0x54 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+                0x200000c4                hi2c1
+ .bss.hspi1     0x20000118       0x58 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000118                hspi1
+ .bss.hspi3     0x20000170       0x58 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000170                hspi3
  .bss.hdma_spi1_rx
-                0x20000178       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x20000178                hdma_spi1_rx
+                0x200001c8       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x200001c8                hdma_spi1_rx
  .bss.hdma_spi1_tx
-                0x200001d8       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x200001d8                hdma_spi1_tx
+                0x20000228       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000228                hdma_spi1_tx
  .bss.hdma_spi3_rx
-                0x20000238       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x20000238                hdma_spi3_rx
+                0x20000288       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x20000288                hdma_spi3_rx
  .bss.hdma_spi3_tx
-                0x20000298       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
-                0x20000298                hdma_spi3_tx
- .bss.htim1     0x200002f8       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x200002f8                htim1
- .bss.htim2     0x20000340       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
-                0x20000340                htim2
- .bss.huart2    0x20000388       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x20000388                huart2
- .bss.huart3    0x200003d0       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x200003d0                huart3
+                0x200002e8       0x60 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+                0x200002e8                hdma_spi3_tx
+ .bss.htim1     0x20000348       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x20000348                htim1
+ .bss.htim2     0x20000390       0x48 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+                0x20000390                htim2
+ .bss.huart2    0x200003d8       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x200003d8                huart2
+ .bss.huart3    0x20000420       0x48 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x20000420                huart3
  .bss.hdma_usart2_rx
-                0x20000418       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x20000418                hdma_usart2_rx
+                0x20000468       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x20000468                hdma_usart2_rx
  .bss.hdma_usart3_rx
-                0x20000478       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
-                0x20000478                hdma_usart3_rx
+                0x200004c8       0x60 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+                0x200004c8                hdma_usart3_rx
+ .bss.GPS_Read_Pos
+                0x20000528        0x2 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .bss.GPS_Write_Pos
+                0x2000052a        0x2 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .bss.GPS_Sentence_Pos
+                0x2000052c        0x2 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .bss.GPS_In_Sentence
+                0x2000052e        0x2 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .bss.GPS_Data  0x20000530       0x30 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x20000530                GPS_Data
+ .bss.GPS_Buffer_RX
+                0x20000560      0x200 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x20000560                GPS_Buffer_RX
+ .bss.GPS_Sentence
+                0x20000760      0x200 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+                0x20000760                GPS_Sentence
+ .bss.__sf      0x20000960      0x138 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+                0x20000960                __sf
  *(COMMON)
-                0x200004d8                        . = ALIGN (0x4)
-                0x200004d8                        _ebss = .
-                0x200004d8                        __bss_end__ = _ebss
+                0x20000a98                        . = ALIGN (0x4)
+                0x20000a98                        _ebss = .
+                0x20000a98                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x200004d8     0x1200 load address 0x08005358
-                0x200004d8                        . = ALIGN (0x8)
+                0x20000a98     0x1200 load address 0x08007dbc
+                0x20000a98                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x200004d8                        PROVIDE (_end = .)
-                0x200006d8                        . = (. + _Min_Heap_Size)
- *fill*         0x200004d8      0x200 
-                0x200016d8                        . = (. + _Min_Stack_Size)
- *fill*         0x200006d8     0x1000 
-                0x200016d8                        . = ALIGN (0x8)
+                0x20000a98                        PROVIDE (_end = .)
+                0x20000c98                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000a98      0x200 
+                0x20001c98                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000c98     0x1000 
+                0x20001c98                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -5882,17 +6151,49 @@ LOAD linker stubs
  .ARM.attributes
                 0x000004ce       0x21 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
  .ARM.attributes
-                0x000004ef       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x000004ef       0x34 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
  .ARM.attributes
-                0x00000511       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x00000523       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
  .ARM.attributes
-                0x00000545       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x00000557       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
  .ARM.attributes
-                0x00000567       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x0000058b       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
  .ARM.attributes
-                0x0000059b       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x000005bf       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
  .ARM.attributes
-                0x000005cf       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000005f3       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+ .ARM.attributes
+                0x00000627       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .ARM.attributes
+                0x0000065b       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .ARM.attributes
+                0x0000068f       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000006b1       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000006d3       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000006f5       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .ARM.attributes
+                0x00000717       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000739       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000075b       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x0000078f       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000007b1       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x000007e5       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000819       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x0000084d       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .ARM.attributes
+                0x00000881       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x000008b5       0x22 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -5918,10 +6219,14 @@ LOAD linker stubs
  .comment       0x00000043       0x44 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
  .comment       0x00000043       0x44 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
  .comment       0x00000043       0x44 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .comment       0x00000043       0x44 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
  .comment       0x00000043       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_info     0x00000000    0x1431b
+.debug_info     0x00000000    0x16b5d
  .debug_info    0x00000000      0x512 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x00000512      0xce3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_info    0x000011f5      0x8c3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5934,21 +6239,25 @@ LOAD linker stubs
  .debug_info    0x00007a6c     0x299d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_info    0x0000a409     0x14db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_info    0x0000b8e4     0x2f4f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000e833      0xc9d CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_info    0x0000f4d0      0x67e CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000fb4e      0x995 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_info    0x000104e3      0x4c6 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_info    0x000109a9      0x968 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_info    0x00011311      0xa10 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_info    0x00011d21      0xe06 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_info    0x00012b27      0xc30 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_info    0x00013757      0x740 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00013e97      0x269 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00014100       0x30 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_info    0x00014130       0xe0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_info    0x00014210      0x10b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_info    0x0000e833      0xca4 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_info    0x0000f4d7      0x67e CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000fb55      0x995 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_info    0x000104ea      0x4c6 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_info    0x000109b0      0x968 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_info    0x00011318      0xa10 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_info    0x00011d28      0xe06 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_info    0x00012b2e      0xc30 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_info    0x0001375e      0x76e CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00013ecc      0x269 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00014135       0x30 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_info    0x00014165      0xa45 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_info    0x00014baa      0xfb8 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x00015b62       0xe0 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_info    0x00015c42      0x715 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_info    0x00016357      0x6fb /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_info    0x00016a52      0x10b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_abbrev   0x00000000     0x3003
+.debug_abbrev   0x00000000     0x393f
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x252 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_abbrev  0x0000036c      0x2b7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -5969,13 +6278,17 @@ LOAD linker stubs
  .debug_abbrev  0x00002584      0x216 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_abbrev  0x0000279a      0x22c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
  .debug_abbrev  0x000029c6      0x234 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00002bfa      0x1a6 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00002da0       0xd8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x00002e78       0x24 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_abbrev  0x00002e9c       0x9e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x00002f3a       0xc9 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x00002bfa      0x1dc CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00002dd6       0xd8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x00002eae       0x24 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_abbrev  0x00002ed2      0x23b CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_abbrev  0x0000310d      0x424 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x00003531       0x9e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x000035cf      0x149 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x00003718      0x15e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x00003876       0xc9 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_aranges  0x00000000     0x1338
+.debug_aranges  0x00000000     0x1430
  .debug_aranges
                 0x00000000       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
@@ -6023,12 +6336,20 @@ LOAD linker stubs
  .debug_aranges
                 0x000012d0       0x28 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
  .debug_aranges
-                0x000012f8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x000012f8       0x48 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
  .debug_aranges
-                0x00001318       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00001340       0x78 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_aranges
+                0x000013b8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_aranges
+                0x000013d8       0x18 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_aranges
+                0x000013f0       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_aranges
+                0x00001410       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_rnglists
-                0x00000000      0xf0e
+                0x00000000      0xfd2
  .debug_rnglists
                 0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
@@ -6076,11 +6397,17 @@ LOAD linker stubs
  .debug_rnglists
                 0x00000ecf       0x19 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
  .debug_rnglists
-                0x00000ee8       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x00000ee8       0x34 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
  .debug_rnglists
-                0x00000efb       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x00000f1c       0x7d /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_rnglists
+                0x00000f99       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_rnglists
+                0x00000fac       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_rnglists
+                0x00000fbf       0x13 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_macro    0x00000000    0x234f6
+.debug_macro    0x00000000    0x23a52
  .debug_macro   0x00000000      0x21a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x0000021a      0xad8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x00000cf2       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -6150,10 +6477,15 @@ LOAD linker stubs
  .debug_macro   0x00022a01      0x233 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_macro   0x00022c34      0x233 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
  .debug_macro   0x00022e67      0x233 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_macro   0x0002309a      0x233 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x000232cd      0x229 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x0002309a      0x23c CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x000232d6       0x16 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x000232ec      0x229 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x00023515      0x31e CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00023833       0x10 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x00023843       0x74 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_macro   0x000238b7      0x19b CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
 
-.debug_line     0x00000000    0x19940
+.debug_line     0x00000000    0x1b311
  .debug_line    0x00000000      0x8ec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x000008ec     0x137f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_line    0x00001c6b      0xf75 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -6166,49 +6498,57 @@ LOAD linker stubs
  .debug_line    0x0000bd2c     0x38e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_line    0x0000f60f     0x1ac8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_line    0x000110d7     0x26b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00013787      0xab1 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_line    0x00014238      0x8ad CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_line    0x00014ae5      0x8fe CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_line    0x000153e3      0x87d CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_line    0x00015c60      0x8e4 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_line    0x00016544      0xa14 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_line    0x00016f58      0xa4f CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_line    0x000179a7      0x9ae CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_line    0x00018355      0xa15 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00018d6a      0x876 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x000195e0       0x7a CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_line    0x0001965a      0x17e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_line    0x000197d8      0x168 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_line    0x00013787      0xab2 CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_line    0x00014239      0x8ad CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_line    0x00014ae6      0x8fe CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_line    0x000153e4      0x87d CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_line    0x00015c61      0x8e4 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_line    0x00016545      0xa14 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_line    0x00016f59      0xa4f CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_line    0x000179a8      0x9ae CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_line    0x00018356      0xa63 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00018db9      0x876 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0001962f       0x7a CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_line    0x000196a9     0x10c9 CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_line    0x0001a772      0x5d1 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_line    0x0001ad43      0x17e /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_line    0x0001aec1      0x163 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_line    0x0001b024      0x185 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_line    0x0001b1a9      0x168 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_str      0x00000000    0xd9478
- .debug_str     0x00000000    0xd9478 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0xdd079
+ .debug_str     0x00000000    0xdd079 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0xd3368 (size before relaxing)
- .debug_str     0x000d9478    0xd3955 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_str     0x000d9478    0xd379c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x000d9478    0xd34e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x000d9478    0xd3782 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x000d9478    0xd3c68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x000d9478    0xd3eec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x000d9478    0xd4386 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
- .debug_str     0x000d9478    0xd3c26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_str     0x000d9478    0xd46f2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x000d9478    0xd3efe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x000d9478    0xd3d7d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x000d9478    0xd440b CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
- .debug_str     0x000d9478    0xd3b14 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
- .debug_str     0x000d9478    0xd3a66 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
- .debug_str     0x000d9478    0xd3a46 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
- .debug_str     0x000d9478    0xd3b23 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
- .debug_str     0x000d9478    0xd3ae3 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
- .debug_str     0x000d9478    0xd3e99 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
- .debug_str     0x000d9478    0xd403a CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_str     0x000d9478    0xd3aa8 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x000d9478    0xd3529 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x000d9478       0x84 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
- .debug_str     0x000d9478      0x211 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_str     0x000d9478      0x272 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_str     0x000dd079    0xd3955 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_str     0x000dd079    0xd379c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x000dd079    0xd34e3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x000dd079    0xd3782 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x000dd079    0xd3c68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x000dd079    0xd3eec cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000dd079    0xd4386 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+ .debug_str     0x000dd079    0xd3c26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x000dd079    0xd46f2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x000dd079    0xd3efe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x000dd079    0xd3d7d cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000dd079    0xd441a CMakeFiles/drone-fc.dir/Core/Src/main.c.obj
+ .debug_str     0x000dd079    0xd3b14 CMakeFiles/drone-fc.dir/Core/Src/gpio.c.obj
+ .debug_str     0x000dd079    0xd3a66 CMakeFiles/drone-fc.dir/Core/Src/adc.c.obj
+ .debug_str     0x000dd079    0xd3a46 CMakeFiles/drone-fc.dir/Core/Src/dma.c.obj
+ .debug_str     0x000dd079    0xd3b23 CMakeFiles/drone-fc.dir/Core/Src/i2c.c.obj
+ .debug_str     0x000dd079    0xd3ae3 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
+ .debug_str     0x000dd079    0xd3e99 CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
+ .debug_str     0x000dd079    0xd403a CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
+ .debug_str     0x000dd079    0xd3b01 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000dd079    0xd3529 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x000dd079       0x84 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
+ .debug_str     0x000dd079    0xd6f1d CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_str     0x000dd079      0x7b4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_str     0x000dd079      0x211 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_str     0x000dd079      0x531 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-impure.o)
+ .debug_str     0x000dd079      0x52b /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_str     0x000dd079      0x272 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_frame    0x00000000     0x4c04
+.debug_frame    0x00000000     0x5324
  .debug_frame   0x00000000       0x50 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_frame   0x00000050      0x3bc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
  .debug_frame   0x0000040c      0x1d8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -6229,12 +6569,27 @@ LOAD linker stubs
  .debug_frame   0x000046e4       0x94 CMakeFiles/drone-fc.dir/Core/Src/spi.c.obj
  .debug_frame   0x00004778      0x10c CMakeFiles/drone-fc.dir/Core/Src/tim.c.obj
  .debug_frame   0x00004884       0x90 CMakeFiles/drone-fc.dir/Core/Src/usart.c.obj
- .debug_frame   0x00004914      0x210 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00004b24       0x34 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00004b58       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00004b84       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00004bb8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00004bd8       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00004914      0x218 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00004b2c       0x34 CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00004b60       0xfc CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.obj
+ .debug_frame   0x00004c5c       0x44 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o)
+ .debug_frame   0x00004ca0       0x28 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_finite.o)
+ .debug_frame   0x00004cc8       0x80 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+ .debug_frame   0x00004d48       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_fabs.o)
+ .debug_frame   0x00004d68       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
+ .debug_frame   0x00004d94      0x144 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
+ .debug_frame   0x00004ed8       0x38 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
+ .debug_frame   0x00004f10       0xac /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00004fbc       0x50 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000500c       0xc4 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x000050d0       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x000050f0       0x24 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00005114       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00005140       0x34 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00005174      0x144 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x000052b8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x000052d8       0x20 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-errno.o)
+ .debug_frame   0x000052f8       0x2c /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000       0x68
@@ -6242,8 +6597,10 @@ LOAD linker stubs
                 0x00000000       0x68 CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.obj
 
 .debug_loclists
-                0x00000000       0xa1
+                0x00000000      0x357
  .debug_loclists
-                0x00000000       0x4d /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+                0x00000000      0x2b6 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-findfp.o)
  .debug_loclists
-                0x0000004d       0x54 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)
+                0x000002b6       0x4d /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_loclists
+                0x00000303       0x54 /home/nestor/st/stm32cubeide_2.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(libc_a-init.o)

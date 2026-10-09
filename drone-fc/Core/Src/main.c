@@ -104,6 +104,8 @@ void ALT_TxRxCpltCallback(){
 			ALT_Raw.T = (ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_H-0x02] << 16)
 								+ (ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_M-0x02] << 8)
 								+ ALT_SPI_ALTPacket_RX[ALT_OUT_TEMP_L-0x02];
+
+			ALT_Compensate();
 			break;
 	}
 }
