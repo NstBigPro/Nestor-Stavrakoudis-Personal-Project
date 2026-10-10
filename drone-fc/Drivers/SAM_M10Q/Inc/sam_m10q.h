@@ -34,7 +34,7 @@ typedef struct {
 
 	uint8_t		day;														// Day
 	uint8_t		month;													// Month
-	uint32_t	year;														// Year
+	uint16_t	year;														// Year
 
 	float latitude;														// Latitude
 	Cardinal_Direction latitude_direction;		// North/south

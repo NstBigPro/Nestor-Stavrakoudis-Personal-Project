@@ -351,11 +351,10 @@ void _GPS_Parse_RMC(){
 	uint8_t buffer[32];
 	uint8_t buffer_pos = 0;
 
-	while(GPS_Sentence[sentence_pos++] != ','){}
-	sentence_pos++; // Skip the first section as it is the $GNGGA identifier
+	while(GPS_Sentence[sentence_pos++] != ','){} // Skip the first section as it is the $GNGGA identifier
 
 	while(GPS_Sentence[sentence_pos] != ','){
-		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Obtain UTC time (hhmmss.ss)
+		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 1:Obtain UTC time (hhmmss.ss)
 	}
 	buffer_pos=0;
 	sentence_pos++;
@@ -365,7 +364,7 @@ void _GPS_Parse_RMC(){
 	GPS_Data.centisecond	= (buffer[7]-'0')*10+(buffer[8]-'0');
 
 	while(GPS_Sentence[sentence_pos] != ','){
-		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Obtain packet validity
+		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 2:Obtain packet validity
 	}
 	buffer_pos=0;
 	sentence_pos++;
@@ -374,6 +373,226 @@ void _GPS_Parse_RMC(){
 			break;
 		case 'V':
 			return;
+
+	}
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 3:Obtain latitude (ddmm.mmmm)
+  }
+  uint8_t copy = 0;
+  buffer[buffer_pos] = '\0';
+  if(buffer_pos != 0){
+    copy = 1;
+  } else {
+    copy = 0;
+  }
+  buffer_pos=0;
+  sentence_pos++;
+  uint8_t degrees = (buffer[0]-'0')*10+(buffer[1]-'0');
+  uint8_t minutes_int = (buffer[2]-'0')*10+(buffer[3]-'0');
+  uint32_t minutes_dec = 0;
+  uint8_t i;
+  for(i = 5; buffer[i]!='\0'; i++){
+    minutes_dec += buffer[i] - '0';
+    minutes_dec *= 10;
+  }
+  minutes_dec /= 10;
+
+  if(copy) {
+    GPS_Data.latitude = degrees + ((float) minutes_int + (float) minutes_dec / (float) pow(10,(i-5))) / 60.0f;
+  } else {
+    GPS_Data.latitude = 0.0f;
+  }
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 4:Obtain latitude cardinal direction
+  }
+  buffer_pos=0;
+  sentence_pos++;
+  switch(buffer[0]){
+    case 'N':
+      GPS_Data.latitude_direction = NORTH;
+      break;
+    case 'S':
+      GPS_Data.latitude_direction = SOUTH;
+      break;
+  }
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 5:Obtain longitude (ddmm.mmmm)
+  }
+  buffer[buffer_pos] = '\0';
+  if(buffer_pos != 0){
+    copy = 1;
+  } else {
+    copy = 0;
+  }
+  buffer_pos=0;
+  sentence_pos++;
+  degrees = (buffer[0]-'0')*100+(buffer[1]-'0')*10+(buffer[2]-'0');
+  minutes_int = (buffer[3]-'0')*10+(buffer[4]-'0');
+  minutes_dec = 0;
+  for(i = 6; buffer[i]!='\0'; i++){
+    minutes_dec += buffer[i] - '0';
+    minutes_dec *= 10;
+  }
+  minutes_dec /= 10;
+
+  if(copy) {
+    GPS_Data.longitude = degrees + ((float) minutes_int + (float) minutes_dec / (float) pow(10,(i-6))) / 60.0f;
+  } else {
+    GPS_Data.longitude = 0.0f;
+  }
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 6:Obtain longitude cardinal direction
+  }
+  buffer_pos=0;
+  sentence_pos++;
+  switch(buffer[0]){
+    case 'E':
+      GPS_Data.longitude_direction = EAST;
+      break;
+    case 'W':
+      GPS_Data.longitude_direction = WEST;
+      break;
+  }
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 7:Speed
+  }
+  buffer[buffer_pos] = '\0';
+  buffer_pos=0;
+  sentence_pos++;
+  int8_t encountered_dot = -1;
+  uint16_t decimal = 0;
+  uint16_t integer = 0;
+  int8_t sign = (buffer[0]=='-')?-1:1;
+  for(i=((sign==-1)?1:0); buffer[i]!='\0'; i++){
+    if(buffer[i] == '.'){
+      encountered_dot = i;
+      integer /= 10;
+    } else {
+      if(encountered_dot == -1){
+        integer += buffer[i] - '0';
+        integer *= 10;
+      }
+      else {
+        decimal += buffer[i] - '0';
+        decimal *= 10;
+      }
+    }
+  }
+  decimal /= 10;
+  if(encountered_dot == -1){
+    GPS_Data.speed = (float) integer / 10.0f;
+  }
+  else{
+    GPS_Data.speed = (float) integer + (float) decimal / (float) pow(10,i-encountered_dot-1);
+  }
+  GPS_Data.speed *= 1.852;	// convert knots to km/h as it is the standard for drones
+  GPS_Data.speed *= sign;
+
+  while(GPS_Sentence[sentence_pos] != ','){
+    buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 8:Heading
+  }
+  buffer[buffer_pos] = '\0';
+  buffer_pos=0;
+  sentence_pos++;
+  encountered_dot = -1;
+  decimal = 0;
+  integer = 0;
+  sign = (buffer[0]=='-')?-1:1;
+  for(i=((sign==-1)?1:0); buffer[i]!='\0'; i++){
+    if(buffer[i] == '.'){
+      encountered_dot = i;
+      integer /= 10;
+    } else {
+      if(encountered_dot == -1){
+        integer += buffer[i] - '0';
+        integer *= 10;
+      }
+      else {
+        decimal += buffer[i] - '0';
+        decimal *= 10;
+      }
+    }
+  }
+  decimal /= 10;
+  if(encountered_dot == -1){
+    GPS_Data.heading = (float) integer / 10.0f;
+  }
+  else{
+    GPS_Data.heading = (float) integer + (float) decimal / (float) pow(10,i-encountered_dot-1);
+  }
+  GPS_Data.heading *= sign;
+
+	while(GPS_Sentence[sentence_pos] != ','){
+		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 9:Obtain UTC date (ddmmyy)
+	}
+	buffer_pos=0;
+	sentence_pos++;
+	GPS_Data.day 					= (buffer[0]-'0')*10+(buffer[1]-'0');
+	GPS_Data.month				= (buffer[2]-'0')*10+(buffer[3]-'0');
+	GPS_Data.year 				= (buffer[4]-'0')*10+(buffer[5]-'0') + 2000;
+
+  while(GPS_Sentence[sentence_pos] != ','){}
+  sentence_pos++; // Skip field 10 as SAM-M10Q does not calculate magnetic variation
+
+  while(GPS_Sentence[sentence_pos] != ','){}
+  sentence_pos++; // Skip field 11 as SAM-M10Q does not calculate magnetic variation
+
+  while(GPS_Sentence[sentence_pos] != ','){
+  	switch(GPS_Sentence[sentence_pos]){	// Field 12: Fix quality
+  		case 'A':
+  			GPS_Data.fix_quality = 1;
+  			break;
+  		case 'N':
+  			GPS_Data.fix_quality = 0;
+  			break;
+  		case 'D':
+  			GPS_Data.fix_quality = 2;
+  			break;
+  		case 'E':
+  			GPS_Data.fix_quality = 6;
+  			break;
+  		default:
+  			break;
+  	}
+  	sentence_pos++;
+  }
+  sentence_pos++;
+
+  while(GPS_Sentence[sentence_pos++] != '*'){} // Skip field 13 as it won't be used
+
+
+  uint8_t checksum_end = sentence_pos - 1; // Save the position of the '*' character as it is a checksum delimeter
+
+
+	while(GPS_Sentence[sentence_pos] != '\r'){
+		buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 14:Checksum
+	}
+	buffer_pos=0;
+	sentence_pos=1; // Prepare for checksum from position 1 (exclude the $)
+	uint8_t checksum_provided_H = (buffer[0] -'0');
+	if(checksum_provided_H > 9){
+		checksum_provided_H -= 7;
+	}
+	uint8_t checksum_provided_L = (buffer[1] -'0');
+	if(checksum_provided_L > 9){
+		checksum_provided_L -= 7;
+	}
+
+	uint8_t checksum_provided = checksum_provided_H * 16 + checksum_provided_L;
+	uint8_t checksum_calculated = 0x00;
+	for(sentence_pos=1;sentence_pos<checksum_end;sentence_pos++){
+		checksum_calculated ^= GPS_Sentence[sentence_pos];
+	}
+
+	if(checksum_calculated == checksum_provided){
+	 GPS_Data.checksum_validity = CHECKSUM_VALID;
+	} else {
+	 GPS_Data.checksum_validity = CHECKSUM_INVALID;
 	}
 }
 
