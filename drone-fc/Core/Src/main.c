@@ -27,11 +27,17 @@
 /* USER CODE BEGIN Includes */
 #include "lsm6dsv32x.h" // IMU header
 #include "bmp388.h"			// Barometer header
+#include "sam_m10q.h"		// GPS header
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef enum {
+	AUTONOMOUS,
+	MANUAL_ONLY,
+	FATAL,
+	UNDETERMINED
+} Sensor_Status;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -42,12 +48,26 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
+#define LED1_R_On()	(HAL_GPIO_WritePin(LED1_R_GPIO_Port,LED1_R_Pin,GPIO_PIN_RESET))
+#define LED1_G_On()	(HAL_GPIO_WritePin(LED1_G_GPIO_Port,LED1_G_Pin,GPIO_PIN_RESET))
+#define LED2_R_On()	(HAL_GPIO_WritePin(LED2_R_GPIO_Port,LED2_R_Pin,GPIO_PIN_RESET))
+#define LED2_G_On()	(HAL_GPIO_WritePin(LED2_G_GPIO_Port,LED2_G_Pin,GPIO_PIN_RESET))
+
+#define LED1_R_Off()	(HAL_GPIO_WritePin(LED1_R_GPIO_Port,LED1_R_Pin,GPIO_PIN_SET))
+#define LED1_G_Off()	(HAL_GPIO_WritePin(LED1_G_GPIO_Port,LED1_G_Pin,GPIO_PIN_SET))
+#define LED2_R_Off()	(HAL_GPIO_WritePin(LED2_R_GPIO_Port,LED2_R_Pin,GPIO_PIN_SET))
+#define LED2_G_Off()	(HAL_GPIO_WritePin(LED2_G_GPIO_Port,LED2_G_Pin,GPIO_PIN_SET))
+
+#define LED1_R_Toggle()	(HAL_GPIO_TogglePin(LED1_R_GPIO_Port,LED1_R_Pin))
+#define LED1_G_Toggle()	(HAL_GPIO_TogglePin(LED1_G_GPIO_Port,LED1_G_Pin))
+#define LED2_R_Toggle()	(HAL_GPIO_TogglePin(LED2_R_GPIO_Port,LED2_R_Pin))
+#define LED2_G_Toggle()	(HAL_GPIO_TogglePin(LED2_G_GPIO_Port,LED2_G_Pin))
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+Sensor_Status sensor_status = UNDETERMINED;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,6 +80,8 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 void IMU_TxRxCpltCallback();
 void ALT_TxRxCpltCallback();
+
+void LED_Test_Sequence();
 
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi){
 	if (hspi == IMU_INTERFACE){ // These events refer to the IMU SPI DMA.
@@ -109,6 +131,57 @@ void ALT_TxRxCpltCallback(){
 			break;
 	}
 }
+
+
+void LED_Test_Sequence(){
+  HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);  // ON (pull low)
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED1_G_GPIO_Port, LED1_G_Pin);
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED2_G_GPIO_Port, LED2_G_Pin);
+  HAL_Delay(200);
+
+  HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED1_G_GPIO_Port, LED1_G_Pin);// OFF (release high)
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
+  HAL_Delay(200);
+  HAL_GPIO_TogglePin(LED2_G_GPIO_Port, LED2_G_Pin);
+  HAL_Delay(200);
+
+  HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);
+  HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
+
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	/* Used for blinking LEDs based on TIM3 */
+	if(htim->Instance == TIM3){
+		if(sensor_status == FATAL){
+			LED1_G_Off();
+			LED2_G_Off();
+			LED1_R_Toggle();
+			LED2_R_Toggle();
+		} else if(sensor_status == MANUAL_ONLY) {
+			LED1_G_On();
+			LED1_G_Off();
+			LED1_R_Off();
+			LED1_R_Toggle();
+		}
+	}
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t EXTI_Pin){
+	/* External interrupt callback */
+	if(EXTI_Pin == ALT_INT_Pin){
+		ALT_Read();
+	}	else if(EXTI_Pin == IMU_INT1_Pin){
+		IMU_Read();
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -149,13 +222,32 @@ int main(void)
   MX_TIM2_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_Base_Start_IT(&htim3);	// TIM3 has a period of 200ms and is used to blink LEDs for status.
+  // LED testing sequence. Additionally, it gives time for everything to power up.
+  LED_Test_Sequence();
+
+  IMU_Test();		// Test the IMU
+  if(IMU_Status == IMU_FAULTY){
+  	sensor_status = FATAL;
+  }
+
+  ALT_Test();		// Test the barometer
+  if(ALT_Status == ALT_FAULTY){
+  	sensor_status = FATAL;
+  } else if(ALT_Status == ALT_OPERATIONAL && IMU_Status == IMU_OPERATIONAL) {	// IMU and barometer operational; manual PID loop is available
+  	sensor_status = MANUAL_ONLY;
+  	IMU_Init();
+  	ALT_Init();
+  	GPS_Init();
+  }
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+  while (sensor_status != FATAL)
   {
     /* USER CODE END WHILE */
 
