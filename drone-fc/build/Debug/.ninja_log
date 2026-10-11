@@ -84,3 +84,15 @@
 119	197	1791711595719946791	drone-fc.elf	d7ceb96e72c5323c
 1	118	1791711685813656969	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	b094ac154f0196d
 118	196	1791711685930656593	drone-fc.elf	d7ceb96e72c5323c
+2	213	1791714301428242828	CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj	35ab2a8f1d765081
+1	220	1791714301427242831	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	b094ac154f0196d
+1	204	1791714336874128803	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	a079b465d1e5bd67
+2	200	1791714370338021153	CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj	35ab2a8f1d765081
+200	320	1791714370536020516	drone-fc.elf	d7ceb96e72c5323c
+2	159	1791714669579360455	CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj	35ab2a8f1d765081
+2	168	1791714669578058531	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	b094ac154f0196d
+2	177	1791714669579624178	CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.obj	a079b465d1e5bd67
+177	285	1791714669753057968	drone-fc.elf	d7ceb96e72c5323c
+2	165	1791714728374869388	CMakeFiles/drone-fc.dir/Core/Src/main.c.obj	b094ac154f0196d
+2	170	1791714747924806498	CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.obj	35ab2a8f1d765081
+170	293	1791714748092805958	drone-fc.elf	d7ceb96e72c5323c

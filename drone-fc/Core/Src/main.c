@@ -38,6 +38,12 @@ typedef enum {
 	FATAL,
 	UNDETERMINED
 } Sensor_Status;
+
+typedef struct {
+	float roll;
+	float pitch;
+	float yaw;
+} Attitude;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -68,6 +74,7 @@ typedef enum {
 
 /* USER CODE BEGIN PV */
 Sensor_Status sensor_status = UNDETERMINED;
+Attitude attitude;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -107,6 +114,18 @@ void IMU_TxRxCpltCallback(){
 			IMU_Raw.G_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_G-0x21];
 			IMU_Raw.G_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_G-0x21];
 			IMU_Raw.G_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_G-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_G-0x21];
+
+			IMU_Data.A_X = IMU_Raw.A_X * 0.976f - IMU_Bias.A_X;	// Scaling factor comes from "Linear
+			IMU_Data.A_Y = IMU_Raw.A_Y * 0.976f - IMU_Bias.A_Y;	// acceleration sensitivity", p.12 on datasheet
+			IMU_Data.A_Z = IMU_Raw.A_Z * 0.976f - IMU_Bias.A_Z;
+
+			IMU_Data.G_X = IMU_Raw.G_X * 70.0f - IMU_Bias.G_X;	// Scaling factor comes from "Angular
+			IMU_Data.G_Y = IMU_Raw.G_Y * 70.0f - IMU_Bias.G_Y;	// rate sensitivity", p.12 on datasheet
+			IMU_Data.G_Z = IMU_Raw.G_Z * 70.0f - IMU_Bias.G_Z;
+
+			IMU_Angles.G_X += IMU_Data.G_X / 1920.0f;	// Integrate rates
+			IMU_Angles.G_Y += IMU_Data.G_Y / 1920.0f;
+			IMU_Angles.G_Z += IMU_Data.G_Z / 1920.0f;
 			break;
 	}
 }

@@ -115,7 +115,9 @@ typedef struct {
 typedef struct {
 	float P;
 	float T;
+	float A;
 } ALT_Data_Packet_Compensated;
+
 
 typedef struct {
 	uint16_t	PAR_T1;
@@ -170,7 +172,7 @@ extern ALT_Calibration_Coefficient_Scaled ALT_Coefficients_Scaled;	// Scaled tri
 
 
 void ALT_ReadCalibration(void);	// Obtain calibration/trimming data
-void ALT_Compensate(void);			// Apply calibration/trimming coefficients to raw reading (formulas from datasheet appendix 9)
+void ALT_Compensate(void);			// Apply calibration/trimming coefficients to raw reading & calculate altitude(formulas from datasheet appendix 9)
 
 void _ALT_Compensate_T(void);		// Apply calibration/trimming coefficients to raw temperature reading
 void _ALT_Compensate_P(void);		// Apply calibration/trimming coefficients to raw pressure reading

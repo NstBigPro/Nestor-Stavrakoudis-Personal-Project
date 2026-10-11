@@ -19,6 +19,7 @@
 #include "usart.h"
 #include "gpio.h"
 
+#include <math.h>
 /* extern variable initialization */
 volatile ALT_StatusTypeDef ALT_Status = ALT_FAULTY;
 ALT_DMA_Transaction_Type	ALT_Current_DMA_Transaction;
@@ -226,9 +227,10 @@ void _ALT_Compensate_P(){
 }
 
 void ALT_Compensate(){
-	/* Apply calibration/trimming coefficients to raw reading */
+	/* Apply calibration/trimming coefficients to raw reading & calculate altitude */
 
 	_ALT_Compensate_T();
 	_ALT_Compensate_P();
 
+	ALT_Compensated.A = 44330.0f * (1.0f - powf(ALT_Compensated.P / 101325.0f, 0.1903f)); // Apply the international standard barometric formula
 }

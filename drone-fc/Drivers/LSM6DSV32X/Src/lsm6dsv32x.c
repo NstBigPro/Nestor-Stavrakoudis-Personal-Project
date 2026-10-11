@@ -24,6 +24,9 @@ volatile IMU_StatusTypeDef IMU_Status = IMU_FAULTY;
 IMU_DMA_Transaction_Type	IMU_Current_DMA_Transaction;
 uint8_t         IMU_Current_Register_Read;
 IMU_Data_Packet IMU_Raw;
+IMU_Data_Packet_Scaled IMU_Data;
+IMU_Angles_Packet IMU_Angles;
+IMU_Bias_Packet IMU_Bias;
 uint8_t IMU_SPI_SingleBuf_RX[2], IMU_SPI_SingleBuf_TX[2];
 uint8_t IMU_SPI_IMUPacket_RX[13], IMU_SPI_IMUPacket_TX[13];
 

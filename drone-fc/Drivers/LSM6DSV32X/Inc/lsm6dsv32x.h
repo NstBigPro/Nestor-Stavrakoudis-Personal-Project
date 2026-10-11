@@ -108,6 +108,30 @@ typedef struct {
 	int16_t G_Z;
 } IMU_Data_Packet;
 
+typedef struct {
+	float A_X;
+	float A_Y;
+	float A_Z;
+	float G_X;
+	float G_Y;
+	float G_Z;
+} IMU_Data_Packet_Scaled;
+
+typedef struct {
+	float G_X;
+	float G_Y;
+	float G_Z;
+} IMU_Angles_Packet;
+
+typedef struct {
+	float A_X;
+	float A_Y;
+	float A_Z;
+	float G_X;
+	float G_Y;
+	float G_Z;
+} IMU_Bias_Packet;
+
 typedef enum {
 	IMU_WRITE_REG,
 	IMU_SINGLE_REG,
@@ -119,6 +143,9 @@ extern uint8_t									IMU_Current_Register_Read; 		// Transfers which register 
 
 void IMU_Read(void);		// Read IMU acceleration and gyroscope registers
 extern IMU_Data_Packet IMU_Raw; // IMU output
+extern IMU_Data_Packet_Scaled IMU_Data;	// IMU output (Scaled)
+extern IMU_Angles_Packet IMU_Angles;		// Integrated gyroscope rates
+extern IMU_Bias_Packet IMU_Bias;		// Integrated gyroscope rates
 
 extern uint8_t IMU_SPI_SingleBuf_RX[2]; // Receive buffer for single register
 extern uint8_t IMU_SPI_SingleBuf_TX[2];	// Write buffer for single register
