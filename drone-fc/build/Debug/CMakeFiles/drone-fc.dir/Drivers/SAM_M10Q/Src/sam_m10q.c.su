@@ -1,6 +1,0 @@
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:36:6:GPS_Init	8	static
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:42:6:GPS_New_Sentence	16	static
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:58:6:GPS_Parse_Byte	16	static
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:75:6:_GPS_Parse_GGA	96	static
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:349:6:_GPS_Parse_RMC	80	static
-/home/nestor/drone-master/drone-fc/Drivers/SAM_M10Q/Src/sam_m10q.c:599:6:GPS_Parse_Sentence	24	static

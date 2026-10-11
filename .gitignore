@@ -1,3 +1,4 @@
 .metadata
 *.kicad_prl
 *.lck
+build/
