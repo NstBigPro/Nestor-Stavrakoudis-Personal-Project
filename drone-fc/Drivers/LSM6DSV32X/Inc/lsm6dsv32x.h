@@ -97,6 +97,7 @@ typedef enum {
 void IMU_Test(void);																				// Checks WHO_AM_I
 extern volatile IMU_StatusTypeDef IMU_Status;
 
+void IMU_Calibrate(void);																		// Obtain IMU bias values
 void IMU_Init(void);																				// IMU initialization
 
 typedef struct {
