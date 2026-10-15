@@ -23,6 +23,7 @@
 #include "usart.h"
 #include "gpio.h"
 
+#include <math.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lsm6dsv32x.h" // IMU header
@@ -48,7 +49,7 @@ typedef struct {
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define RAD_TO_DEG 57.2957795131f		// We avoid 180/M_PI to save CPU work
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -75,6 +76,7 @@ typedef struct {
 /* USER CODE BEGIN PV */
 Sensor_Status sensor_status = UNDETERMINED;
 Attitude attitude;
+Attitude attitude_accel;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -119,13 +121,25 @@ void IMU_TxRxCpltCallback(){
 			IMU_Data.A_Y = IMU_Raw.A_Y * 0.976f - IMU_Bias.A_Y;	// acceleration sensitivity", p.12 on datasheet
 			IMU_Data.A_Z = IMU_Raw.A_Z * 0.976f - IMU_Bias.A_Z;
 
-			IMU_Data.G_X = IMU_Raw.G_X * 70.0f - IMU_Bias.G_X;	// Scaling factor comes from "Angular
-			IMU_Data.G_Y = IMU_Raw.G_Y * 70.0f - IMU_Bias.G_Y;	// rate sensitivity", p.12 on datasheet
-			IMU_Data.G_Z = IMU_Raw.G_Z * 70.0f - IMU_Bias.G_Z;
+			IMU_Data.G_X = IMU_Raw.G_X * 0.07f - IMU_Bias.G_X;	// Scaling factor comes from "Angular
+			IMU_Data.G_Y = IMU_Raw.G_Y * 0.07f - IMU_Bias.G_Y;	// rate sensitivity", p.12 on datasheet
+			IMU_Data.G_Z = IMU_Raw.G_Z * 0.07f - IMU_Bias.G_Z;
 
 			IMU_Angles.G_X += IMU_Data.G_X / 1920.0f;	// Integrate rates
 			IMU_Angles.G_Y += IMU_Data.G_Y / 1920.0f;
 			IMU_Angles.G_Z += IMU_Data.G_Z / 1920.0f;
+
+			attitude_accel.roll = atan2f(IMU_Data.A_Y, IMU_Data.A_Z);
+			attitude_accel.roll *= RAD_TO_DEG;
+			attitude.roll += IMU_Data.G_X*0.000520833f;//1/1920
+			attitude.roll = IMU_FILTER_COEFFICIENT * attitude.roll + (1-IMU_FILTER_COEFFICIENT) *
+					attitude_accel.roll;		// Complementary filter for roll
+
+			attitude_accel.pitch = atan2f(-IMU_Data.A_X, sqrtf(IMU_Data.A_Y*IMU_Data.A_Y + IMU_Data.A_Z*IMU_Data.A_Z));
+			attitude_accel.pitch *= RAD_TO_DEG;
+			attitude.pitch += IMU_Data.G_Y*0.000520833f;//1/1920
+			attitude.pitch = IMU_FILTER_COEFFICIENT * attitude.pitch + (1-IMU_FILTER_COEFFICIENT) *
+								attitude_accel.pitch;	// Complementary filter for pitch
 			break;
 	}
 }
@@ -186,9 +200,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			LED2_R_Toggle();
 		} else if(sensor_status == MANUAL_ONLY) {
 			LED1_G_On();
-			LED1_G_Off();
+			LED2_G_Off();
 			LED1_R_Off();
-			LED1_R_Toggle();
+			LED2_R_Toggle();
 		}
 	}
 }
@@ -244,29 +258,23 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);	// TIM3 has a period of 200ms and is used to blink LEDs for status.
+  __HAL_SPI_ENABLE(&hspi1);
   // LED testing sequence. Additionally, it gives time for everything to power up.
   LED_Test_Sequence();
 
   IMU_Test();		// Test the IMU
   if(IMU_Status == IMU_FAULTY){
   	sensor_status = FATAL;
-  }
-
-  ALT_Test();		// Test the barometer
-  if(ALT_Status == ALT_FAULTY){
-  	sensor_status = FATAL;
-  } else if(ALT_Status == ALT_OPERATIONAL && IMU_Status == IMU_OPERATIONAL) {	// IMU and barometer operational; manual PID loop is available
-  	sensor_status = MANUAL_ONLY;
-  	IMU_Init();
-  	ALT_Init();
-  	GPS_Init();
+  } else {
+	sensor_status = MANUAL_ONLY;
+	IMU_Init();
   }
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (sensor_status != FATAL)
+  while (1)
   {
     /* USER CODE END WHILE */
 

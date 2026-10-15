@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "drone-fc.map"
+  "CMakeFiles/drone-fc.dir/Core/Src/adc.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/adc.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/dma.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/dma.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/gpio.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/gpio.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/i2c.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/i2c.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/main.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/main.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/spi.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/spi.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_hal_msp.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/stm32f4xx_it.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/syscalls.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/syscalls.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/sysmem.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/sysmem.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/tim.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/tim.c.o.d"
+  "CMakeFiles/drone-fc.dir/Core/Src/usart.c.o"
+  "CMakeFiles/drone-fc.dir/Core/Src/usart.c.o.d"
+  "CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.o"
+  "CMakeFiles/drone-fc.dir/Drivers/BMP388/Src/bmp388.c.o.d"
+  "CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.o"
+  "CMakeFiles/drone-fc.dir/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c.o.d"
+  "CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.o"
+  "CMakeFiles/drone-fc.dir/Drivers/SAM_M10Q/Src/sam_m10q.c.o.d"
+  "CMakeFiles/drone-fc.dir/startup_stm32f407xx.s.o"
+  "drone-fc"
+  "drone-fc.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/drone-fc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

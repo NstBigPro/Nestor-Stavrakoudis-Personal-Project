@@ -107,9 +107,9 @@ void IMU_Calibrate(){
 		G_Y_sum += IMU_Raw.G_Y;
 		G_Z_sum += IMU_Raw.G_Z;
 	}
-	IMU_Bias.G_X = G_X_sum * 70.0f / 500.0f;
-	IMU_Bias.G_Y = G_Y_sum * 70.0f / 500.0f;
-	IMU_Bias.G_Z = G_Z_sum * 70.0f / 500.0f;
+	IMU_Bias.G_X = G_X_sum * 0.07f / 500.0f;
+	IMU_Bias.G_Y = G_Y_sum * 0.07f / 500.0f;
+	IMU_Bias.G_Z = G_Z_sum * 0.07f / 500.0f;
 }
 
 void IMU_Init(){
@@ -125,10 +125,10 @@ void IMU_Init(){
 
 	IMU_Calibrate();	// Obtain bias values
 
+	while (HAL_SPI_GetState(IMU_INTERFACE) != HAL_SPI_STATE_READY);	 // Ensure DMA transactions are over
 	IMU_Angles.G_X = 0;
 	IMU_Angles.G_Y = 0;
 	IMU_Angles.G_Z = 0;
-
 	_IMU_WriteRegisterBlocking(IMU_INT1_CTRL, IMU_INT1_SETTING); // Set INT1 behavior
 
 }
