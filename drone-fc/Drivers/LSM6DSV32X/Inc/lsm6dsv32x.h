@@ -148,6 +148,7 @@ extern IMU_Data_Packet IMU_Raw; // IMU output
 extern IMU_Data_Packet_Scaled IMU_Data;	// IMU output (Scaled)
 extern IMU_Angles_Packet IMU_Angles;		// Integrated gyroscope rates
 extern IMU_Bias_Packet IMU_Bias;		// Integrated gyroscope rates
+extern uint8_t IMU_Calibrated;
 
 extern uint8_t IMU_SPI_SingleBuf_RX[2]; // Receive buffer for single register
 extern uint8_t IMU_SPI_SingleBuf_TX[2];	// Write buffer for single register

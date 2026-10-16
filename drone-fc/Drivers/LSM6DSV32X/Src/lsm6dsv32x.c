@@ -29,6 +29,7 @@ IMU_Angles_Packet IMU_Angles;
 IMU_Bias_Packet IMU_Bias;
 uint8_t IMU_SPI_SingleBuf_RX[2], IMU_SPI_SingleBuf_TX[2];
 uint8_t IMU_SPI_IMUPacket_RX[13], IMU_SPI_IMUPacket_TX[13];
+uint8_t IMU_Calibrated = 0;
 
 
 void _IMU_ReadRegister(uint8_t reg){
@@ -110,6 +111,7 @@ void IMU_Calibrate(){
 	IMU_Bias.G_X = G_X_sum * 0.07f / 500.0f;
 	IMU_Bias.G_Y = G_Y_sum * 0.07f / 500.0f;
 	IMU_Bias.G_Z = G_Z_sum * 0.07f / 500.0f;
+	IMU_Calibrated = 1;
 }
 
 void IMU_Init(){
