@@ -57,11 +57,11 @@ typedef struct {
 
 } GPS_Packet;
 
-extern GPS_Packet GPS_Data;									// GPS data packet
+extern volatile GPS_Packet GPS_Data;									// GPS data packet
 
 extern uint8_t GPS_Buffer_RX[512];						// GPS receive buffer
 
-extern uint8_t GPS_Sentence[512];						// GPS current sentence
+extern volatile uint8_t GPS_Sentence[512];						// GPS current sentence
 
 
 void GPS_Parse_Sentence(void);	// Sentence parser

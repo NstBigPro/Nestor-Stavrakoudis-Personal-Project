@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sam_m10q.h"
+#include "ep1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -314,11 +315,14 @@ void USART2_IRQHandler(void)
 void USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
+	if(__HAL_UART_GET_FLAG(RADIO_INTERFACE,UART_FLAG_IDLE)){
+		__HAL_UART_CLEAR_IDLEFLAG(RADIO_INTERFACE);
 
+	}
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */
-
+  Radio_New_Sentence();
   /* USER CODE END USART3_IRQn 1 */
 }
 

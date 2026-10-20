@@ -27,11 +27,11 @@ static uint16_t GPS_Sentence_Pos = 0;
 static uint16_t GPS_In_Sentence = 0;
 
 /* Extern variable declarations */
-GPS_Packet GPS_Data;
+volatile GPS_Packet GPS_Data;
 
 uint8_t GPS_Buffer_RX[512];
 
-uint8_t GPS_Sentence[512];
+volatile uint8_t GPS_Sentence[512];
 
 void GPS_Init(){
 	/* GPS initialization */

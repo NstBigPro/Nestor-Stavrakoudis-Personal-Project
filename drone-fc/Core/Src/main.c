@@ -29,6 +29,7 @@
 #include "lsm6dsv32x.h" // IMU header
 #include "bmp388.h"			// Barometer header
 #include "sam_m10q.h"		// GPS header
+#include "ep1.h"				// Radio receiver header
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,14 +46,6 @@ typedef struct {
 	float pitch;
 	float yaw;
 } Attitude;
-
-typedef struct {
-	float throttle;
-	float yaw;
-	float roll;
-	float pitch;
-	uint8_t armed:1;
-} Radio_Packet;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -62,11 +55,11 @@ typedef struct {
 /* PID values follow, these are just placeholders and must be experimentally tested*/
 #define PITCH_P	1.5f		// Proportional term of the pitch PID loop.
 #define PITCH_I	0.001f		// Integral term of the pitch PID loop.
-#define PITCH_D	15.0f		// Derivative term of the pitch PID loop.
+#define PITCH_D	200.0f		// Derivative term of the pitch PID loop.
 
 #define ROLL_P	1.5f		// Proportional term of the roll PID loop.
 #define ROLL_I	0.001f		// Integral term of the roll PID loop.
-#define ROLL_D	15.0f		// Derivative term of the roll PID loop.
+#define ROLL_D	200.0f		// Derivative term of the roll PID loop.
 
 #define PID_I_LIMIT		100000.0f		// PID integral term clamp
 #define PID_OUT_LIMIT	400.0f		// Maximum output
@@ -102,7 +95,6 @@ volatile Attitude attitude_accel;	// Attitude (accelerometer only)
 volatile Attitude error;
 volatile Attitude error_old;
 
-volatile Radio_Packet Radio_Data;
 
 volatile float roll_error_i;		// integral accumulator of roll pid loop
 volatile float pitch_error_i;		// integral accumulator or pitch pid loop
@@ -160,8 +152,8 @@ void IMU_TxRxCpltCallback(){
 			IMU_Angles.G_Y += IMU_Data.G_Y / 1920.0f;
 			IMU_Angles.G_Z += IMU_Data.G_Z / 1920.0f;
 
-			error_old.roll = Radio_Data.roll - attitude.roll;
-			error_old.pitch = Radio_Data.pitch - attitude.pitch;
+			error_old.roll = Radio_Scaled.roll - attitude.roll;
+			error_old.pitch = Radio_Scaled.pitch - attitude.pitch;
 
 			attitude_accel.roll = atan2f(IMU_Data.A_Y, IMU_Data.A_Z);
 			attitude_accel.roll *= RAD_TO_DEG;
@@ -175,28 +167,28 @@ void IMU_TxRxCpltCallback(){
 			attitude.pitch = IMU_FILTER_COEFFICIENT * attitude.pitch + (1-IMU_FILTER_COEFFICIENT) *
 								attitude_accel.pitch;	// Complementary filter for pitch
 			if(IMU_Calibrated){
-				roll_error_i += Radio_Data.roll-attitude.roll;
-				roll_error_i *= ((!Radio_Data.armed ||
-						Radio_Data.throttle < THROTTLE_I_THRESHOLD)?0:1);
+				roll_error_i += Radio_Scaled.roll-attitude.roll;
+				roll_error_i *= ((!Radio_Scaled.armed ||
+						Radio_Scaled.throttle < THROTTLE_I_THRESHOLD)?0:1);
 
 				if(roll_error_i>PID_I_LIMIT) roll_error_i=PID_I_LIMIT;
 				if(roll_error_i<-PID_I_LIMIT) roll_error_i=-PID_I_LIMIT;
 
-				pitch_error_i += Radio_Data.pitch-attitude.pitch;
-				pitch_error_i *= ((!Radio_Data.armed ||
-						Radio_Data.throttle < THROTTLE_I_THRESHOLD)?0:1);
+				pitch_error_i += Radio_Scaled.pitch-attitude.pitch;
+				pitch_error_i *= ((!Radio_Scaled.armed ||
+						Radio_Scaled.throttle < THROTTLE_I_THRESHOLD)?0:1);
 				if(pitch_error_i>PID_I_LIMIT) pitch_error_i=PID_I_LIMIT;
 				if(pitch_error_i<-PID_I_LIMIT) pitch_error_i=-PID_I_LIMIT;
 
-				error.roll = ROLL_P * (Radio_Data.roll - attitude.roll) +
+				error.roll = ROLL_P * (Radio_Scaled.roll - attitude.roll) +
 						ROLL_I * roll_error_i +
-						ROLL_D * ((Radio_Data.roll - attitude.roll) - error_old.roll);	// PID loop for roll
+						ROLL_D * ((Radio_Scaled.roll - attitude.roll) - error_old.roll);	// PID loop for roll
 				if(error.roll>PID_OUT_LIMIT) error.roll = PID_OUT_LIMIT;
 				if(error.roll<-PID_OUT_LIMIT) error.roll = -PID_OUT_LIMIT;
 
-				error.pitch = PITCH_P * (Radio_Data.pitch - attitude.pitch) +
+				error.pitch = PITCH_P * (Radio_Scaled.pitch - attitude.pitch) +
 						PITCH_I * pitch_error_i +
-						PITCH_D * ((Radio_Data.pitch - attitude.pitch) - error_old.pitch);	// PID loop for pitch
+						PITCH_D * ((Radio_Scaled.pitch - attitude.pitch) - error_old.pitch);	// PID loop for pitch
 				if(error.pitch>PID_OUT_LIMIT) error.pitch = PID_OUT_LIMIT;
 				if(error.pitch<-PID_OUT_LIMIT) error.pitch = -PID_OUT_LIMIT;
 			}
@@ -285,11 +277,11 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	Radio_Data.pitch = 0;	// Initialize radio values to ensure no undefined behavior on startup
-	Radio_Data.roll = 0;
-	Radio_Data.throttle = 0;
-	Radio_Data.yaw = 0;
-	Radio_Data.armed = 0;
+	Radio_Scaled.pitch = 0;	// Initialize radio values to ensure no undefined behavior on startup
+	Radio_Scaled.roll = 0;
+	Radio_Scaled.throttle = 0;
+	Radio_Scaled.yaw = 0;
+	Radio_Scaled.armed = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -330,9 +322,12 @@ int main(void)
   if(IMU_Status == IMU_FAULTY){
   	sensor_status = FATAL;
   } else {
-	sensor_status = MANUAL_ONLY;
-	IMU_Init();
+  	sensor_status = MANUAL_ONLY;
+  	IMU_Init();
   }
+
+  GPS_Init();
+  Radio_Init();
 
   /* USER CODE END 2 */
 

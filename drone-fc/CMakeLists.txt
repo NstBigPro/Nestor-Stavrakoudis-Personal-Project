@@ -47,7 +47,8 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${CMAKE_SOURCE_DIR}/Drivers/LSM6DSV32X/Src/lsm6dsv32x.c # IMU driver
     ${CMAKE_SOURCE_DIR}/Drivers/BMP388/Src/bmp388.c			# Barometer driver
-    ${CMAKE_SOURCE_DIR}/Drivers/SAM_M10Q/Src/sam_m10q.c			# GPS driver
+    ${CMAKE_SOURCE_DIR}/Drivers/SAM_M10Q/Src/sam_m10q.c		# GPS driver
+    ${CMAKE_SOURCE_DIR}/Drivers/EP1/Src/ep1.c				# Radio receiver driver
 )
 
 # Add include paths
@@ -56,7 +57,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/Drivers/LSM6DSV32X/Inc	# IMU header
     ${CMAKE_SOURCE_DIR}/Drivers/BMP388/Inc		# Barometer header
     ${CMAKE_SOURCE_DIR}/Drivers/SAM_M10Q/Inc		# GPS header
-    
+    ${CMAKE_SOURCE_DIR}/Drivers/EP1/Inc				# Radio receiver header
 )
 
 # Add project symbols (macros)
