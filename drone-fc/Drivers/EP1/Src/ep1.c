@@ -144,10 +144,11 @@ void Radio_Parse_Byte(uint8_t byte){
 	}
 
 	Radio_Sentence[Radio_Sentence_Pos] = byte;
-	if(Radio_Sentence_Pos == 1 && byte >= 2 && byte <= 62){	// 2nd byte is how many bytes follow the 2 bytes of sync+length. (0x18 for RC Channels Packed)
-		Radio_Sentence_Length = byte + 2;
-	} else {
-		return;
+	if(Radio_Sentence_Pos == 1){	// 2nd byte is how many bytes follow the 2 bytes of sync+length. (0x18 for RC Channels Packed)
+		if(byte >= 2 && byte <= 62)
+			Radio_Sentence_Length = byte + 2;
+		else
+			return;
 	}
 	Radio_Sentence_Pos++;
 	if(Radio_Sentence_Pos == Radio_Sentence_Length){

@@ -46,6 +46,13 @@ typedef struct {
 	float pitch;
 	float yaw;
 } Attitude;
+
+typedef struct {
+	int16_t FL;	//Front left
+	int16_t FR;	//Front right
+	int16_t BL;	//Back left
+	int16_t BR;	//Back right
+} Motor_PWM_Packet;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -65,6 +72,12 @@ typedef struct {
 #define PID_OUT_LIMIT	400.0f		// Maximum output
 #define THROTTLE_I_THRESHOLD	0.1f	// Below a certain throttle (for example on ground) we shouldn't use
 																	// the integrator term because it keeps rising
+
+#define MOTOR_TIMER		&htim1
+#define MOTOR_FL				TIM_CHANNEL_1
+#define MOTOR_FR				TIM_CHANNEL_2
+#define MOTOR_BL				TIM_CHANNEL_3
+#define MOTOR_BR				TIM_CHANNEL_4
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -95,6 +108,8 @@ volatile Attitude attitude_accel;	// Attitude (accelerometer only)
 volatile Attitude error;
 volatile Attitude error_old;
 
+
+volatile Motor_PWM_Packet Motor_PWM;
 
 volatile float roll_error_i;		// integral accumulator of roll pid loop
 volatile float pitch_error_i;		// integral accumulator or pitch pid loop
@@ -192,6 +207,40 @@ void IMU_TxRxCpltCallback(){
 				if(error.pitch>PID_OUT_LIMIT) error.pitch = PID_OUT_LIMIT;
 				if(error.pitch<-PID_OUT_LIMIT) error.pitch = -PID_OUT_LIMIT;
 			}
+
+			/* Motor mixer */
+			Motor_PWM.FL = Radio_Scaled.throttle * 1000 + error.roll - error.pitch;	// PID loop is maxing out on 400 so we multiply throttle by 1000 (arbitrarily)
+			Motor_PWM.FR = Radio_Scaled.throttle * 1000 - error.roll - error.pitch;
+			Motor_PWM.BL = Radio_Scaled.throttle * 1000 + error.roll + error.pitch;
+			Motor_PWM.BR = Radio_Scaled.throttle * 1000 - error.roll + error.pitch;
+
+			if(Motor_PWM.FL > 1000) Motor_PWM.FL = 1000;
+			if(Motor_PWM.FR > 1000) Motor_PWM.FR = 1000;
+			if(Motor_PWM.BL > 1000) Motor_PWM.BL = 1000;
+			if(Motor_PWM.BR > 1000) Motor_PWM.BR = 1000;
+
+			if(Motor_PWM.FL < 0) Motor_PWM.FL = 0;
+			if(Motor_PWM.FR < 0) Motor_PWM.FR = 0;
+			if(Motor_PWM.BL < 0) Motor_PWM.BL = 0;
+			if(Motor_PWM.BR < 0) Motor_PWM.BR = 0;
+
+			if(!Radio_Scaled.armed || Radio_Scaled.kill || !IMU_Calibrated) { // Unless properly calibrated and armed stop the motors
+				Motor_PWM.FL = 0;
+				Motor_PWM.FR = 0;
+				Motor_PWM.BL = 0;
+				Motor_PWM.BR = 0;
+			}
+
+			Motor_PWM.FL+=1000; // Output should be period in us, 1000-2000
+			Motor_PWM.FR+=1000;
+			Motor_PWM.BL+=1000;
+			Motor_PWM.BR+=1000;
+
+			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_FL,Motor_PWM.FL);  // Write the CCR to set the PWM duty cycle
+			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_FR,Motor_PWM.FR);
+			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_BL,Motor_PWM.BL);
+			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_BR,Motor_PWM.BR);
+
 			break;
 	}
 }
@@ -314,6 +363,14 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);	// TIM3 has a period of 200ms and is used to blink LEDs for status.
+
+  HAL_TIM_Base_Start(MOTOR_TIMER);
+  HAL_TIM_PWM_Start(MOTOR_TIMER, MOTOR_FL);
+  HAL_TIM_PWM_Start(MOTOR_TIMER, MOTOR_FR);
+  HAL_TIM_PWM_Start(MOTOR_TIMER, MOTOR_BL);
+  HAL_TIM_PWM_Start(MOTOR_TIMER, MOTOR_BR);
+
+
   __HAL_SPI_ENABLE(&hspi1);
   // LED testing sequence. Additionally, it gives time for everything to power up.
   LED_Test_Sequence();
