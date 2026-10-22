@@ -301,9 +301,14 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			LED2_R_Toggle();
 		} else if(sensor_status == MANUAL_ONLY) {
 			LED1_G_On();
-			LED2_G_Off();
-			LED1_R_Off();
-			LED2_R_Toggle();
+			if(GPS_Status == GPS_BOOTING)
+				LED2_G_Toggle();	// GPS active but no fix
+			else if(GPS_Status == GPS_OPERATIONAL)
+				LED2_G_On();			// GPS position data coming in
+			else
+				LED2_G_Off();			// GPS inactive/dead
+			LED1_R_Off();				// IMU operational
+			LED2_R_Toggle();	// Barometer inactive/dead
 		}
 	}
 }

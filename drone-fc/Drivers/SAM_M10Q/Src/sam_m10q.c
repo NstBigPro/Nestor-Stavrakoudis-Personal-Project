@@ -33,6 +33,8 @@ uint8_t GPS_Buffer_RX[512];
 
 volatile uint8_t GPS_Sentence[512];
 
+GPS_StatusTypeDef GPS_Status = GPS_OFF;
+
 void GPS_Init(){
 	/* GPS initialization */
 	HAL_UART_Receive_DMA(GPS_INTERFACE,GPS_Buffer_RX,512);
@@ -188,6 +190,9 @@ void _GPS_Parse_GGA(){
   sentence_pos++;
   GPS_Data.fix_quality = buffer[0] - '0';
 
+	if(GPS_Status == GPS_BOOTING &&
+			(GPS_Data.fix_quality == 1 || GPS_Data.fix_quality == 2))
+		GPS_Status = GPS_OPERATIONAL;	// Obtained fix, update GPS status
 
   while(GPS_Sentence[sentence_pos] != ','){
     buffer[buffer_pos++] = GPS_Sentence[sentence_pos++]; // Field 7:Satellite number
@@ -546,12 +551,16 @@ void _GPS_Parse_RMC(){
   	switch(GPS_Sentence[sentence_pos]){	// Field 12: Fix quality
   		case 'A':
   			GPS_Data.fix_quality = 1;
+  			if(GPS_Status == GPS_BOOTING)
+  				GPS_Status = GPS_OPERATIONAL;	// Obtained fix, update GPS status
   			break;
   		case 'N':
   			GPS_Data.fix_quality = 0;
   			break;
   		case 'D':
   			GPS_Data.fix_quality = 2;
+  			if(GPS_Status == GPS_BOOTING)
+  				GPS_Status = GPS_OPERATIONAL;	// Obtained fix, update GPS status
   			break;
   		case 'E':
   			GPS_Data.fix_quality = 6;
@@ -609,10 +618,14 @@ void GPS_Parse_Sentence(){
 		}
 		if(GPS_Sentence[sentence_pos] == '$'){
 			start_type = 1;
+			if(GPS_Status == GPS_OFF){
+				GPS_Status = GPS_BOOTING;	// Received first sentence. Since the module has 25s cold start we do not outright obtain a fix.
+			}
 		}
 		sentence_pos++;
 	}
 	start_type=0;
+
 	if(type[0] == 'G' &&
 			type[1] == 'N' &&
 			type[2] == 'G' &&

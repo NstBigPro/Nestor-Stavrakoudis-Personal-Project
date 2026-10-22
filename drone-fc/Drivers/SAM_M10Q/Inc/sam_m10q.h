@@ -57,12 +57,19 @@ typedef struct {
 
 } GPS_Packet;
 
+typedef enum {
+	GPS_OFF,
+	GPS_BOOTING,
+	GPS_OPERATIONAL
+} GPS_StatusTypeDef;
+
 extern volatile GPS_Packet GPS_Data;									// GPS data packet
 
 extern uint8_t GPS_Buffer_RX[512];						// GPS receive buffer
 
 extern volatile uint8_t GPS_Sentence[512];						// GPS current sentence
 
+extern GPS_StatusTypeDef GPS_Status;
 
 void GPS_Parse_Sentence(void);	// Sentence parser
 void GPS_Parse_Byte(uint8_t byte);			// Byte parser
