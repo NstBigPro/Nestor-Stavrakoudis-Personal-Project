@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "DRV8323S") (type "KiCad") (uri "${KIPRJMOD}/footprints/DRV8323S.pretty") (options "") (descr ""))
+	(lib (name "ISZ072N06NM6ATMA1") (type "KiCad") (uri "${KIPRJMOD}/footprints/ISZ072N06NM6ATMA1.pretty") (options "") (descr ""))
+	(lib (name "VLS3015") (type "KiCad") (uri "${KIPRJMOD}/footprints/VLS3015.pretty") (options "") (descr ""))
+)
