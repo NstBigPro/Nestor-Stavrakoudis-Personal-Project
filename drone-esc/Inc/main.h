@@ -28,6 +28,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g4xx_hal.h"
+
 #include "motorcontrol.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -50,8 +51,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -64,6 +63,13 @@ void Error_Handler(void);
 #define M1_BUS_VOLTAGE_Pin BUS_VOLTAGE_Pin
 #define M2_BUS_VOLTAGE_GPIO_Port BUS_VOLTAGE_GPIO_Port
 #define M2_BUS_VOLTAGE_Pin BUS_VOLTAGE_Pin
+#define NSCS_2_Pin GPIO_PIN_13
+#define NSCS_2_GPIO_Port GPIOC
+#define ENABLE_2_Pin GPIO_PIN_14
+#define ENABLE_2_GPIO_Port GPIOC
+#define NFAULT_2_Pin GPIO_PIN_15
+#define NFAULT_2_GPIO_Port GPIOC
+#define NFAULT_2_EXTI_IRQn EXTI15_10_IRQn
 #define BUS_VOLTAGE_Pin GPIO_PIN_0
 #define BUS_VOLTAGE_GPIO_Port GPIOF
 #define M2_CURR_AMPL_U_Pin GPIO_PIN_1
@@ -76,8 +82,17 @@ void Error_Handler(void);
 #define M1_CURR_AMPL_W_GPIO_Port GPIOA
 #define M2_CURR_AMPL_W_Pin GPIO_PIN_4
 #define M2_CURR_AMPL_W_GPIO_Port GPIOA
+#define NSCS_1_Pin GPIO_PIN_0
+#define NSCS_1_GPIO_Port GPIOB
+#define ENABLE_1_Pin GPIO_PIN_1
+#define ENABLE_1_GPIO_Port GPIOB
+#define NFAULT_1_Pin GPIO_PIN_2
+#define NFAULT_1_GPIO_Port GPIOB
+#define NFAULT_1_EXTI_IRQn EXTI2_IRQn
 #define M2_CURR_AMPL_V_Pin GPIO_PIN_11
 #define M2_CURR_AMPL_V_GPIO_Port GPIOB
+#define CAL_Pin GPIO_PIN_13
+#define CAL_GPIO_Port GPIOB
 #define M1_PWM_WL_Pin GPIO_PIN_15
 #define M1_PWM_WL_GPIO_Port GPIOB
 #define M1_PWM_UH_Pin GPIO_PIN_8

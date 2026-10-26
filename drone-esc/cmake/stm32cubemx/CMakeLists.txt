@@ -24,6 +24,10 @@ set(MX_Include_Dirs
 # STM32CubeMX generated application sources
 set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/main.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/gpio.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/adc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/cordic.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/i2c.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/motorcontrol.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/speed_torq_ctrl.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/pwm_common.c
@@ -41,6 +45,8 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/mc_parameters.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/mc_configuration_registers.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/mc_app_hooks.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/spi.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/tim.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/stm32g4xx_it.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/stm32g4xx_hal_msp.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Src/sysmem.c
@@ -68,6 +74,10 @@ set(STM32_Drivers_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cordic.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
 )
