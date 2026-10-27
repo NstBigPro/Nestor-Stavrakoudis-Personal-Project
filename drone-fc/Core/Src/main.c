@@ -68,7 +68,14 @@ typedef struct {
 #define ROLL_I	0.001f		// Integral term of the roll PID loop.
 #define ROLL_D	200.0f		// Derivative term of the roll PID loop.
 
-#define PID_I_LIMIT		100000.0f		// PID integral term clamp
+#define YAW_P	0.7f				// Proportianal term of the yaw PID loop.
+#define YAW_I	0.005f			// Integral term of the yaw PID loop.
+// Yaw does not usually have a derivative term
+
+#define ROLL_PITCH_AUTHORITY 2.5f		// Yaw output is divided by this to keep roll/pitch the most important factors
+
+
+#define PID_I_LIMIT		10000.0f		// PID integral term clamp
 #define PID_OUT_LIMIT	400.0f		// Maximum output
 #define THROTTLE_I_THRESHOLD	0.1f	// Below a certain throttle (for example on ground) we shouldn't use
 																	// the integrator term because it keeps rising
@@ -112,7 +119,10 @@ volatile Attitude error_old;
 volatile Motor_PWM_Packet Motor_PWM;
 
 volatile float roll_error_i;		// integral accumulator of roll pid loop
-volatile float pitch_error_i;		// integral accumulator or pitch pid loop
+volatile float pitch_error_i;		// integral accumulator of pitch pid loop
+
+volatile float yaw_rate_error;	// integral accumulator of yaw rate
+volatile float yaw_error_i;			// integral accumulator of yaw pid loop
 
 
 /* USER CODE END PV */
@@ -181,11 +191,13 @@ void IMU_TxRxCpltCallback(){
 			attitude.pitch += IMU_Data.G_Y*0.000520833f;//1/1920
 			attitude.pitch = IMU_FILTER_COEFFICIENT * attitude.pitch + (1-IMU_FILTER_COEFFICIENT) *
 								attitude_accel.pitch;	// Complementary filter for pitch
+
+			attitude.yaw += IMU_Data.G_Z*0.000520833f;	// Yaw has no complementary filter as gravity reference does not change by rotating about the yaw axis
+
 			if(IMU_Calibrated){
 				roll_error_i += Radio_Scaled.roll-attitude.roll;
 				roll_error_i *= ((!Radio_Scaled.armed ||
 						Radio_Scaled.throttle < THROTTLE_I_THRESHOLD)?0:1);
-
 				if(roll_error_i>PID_I_LIMIT) roll_error_i=PID_I_LIMIT;
 				if(roll_error_i<-PID_I_LIMIT) roll_error_i=-PID_I_LIMIT;
 
@@ -194,6 +206,12 @@ void IMU_TxRxCpltCallback(){
 						Radio_Scaled.throttle < THROTTLE_I_THRESHOLD)?0:1);
 				if(pitch_error_i>PID_I_LIMIT) pitch_error_i=PID_I_LIMIT;
 				if(pitch_error_i<-PID_I_LIMIT) pitch_error_i=-PID_I_LIMIT;
+
+				yaw_error_i += Radio_Scaled.yaw-IMU_Data.G_Z;
+				yaw_error_i *= ((!Radio_Scaled.armed ||
+						Radio_Scaled.throttle < THROTTLE_I_THRESHOLD)?0:1);
+				if(yaw_error_i>PID_I_LIMIT) yaw_error_i=PID_I_LIMIT;
+				if(yaw_error_i<-PID_I_LIMIT) yaw_error_i=-PID_I_LIMIT;
 
 				error.roll = ROLL_P * (Radio_Scaled.roll - attitude.roll) +
 						ROLL_I * roll_error_i +
@@ -206,13 +224,19 @@ void IMU_TxRxCpltCallback(){
 						PITCH_D * ((Radio_Scaled.pitch - attitude.pitch) - error_old.pitch);	// PID loop for pitch
 				if(error.pitch>PID_OUT_LIMIT) error.pitch = PID_OUT_LIMIT;
 				if(error.pitch<-PID_OUT_LIMIT) error.pitch = -PID_OUT_LIMIT;
+
+				error.yaw = YAW_P * (Radio_Scaled.yaw - IMU_Data.G_Z) +
+						YAW_I * yaw_error_i;	// PID loop for yaw
+				if(error.yaw>PID_OUT_LIMIT) error.yaw = PID_OUT_LIMIT;
+				if(error.yaw<-PID_OUT_LIMIT) error.yaw = -PID_OUT_LIMIT;
+				error.yaw /= ROLL_PITCH_AUTHORITY;	// Keep pitch/roll the most impactful steering factors
 			}
 
 			/* Motor mixer */
-			Motor_PWM.FL = Radio_Scaled.throttle * 1000 + error.roll - error.pitch;	// PID loop is maxing out on 400 so we multiply throttle by 1000 (arbitrarily)
-			Motor_PWM.FR = Radio_Scaled.throttle * 1000 - error.roll - error.pitch;
-			Motor_PWM.BL = Radio_Scaled.throttle * 1000 + error.roll + error.pitch;
-			Motor_PWM.BR = Radio_Scaled.throttle * 1000 - error.roll + error.pitch;
+			Motor_PWM.FL = Radio_Scaled.throttle * 1000 + error.roll - error.pitch - error.yaw;	// PID loop is maxing out on 400 (160 for yaw) so we multiply throttle by 1000 (arbitrarily)
+			Motor_PWM.FR = Radio_Scaled.throttle * 1000 - error.roll - error.pitch + error.yaw;
+			Motor_PWM.BL = Radio_Scaled.throttle * 1000 + error.roll + error.pitch + error.yaw;
+			Motor_PWM.BR = Radio_Scaled.throttle * 1000 - error.roll + error.pitch - error.yaw;
 
 			if(Motor_PWM.FL > 1000) Motor_PWM.FL = 1000;
 			if(Motor_PWM.FR > 1000) Motor_PWM.FR = 1000;
