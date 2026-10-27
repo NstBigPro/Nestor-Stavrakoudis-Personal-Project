@@ -46,6 +46,7 @@ typedef struct {
 typedef struct {
 	uint8_t armed:1;
 	uint8_t kill:1;
+	uint16_t armed_position;
 	float pitch;
 	float roll;
 	float yaw;
@@ -60,6 +61,8 @@ extern volatile Radio_Packet_Scaled Radio_Scaled;					// Scaled radio data packe
 extern uint8_t Radio_Buffer_RX[512];						// Radio receive buffer
 
 extern volatile uint8_t Radio_Sentence[512];						// Radio current sentence
+
+extern volatile uint32_t Radio_Timestamp;
 
 void Radio_Parse_Sentence(void);	// Sentence parser
 void Radio_Parse_Byte(uint8_t byte);			// Byte parser

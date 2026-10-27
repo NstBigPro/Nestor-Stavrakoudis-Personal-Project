@@ -18,14 +18,16 @@
 #include "adc.h"
 #include "dma.h"
 #include "i2c.h"
+#include "iwdg.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
-#include <math.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <math.h>
+
 #include "lsm6dsv32x.h" // IMU header
 #include "bmp388.h"			// Barometer header
 #include "sam_m10q.h"		// GPS header
@@ -80,6 +82,11 @@ typedef struct {
 #define THROTTLE_I_THRESHOLD	0.1f	// Below a certain throttle (for example on ground) we shouldn't use
 																	// the integrator term because it keeps rising
 
+#define RADIO_TIMEOUT	300				// Timeout in milliseconds
+
+#define EXTREME_STATE_THRESHOLD	200	// Held more than these samples in extreme state shuts motors off
+#define EXTREME_STATE_ANGLE			70	// Extreme state angle threshold
+
 #define MOTOR_TIMER		&htim1
 #define MOTOR_FL				TIM_CHANNEL_1
 #define MOTOR_FR				TIM_CHANNEL_2
@@ -124,6 +131,10 @@ volatile float pitch_error_i;		// integral accumulator of pitch pid loop
 volatile float yaw_rate_error;	// integral accumulator of yaw rate
 volatile float yaw_error_i;			// integral accumulator of yaw pid loop
 
+volatile uint16_t extreme_state_counter = 0;	// Used for detecting crashed orientations
+
+volatile uint8_t failsafe = 0;
+volatile uint8_t arm_switch_seen_low = 0;
 
 /* USER CODE END PV */
 
@@ -157,6 +168,10 @@ void IMU_TxRxCpltCallback(){
 		case IMU_SINGLE_REG:
 			break; // Not used yet (all single register reads use blocking mode)
 		case IMU_PACKET: // Parse IMU Packet
+			failsafe = (HAL_GetTick() - Radio_Timestamp >= RADIO_TIMEOUT)
+				                || extreme_state_counter >= EXTREME_STATE_THRESHOLD
+				                || Radio_Scaled.kill || !IMU_Calibrated;
+
 			IMU_Raw.A_X = (IMU_SPI_IMUPacket_RX[IMU_OUTX_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTX_L_A-0x21];
 			IMU_Raw.A_Y = (IMU_SPI_IMUPacket_RX[IMU_OUTY_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTY_L_A-0x21];
 			IMU_Raw.A_Z = (IMU_SPI_IMUPacket_RX[IMU_OUTZ_H_A-0x21] << 8) + IMU_SPI_IMUPacket_RX[IMU_OUTZ_L_A-0x21];
@@ -232,6 +247,32 @@ void IMU_TxRxCpltCallback(){
 				error.yaw /= ROLL_PITCH_AUTHORITY;	// Keep pitch/roll the most impactful steering factors
 			}
 
+			if(extreme_state_counter >= EXTREME_STATE_THRESHOLD)
+				Radio_Scaled.armed = 0;
+
+			if(fabsf(attitude.pitch) >= EXTREME_STATE_ANGLE || fabsf(attitude.roll) >= EXTREME_STATE_ANGLE){
+				if(extreme_state_counter < EXTREME_STATE_THRESHOLD)
+					extreme_state_counter += 1;
+			}
+
+			if(fabsf(attitude.pitch) < EXTREME_STATE_ANGLE && fabsf(attitude.roll) < EXTREME_STATE_ANGLE)
+				extreme_state_counter = 0;
+
+
+
+
+
+			if(failsafe) {
+							Radio_Scaled.armed = 0;
+							arm_switch_seen_low = 0;
+			}
+			if(Radio_Scaled.armed_position < RADIO_CENTER) {
+							Radio_Scaled.armed = 0;
+							arm_switch_seen_low = 1; 	// This is used so that if the failsafe is resolved the motors don't spin immediately causing injury / damage
+			} else if(arm_switch_seen_low && !failsafe && Radio_Scaled.throttle < 0.1 && Radio_Scaled.armed_position >= RADIO_CENTER) {
+							Radio_Scaled.armed = 1;
+							arm_switch_seen_low = 0;
+			}
 			/* Motor mixer */
 			Motor_PWM.FL = Radio_Scaled.throttle * 1000 + error.roll - error.pitch - error.yaw;	// PID loop is maxing out on 400 (160 for yaw) so we multiply throttle by 1000 (arbitrarily)
 			Motor_PWM.FR = Radio_Scaled.throttle * 1000 - error.roll - error.pitch + error.yaw;
@@ -247,6 +288,11 @@ void IMU_TxRxCpltCallback(){
 			if(Motor_PWM.FR < 0) Motor_PWM.FR = 0;
 			if(Motor_PWM.BL < 0) Motor_PWM.BL = 0;
 			if(Motor_PWM.BR < 0) Motor_PWM.BR = 0;
+
+
+
+			if(HAL_GetTick() - Radio_Timestamp >= RADIO_TIMEOUT)
+				Radio_Scaled.armed = 0;
 
 			if(!Radio_Scaled.armed || Radio_Scaled.kill || !IMU_Calibrated) { // Unless properly calibrated and armed stop the motors
 				Motor_PWM.FL = 0;
@@ -265,6 +311,7 @@ void IMU_TxRxCpltCallback(){
 			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_BL,Motor_PWM.BL);
 			__HAL_TIM_SET_COMPARE(MOTOR_TIMER,MOTOR_BR,Motor_PWM.BR);
 
+			IWDG->KR = 0xAAAA;	// Watchdog refill
 			break;
 	}
 }
@@ -294,21 +341,29 @@ void ALT_TxRxCpltCallback(){
 void LED_Test_Sequence(){
   HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);  // ON (pull low)
   HAL_Delay(200);
+	IWDG->KR = 0xAAAA;	// Watchdog refill
   HAL_GPIO_TogglePin(LED1_G_GPIO_Port, LED1_G_Pin);
   HAL_Delay(200);
+	IWDG->KR = 0xAAAA;
   HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
   HAL_GPIO_TogglePin(LED2_G_GPIO_Port, LED2_G_Pin);
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
 
   HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
   HAL_GPIO_TogglePin(LED1_G_GPIO_Port, LED1_G_Pin);// OFF (release high)
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
   HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
   HAL_GPIO_TogglePin(LED2_G_GPIO_Port, LED2_G_Pin);
   HAL_Delay(200);
+  IWDG->KR = 0xAAAA;
 
   HAL_GPIO_TogglePin(LED1_R_GPIO_Port, LED1_R_Pin);
   HAL_GPIO_TogglePin(LED2_R_GPIO_Port, LED2_R_Pin);
@@ -323,6 +378,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			LED2_G_Off();
 			LED1_R_Toggle();
 			LED2_R_Toggle();
+
 		} else if(sensor_status == MANUAL_ONLY) {
 			LED1_G_On();
 			if(GPS_Status == GPS_BOOTING)
@@ -335,6 +391,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			LED2_R_Toggle();	// Barometer inactive/dead
 		}
 	}
+	IWDG->KR = 0xAAAA;
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t EXTI_Pin){
@@ -390,6 +447,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   MX_TIM3_Init();
+  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);	// TIM3 has a period of 200ms and is used to blink LEDs for status.
 
@@ -445,8 +503,9 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 12;
