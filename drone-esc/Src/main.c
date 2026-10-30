@@ -15,6 +15,10 @@
   *
   ******************************************************************************
   */
+
+/* Note from author: Right now we focus on PWM implementation, with DShot coming later
+ * as the bidirectional mode will enable per motor telemetry.
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -32,12 +36,25 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef struct {
+	uint32_t rise;
+	uint32_t fall;
+	uint32_t period;
+	uint32_t high_count;
+	uint8_t rise_exists;
+	uint8_t fall_exists;
+} PWM_DecodingTypeDef;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define PWM_TIMER &htim2
 
+#define PWM_1_PORT GPIOB
+#define PWM_1_PIN	GPIO_PIN_10
+
+#define PWM_2_PORT GPIOA
+#define PWM_2_PIN	GPIO_PIN_3
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,7 +65,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+volatile PWM_DecodingTypeDef PWM_1 = {0};
+volatile PWM_DecodingTypeDef PWM_2 = {0};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,7 +123,8 @@ int main(void)
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_IC_Start_IT(PWM_TIMER, TIM_CHANNEL_3);
+  HAL_TIM_IC_Start_IT(PWM_TIMER, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -189,7 +208,50 @@ static void MX_NVIC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance!=TIM2) return; // PWM signals are on TIM2
+	uint8_t state;
+	uint32_t new_rise;
+	if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3) { // PWM/DShot channel 1/3 (depending on which MCU it runs)
+		state = HAL_GPIO_ReadPin(PWM_1_PORT,PWM_1_PIN);
+		if(state){
+			if (PWM_1.rise_exists){
+				new_rise = htim->Instance->CCR3;
+				PWM_1.period = new_rise - PWM_1.rise;
+				PWM_1.rise = new_rise;
+			} else if(!PWM_1.rise_exists){
+				PWM_1.rise = htim->Instance->CCR3;
+				PWM_1.rise_exists = 1;
+			}
+		} else {
+			PWM_2.fall = htim->Instance->CCR3;
+			if(PWM_1.fall_exists && PWM_1.rise_exists){
+				PWM_1.high_count = PWM_2.fall - PWM_1.rise;
+			} else if(!PWM_1.fall_exists){
+				PWM_1.fall_exists = 1;
+			}
+		}
+	} else if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_4) { // PWM/DShot channel 2/4 (depending on which MCU it runs)
+		state = HAL_GPIO_ReadPin(PWM_2_PORT,PWM_2_PIN);
+		if(state){
+			if (PWM_2.rise_exists){
+				new_rise = htim->Instance->CCR4;
+				PWM_2.period = new_rise - PWM_2.rise;
+				PWM_2.rise = new_rise;
+			} else if(!PWM_2.rise_exists){
+				PWM_2.rise = htim->Instance->CCR4;
+				PWM_2.rise_exists = 1;
+			}
+		} else {
+			PWM_2.fall = htim->Instance->CCR4;
+			if(PWM_2.fall_exists && PWM_2.rise_exists){
+				PWM_2.high_count = PWM_2.fall - PWM_2.rise;
+			} else if(!PWM_2.fall_exists){
+				PWM_2.fall_exists = 1;
+			}
+		}
+	}
+}
 /* USER CODE END 4 */
 
 /**
